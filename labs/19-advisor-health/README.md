@@ -17,6 +17,10 @@ A community transport service sees slow requests during an Azure incident. Its m
 
 ## Concept primer
 
+[![Azure Status, Service Health, Resource Health, and Advisor address different scopes and operational questions.](../../docs/assets/diagrams/health-triage.svg)](../../docs/assets/diagrams/health-triage.svg)
+
+*Recommendations and platform-health observations complement application investigation.* [Open full-size visual](../../docs/assets/diagrams/health-triage.svg).
+
 Azure Advisor evaluates supported resource configurations and usage to suggest improvements. Its five categories are reliability, security, performance, cost, and operational excellence. A recommendation proposes an action; a person still evaluates business constraints, dependencies, testing, and permission before changing a production workload. A cost-saving suggestion is not proof that a smaller instance will meet the service's peak demand. The CLI can expose the reliability category under its older `HighAvailability` label; use the unfiltered list below rather than assuming every portal category is accepted by the CLI's `--category` argument.
 
 Azure Status gives a public, broad view of Azure service health. Service Health gives authenticated users information relevant to the services and regions associated with their subscriptions, including incidents, planned maintenance, and advisories. Resource Health narrows the question to an individual supported resource's availability. These views complement application telemetry. An available VM does not prove its application works, and a quiet global status page does not prove every subscription is unaffected. Health information helps plan a response; it does not automatically restore your application or implement a disaster-recovery design.

@@ -17,6 +17,10 @@ A team wants to recreate a simple private network consistently. Inspect a versio
 
 ## Concept primer
 
+[![Bicep source compiles for ARM deployment, followed by comparison with the actual VNet and subnet.](../../docs/assets/diagrams/iac-deployment.svg)](../../docs/assets/diagrams/iac-deployment.svg)
+
+*Compilation, deployment, and observed-state validation answer different questions.* [Open full-size visual](../../docs/assets/diagrams/iac-deployment.svg).
+
 Azure Resource Manager is the Azure resource-management layer used by tools such as the portal, CLI, PowerShell, and APIs. It processes deployment and management requests while applicable permissions, policies, and locks still apply. An ARM template describes desired infrastructure in JSON. Bicep offers a declarative authoring language that compiles for ARM deployment.
 
 Infrastructure as code records intended state so a change can be reviewed, versioned, and reproduced. Parameters separate environment inputs from resource logic. Dependencies help order related resources; outputs expose useful results. A valid local template is not proof that live authorization, region support, provider registration, or quota will permit deployment.

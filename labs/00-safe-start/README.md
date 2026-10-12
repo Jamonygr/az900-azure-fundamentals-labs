@@ -16,6 +16,10 @@ You are joining a small team's Azure learning project. The team also has product
 
 ## Concept primer
 
+[![Six checkpoints for a safe Azure lab: tools, explicit context, zero-call preview, deliberate execution, configuration validation, and verified cleanup](../../docs/assets/diagrams/safe-workflow.svg)](../../docs/assets/diagrams/safe-workflow.svg)
+
+*Preview makes no Azure calls. Execute only after reading the lab; finish by verifying the owned group is absent.* [Open visual at full size](../../docs/assets/diagrams/safe-workflow.svg).
+
 Azure login establishes an identity; it does not grant every permission. The active subscription is a CLI convenience and can change between sessions. Explicit `--subscription` arguments make the intended scope visible. Tenant, subscription, resource group, and data-plane permissions are distinct. A role that creates a storage account may not read its blobs.
 
 Read-only inspection can expose identifiers. Keep evidence private and redact it before sharing. Preview-first scripts show their intended ownership boundary without calling Azure. Executing a setup creates resources; executing cleanup deletes the owned resource group. Preview success does not prove that permissions, policy, or region availability will permit a live run.

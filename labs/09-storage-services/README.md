@@ -17,9 +17,9 @@ A museum stores images, shares office documents, and queues thumbnail work. Crea
 
 ## Concept primer
 
-[![Storage services, online versus archive blob tiers, and LRS, ZRS, GRS, and GZRS replication boundaries](../../docs/assets/diagrams/storage-decisions.svg)](../../docs/assets/diagrams/storage-decisions.svg)
+[![Storage service icons, online and archive blob tiers, and primary versus secondary replication boundaries](../../docs/assets/diagrams/storage-decisions.svg)](../../docs/assets/diagrams/storage-decisions.svg)
 
-*Conceptual storage choices. The live exercise uses Standard_LRS and Hot; it does not create the other configurations.*
+*The live exercise uses Standard_LRS and Hot. Other tiers and replication arrangements are conceptual; redundancy is not a backup.* [Open visual at full size](../../docs/assets/diagrams/storage-decisions.svg).
 
 Blob stores objects such as images; Files supplies managed file shares; Queue carries asynchronous messages; Table stores structured NoSQL entities; managed disks supply VM block storage. A standard general-purpose v2 account (`StorageV2`) supports several storage services. Premium account types target specific performance/workload requirements; do not assume every type supports every service or tier.
 

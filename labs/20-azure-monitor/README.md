@@ -16,9 +16,9 @@ A volunteer booking site occasionally returns errors. The platform team asks who
 
 ## Concept primer
 
-[![Monitoring signals flow into measurements, event history, and logs, then alert rules, action groups, and operator investigation](../../docs/assets/diagrams/monitoring-signals.svg)](../../docs/assets/diagrams/monitoring-signals.svg)
+[![Metrics, logs, and application telemetry support analysis, alert conditions, and action-group routing.](../../docs/assets/diagrams/monitoring-signals.svg)](../../docs/assets/diagrams/monitoring-signals.svg)
 
-*Conceptual monitoring pipeline. This lesson uses read-only inspection and synthetic data; no collection, alert, or notification is configured.*
+*Conceptual pipeline only: the exercise does not configure collection, alerts, or notifications.* [Open full-size visual](../../docs/assets/diagrams/monitoring-signals.svg).
 
 Azure Monitor collects and analyzes telemetry such as metrics, logs, traces, and events. Metrics are numerical measurements over time, often with dimensions that help separate instances or operations. Logs are records that can contain richer event context. An average can hide a few very slow requests, so aggregations and time windows must match the operational question.
 

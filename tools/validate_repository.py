@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from jsonschema import Draft202012Validator, FormatChecker
+from validate_visuals import validate_visuals
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADINGS = ['Objectives', 'Prerequisites', 'Scenario', 'Concept primer', 'Guided exercise', 'Expected results', 'Knowledge check', 'Troubleshooting', 'Cleanup', 'References']
@@ -90,6 +91,7 @@ def validate():
     require(mapped == objectives.keys(), f'Unmapped/unknown objectives: {sorted(objectives.keys()-mapped)}')
     require(assessed == objectives.keys(), f'Unassessed objectives: {sorted(objectives.keys()-assessed)}')
     require(total == 600, f'Expected 600 questions, got {total}')
+    errors.extend(validate_visuals(ROOT, labs))
     for path in ROOT.rglob('*'):
         if not path.is_file() or any(part in EXCLUDED for part in path.relative_to(ROOT).parts):
             continue
@@ -109,7 +111,7 @@ def validate():
     subprocess.run([sys.executable, str(ROOT / 'tools/update_catalog.py'), '--check'], check=True)
     if errors:
         raise SystemExit('\n'.join(errors))
-    print(f'PASS: 22 labs, {total} questions, {len(objectives)} objectives, schemas, links, and credential patterns')
+    print(f'PASS: 22 labs, {total} questions, {len(objectives)} objectives, 22 teaching visuals, homepage cards, schemas, links, and credential patterns')
 
 
 if __name__ == '__main__':

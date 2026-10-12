@@ -16,9 +16,9 @@ A company has a sales report with an unclear source, a confidential customer fil
 
 ## Concept primer
 
-[![Purview governs data, alongside resource governance and cost controls with separate purposes.](../../docs/assets/diagrams/governance-controls.svg)](../../docs/assets/diagrams/governance-controls.svg)
+[![Purview capabilities support data discovery, information protection, and compliance work.](../../docs/assets/diagrams/purview-data.svg)](../../docs/assets/diagrams/purview-data.svg)
 
-*A conceptual comparison of complementary tools; catalog access does not imply access to the source data.*
+*Catalog metadata does not grant source-data access; the exercise uses invented descriptions.* [Open full-size visual](../../docs/assets/diagrams/purview-data.svg).
 
 Microsoft Purview spans **data governance**, **data security**, and **data compliance**. Data Map captures asset metadata; Unified Catalog helps people discover and understand governed data. Metadata can include a schema, classification, owner, business definition, and lineage. A catalog describes data rather than acting as a universal source-data backup. Catalog visibility does not automatically grant access to the underlying records.
 

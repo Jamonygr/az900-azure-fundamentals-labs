@@ -17,9 +17,9 @@ A project owner wants protection from accidental deletion and wants to understan
 
 ## Concept primer
 
-[![Azure RBAC, Policy, locks, tags, Purview, and Cost Management answer different governance questions.](../../docs/assets/diagrams/governance-controls.svg)](../../docs/assets/diagrams/governance-controls.svg)
+[![RBAC governs permitted actions, Policy evaluates rules, and management locks restrict changes.](../../docs/assets/diagrams/governance-controls.svg)](../../docs/assets/diagrams/governance-controls.svg)
 
-*Choose a control by its purpose and scope; a tag, role assignment, policy, and lock have different effects.*
+*The live exercise creates one owned CanNotDelete lock; Policy definitions are inspected read-only.* [Open full-size visual](../../docs/assets/diagrams/governance-controls.svg).
 
 A Policy **definition** holds a reusable rule and effect. An **assignment** applies a definition or **initiative**—a group of definitions—to a scope. Parameters adapt the rule. An `audit` effect reports matching noncompliance; `deny` can reject a prohibited request; effects such as `modify` and `deployIfNotExists` have additional behavior and remediation requirements. Evaluation and compliance reporting are not necessarily immediate. Listing a built-in definition does not enforce it. Policy governance complements RBAC authorization and does not itself grant the caller an Azure role.
 

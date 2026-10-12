@@ -17,6 +17,10 @@ A small company has three projects: employees signing in to a cloud expense app,
 
 ## Concept primer
 
+[![Four identity scenarios matched to Entra ID, managed Domain Services, business collaboration, and customer identity.](../../docs/assets/diagrams/identity-directory.svg)](../../docs/assets/diagrams/identity-directory.svg)
+
+*Choose identity services by audience and protocol; sign-in and resource permissions remain separate.* [Open full-size visual](../../docs/assets/diagrams/identity-directory.svg).
+
 Microsoft Entra ID is the cloud directory for users, applications, and other identities. An Entra **tenant** is a dedicated directory instance. A subscription is an Azure resource and billing boundary associated with a directory; several subscriptions can use the same tenant. Directory sign-in and permission to manage subscription resources are separate decisions.
 
 Microsoft Entra Domain Services supplies managed traditional-domain capabilities such as domain join, Group Policy, LDAP, and Kerberos/NTLM. It can support applications that cannot readily adopt modern authentication. Microsoft maintains the managed domain controllers. Identity information normally flows from Entra ID into the managed domain; deploying it is an operational and potentially chargeable decision, not a prerequisite for ordinary cloud-app sign-in.

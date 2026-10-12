@@ -18,6 +18,10 @@ A company operates a public web app with customer records. Its staff believe the
 
 ## Concept primer
 
+[![Physical, identity, network, host, application, and data protections surround the information being protected.](../../docs/assets/diagrams/security-layers.svg)](../../docs/assets/diagrams/security-layers.svg)
+
+*Combine defense layers with Zero Trust principles; Defender findings guide review rather than guarantee safety.* [Open full-size visual](../../docs/assets/diagrams/security-layers.svg).
+
 Zero Trust applies three principles: **verify explicitly**, **use least privilege**, and **assume breach**. Verify identities and relevant context instead of relying only on network location. Limit access to the task, scope, and needed duration. Plan containment and detection because an attacker may already have access. A user inside the office and a workload on a private network still need appropriate verification and authorization.
 
 Defense in depth combines controls across physical facilities, identity, network, hosts, applications, and data. For example, provider datacenter protections, MFA, scoped roles, network filtering, guest-OS patching, input validation, encryption, monitoring, and tested recovery each address different risks. Several identical controls in one layer do not replace missing controls elsewhere. The provider and customer retain responsibilities appropriate to the chosen service model.

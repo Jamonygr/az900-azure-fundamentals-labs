@@ -19,6 +19,10 @@ A project team needs to estimate a future workload and identify which resources 
 
 ## Concept primer
 
+[![Estimate future usage, analyze recorded charges, and respond to budget notifications while using tags for organization.](../../docs/assets/diagrams/cost-controls.svg)](../../docs/assets/diagrams/cost-controls.svg)
+
+*Budgets notify at thresholds; this lab creates only an empty owned group.* [Open full-size visual](../../docs/assets/diagrams/cost-controls.svg).
+
 Cost depends on the service's meters and configuration: SKU, region, duration, stored capacity, transactions, data transfer, and optional monitoring can matter. A deallocated VM can leave billable disks and other resources. Resource groups and ordinary tags do not themselves deploy compute, but putting resources in a group can introduce charges.
 
 The pricing calculator estimates a proposed workload from assumptions. It does not deploy resources, guarantee an invoice, or enforce a spending cap. Compare alternatives while holding unrelated assumptions constant. Cost Management helps analyze recorded charges, allocate spend, and forecast costs. Data can arrive with delay. A budget monitors a threshold and sends configured notifications; a budget alone does not stop every Azure service.

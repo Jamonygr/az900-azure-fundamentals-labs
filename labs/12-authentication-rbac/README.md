@@ -18,9 +18,9 @@ A support technician must inspect resources for one project. A deployer must mod
 
 ## Concept primer
 
-[![Authentication verifies identity; Conditional Access applies conditions; RBAC grants resource actions through a principal, role, and scope.](../../docs/assets/diagrams/identity-access.svg)](../../docs/assets/diagrams/identity-access.svg)
+[![Authentication verifies identity, Conditional Access applies conditions, and Azure RBAC grants scoped resource actions.](../../docs/assets/diagrams/identity-access.svg)](../../docs/assets/diagrams/identity-access.svg)
 
-*Conceptual control layers: successful sign-in alone does not grant resource permission.*
+*Conceptual controls: a role assignment combines a principal, role definition, and scope.* [Open full-size visual](../../docs/assets/diagrams/identity-access.svg).
 
 **Authentication** verifies identity. **Authorization** determines permitted actions. SSO reuses an established sign-in across integrated applications; each app still applies its permissions. MFA combines different categories of evidence: knowledge, possession, and biometrics. Two memorized passwords are not two different factor categories. Passwordless methods such as passkeys can use a device-held credential unlocked with a PIN or biometric; security properties vary between methods.
 

@@ -18,6 +18,10 @@ A team wants to inspect Azure resources, automate repeatable work, and organize 
 
 ## Concept primer
 
+[![Azure Arc links a server that remains in an external datacenter to an Azure resource representation.](../../docs/assets/diagrams/hybrid-management.svg)](../../docs/assets/diagrams/hybrid-management.svg)
+
+*Arc extends supported management; the workload stays where it is, and no server is onboarded here.* [Open full-size visual](../../docs/assets/diagrams/hybrid-management.svg).
+
 The Azure portal provides browser-based visual management, search, resource properties, and dashboards. It can be useful for initial exploration, while saved commands and templates record repeatable actions. Portal visibility depends on the selected directory, subscription, filters, and permissions. A dashboard is a view, not a deployment definition or access grant.
 
 Azure CLI uses the `az` executable and commonly returns JSON. Azure PowerShell uses Az-module cmdlets such as `Get-AzResourceGroup` and returns PowerShell objects. PowerShell itself is a shell and language: it can host Azure CLI commands without using the Az module. Cloud Shell is a hosted shell experience with Azure tools and a choice of shell. Closing a shell does not delete deployed Azure resources. Persistent storage and deployed or connected services can have costs; review the selected environment.

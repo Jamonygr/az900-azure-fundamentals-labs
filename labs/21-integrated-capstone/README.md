@@ -16,6 +16,10 @@ A small company wants a disposable proof of concept for private document storage
 
 ## Concept primer
 
+[![An owned group contains an empty VNet subnet and a separate storage account with authorized public endpoint and private practice container.](../../docs/assets/diagrams/capstone-architecture.svg)](../../docs/assets/diagrams/capstone-architecture.svg)
+
+*Configured capstone resources: storage is outside the subnet; no VM or private endpoint is deployed.* [Open full-size visual](../../docs/assets/diagrams/capstone-architecture.svg).
+
 The resource group is a lifecycle boundary, not a network boundary. A VNet defines address space; it does not automatically connect every resource placed in the same group. A private blob container prevents anonymous blob access but is different from a private endpoint. The storage account in this lab retains a public service endpoint with authorized access; this is a deliberate low-complexity design choice. Explain what a private endpoint would change without deploying one.
 
 Standard_LRS stores redundant copies within its local replication boundary; it does not provide geo-replication. Tags organize the deployment but do not enforce every governance rule or propagate automatically. Activity Log records management operations; it is different from application telemetry or blob request logs. Ownership and cleanup checks are as much part of this project as successful creation.

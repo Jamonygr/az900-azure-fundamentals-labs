@@ -19,6 +19,10 @@ A school application is busy when term starts. Its designer says `Cloud means un
 
 ## Concept primer
 
+[![An illustrative demand curve scaling from one server instance to two and back, alongside availability and recovery concerns](../../docs/assets/diagrams/cloud-benefits.svg)](../../docs/assets/diagrams/cloud-benefits.svg)
+
+*Conceptual capacity example. Autoscaling requires service support and configuration; reliability also depends on tested recovery.* [Open visual at full size](../../docs/assets/diagrams/cloud-benefits.svg).
+
 High availability reduces service interruption through resilient design. Reliability is the system's ability to recover and keep meeting its intended function. Scaling up changes the capacity of an instance; scaling out adds instances. Elasticity adjusts capacity with demand, often automatically. A service must support and be configured for the chosen behavior; quotas, dependencies, and startup delays still matter.
 
 Predictability comes from measurement, testing, capacity planning, and cost controls. Security tools help protect workloads, while governance establishes and evaluates organizational rules. Both still require customer decisions. Manageability **of** the cloud concerns operating services, such as monitoring and scaling. Manageability **in** the cloud concerns ways to manage them, such as APIs, a portal, and scripts. Avoid confusing a tool with a guaranteed outcome.

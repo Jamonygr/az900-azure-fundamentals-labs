@@ -17,9 +17,9 @@ A training team needs a boundary for its disposable resources. First create an e
 
 ## Concept primer
 
-[![Management scope hierarchy alongside Azure region, availability zone, and datacenter geography](../../docs/assets/diagrams/azure-hierarchy.svg)](../../docs/assets/diagrams/azure-hierarchy.svg)
+[![Management group, subscription, resource group, and resource hierarchy alongside a region containing separate availability zones](../../docs/assets/diagrams/azure-hierarchy.svg)](../../docs/assets/diagrams/azure-hierarchy.svg)
 
-*Conceptual hierarchy and geography. This exercise creates only an empty resource group.*
+*Management scope and physical geography are separate. This exercise creates only an empty resource group.* [Open visual at full size](../../docs/assets/diagrams/azure-hierarchy.svg).
 
 A datacenter is a physical facility; a region groups datacenters and networking within a geographic area. Availability zones are separated groups of datacenters inside a region, with independent power, cooling, and networking. Zone support depends on region and service. Some regions are paired and others are nonpaired; pairing does not automatically replicate every resource. Sovereign clouds have separate operational and eligibility boundaries, such as Azure Government or Azure operated by 21Vianet.
 

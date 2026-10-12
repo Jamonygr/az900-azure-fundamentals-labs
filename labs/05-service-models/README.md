@@ -18,9 +18,9 @@ A charity needs email, a custom donation website, an old application requiring a
 
 ## Concept primer
 
-[![Customer and provider responsibilities across infrastructure, platform, and software service models](../../docs/assets/diagrams/shared-responsibility.svg)](../../docs/assets/diagrams/shared-responsibility.svg)
+[![Infrastructure, platform, and finished-software service choices with a separate event-to-serverless-code workflow](../../docs/assets/diagrams/service-models.svg)](../../docs/assets/diagrams/service-models.svg)
 
-*Conceptual service-model comparison. Choose a workload's required control before choosing its hosting model.*
+*Choose the control the workload needs. Serverless still requires customer-managed logic, access, and telemetry.* [Open visual at full size](../../docs/assets/diagrams/service-models.svg).
 
 IaaS provides infrastructure building blocks such as virtual machines; you manage the guest OS and applications. PaaS provides a managed application platform; you deploy application code and choose supported settings without operating its underlying OS. SaaS is a finished application used through its provided interface and configuration.
 

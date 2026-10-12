@@ -17,9 +17,9 @@ A team wants space for private application addresses. Inspect a small VNet and e
 
 ## Concept primer
 
-[![Lab VNet and empty subnet with conceptual peering, VPN, ExpressRoute, and private endpoint choices](../../docs/assets/diagrams/virtual-networking.svg)](../../docs/assets/diagrams/virtual-networking.svg)
+[![A VNet with an empty subnet and dashed conceptual links for peering, office connectivity, and private service access](../../docs/assets/diagrams/virtual-networking.svg)](../../docs/assets/diagrams/virtual-networking.svg)
 
-*Only the VNet and subnet in the upper-left panel are deployed. The connectivity choices are conceptual examples.*
+*Only the VNet and empty subnet are deployed. Dashed paths, gateways, and private endpoints are conceptual examples.* [Open visual at full size](../../docs/assets/diagrams/virtual-networking.svg).
 
 A VNet is an isolated logical network with IP address space; subnets partition that space. Routing and security controls determine allowed traffic. An empty subnet hosts no application. Peering connects VNets through the Azure backbone; peering is not automatically transitive. DNS resolves names to addresses and does not authorize access. Azure DNS hosts a domain's DNS records; Azure Private DNS supports name resolution through private zones for connected virtual networks.
 

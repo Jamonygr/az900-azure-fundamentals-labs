@@ -17,6 +17,10 @@ A nonprofit must upload one document now, retain a Windows file-server cache, as
 
 ## Concept primer
 
+[![Four tool paths for one-time copy, Windows file synchronization, workload assessment, and physical offline data transfer](../../docs/assets/diagrams/migration-paths.svg)](../../docs/assets/diagrams/migration-paths.svg)
+
+*Tool selection depends on the requirement. This lab uploads and downloads one harmless blob, then compares content hashes.* [Open visual at full size](../../docs/assets/diagrams/migration-paths.svg).
+
 AzCopy is a command-line data-transfer tool suited to scripted/bulk transfers. Storage Explorer supplies a graphical storage-management interface. Azure File Sync synchronizes Azure Files with supported Windows Server endpoints and can tier cold files to the cloud while retaining local access. It is not a generic replacement for server assessment.
 
 Azure Migrate helps discover, assess, and migrate supported workloads to Azure. Data Box uses a physical device for supported offline data-transfer scenarios when network transfer is impractical. Uploading a file is not a complete migration: dependencies, compatibility, cutover, permissions, and validation still need planning. Select using source/destination, data size, bandwidth, ongoing synchronization, and workload type.

@@ -17,6 +17,10 @@ A manufacturer has a factory system that must remain on its own network, a new p
 
 ## Concept primer
 
+[![Public cloud shared provider services, a dedicated private environment, and integrated hybrid cloud](../../docs/assets/diagrams/cloud-models.svg)](../../docs/assets/diagrams/cloud-models.svg)
+
+*Deployment model describes the environment. Public cloud does not mean public data, and private networking does not change the cloud model.* [Open visual at full size](../../docs/assets/diagrams/cloud-models.svg).
+
 A public cloud offers provider-owned services to multiple customers, with logical separation and controlled access. Public cloud does not mean public access to your data. A private cloud is dedicated to one organization; it can be operated internally or by a third party. Owning an ordinary server alone does not supply the automation and on-demand capabilities of a private cloud.
 
 Hybrid cloud combines public and private environments with integration. A network connection can support that integration, but workload, identity, data, and management decisions also matter. Multicloud means using more than one cloud provider and is not the same definition as hybrid. Choose a model based on control, residency, existing investments, integration needs, staffing, and costs; a regulated workload is not automatically prohibited from public cloud.

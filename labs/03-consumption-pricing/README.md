@@ -17,6 +17,10 @@ A ticketing business runs a small site most days but needs extra capacity during
 
 ## Concept primer
 
+[![Runtime, capacity, and transaction meters feeding an estimate, with pay-as-you-go, commitments, and evictable Spot compute](../../docs/assets/diagrams/cloud-pricing.svg)](../../docs/assets/diagrams/cloud-pricing.svg)
+
+*An estimate needs rates and usage assumptions for all relevant meters. This illustration contains no live price quote.* [Open visual at full size](../../docs/assets/diagrams/cloud-pricing.svg).
+
 Consumption-based pricing measures service usage, such as runtime, capacity, transactions, or data transfer. Buying servers upfront is capital expenditure; paying for ongoing services is usually operating expenditure. A subscription is not a promise that every service is free or charged by the same meter.
 
 Pay-as-you-go favors flexibility. Reservations and savings plans can reduce eligible compute costs in exchange for commitments; their scope, terms, and coverage differ. Spot compute uses spare capacity at variable discounts and can be evicted, making it unsuitable for an uninterrupted service without an interruption-tolerant design. Pricing depends on service, region, tier, licensing, usage, and agreement. Estimates require assumptions and are not invoices. A budget alert informs you; it does not automatically stop every resource.

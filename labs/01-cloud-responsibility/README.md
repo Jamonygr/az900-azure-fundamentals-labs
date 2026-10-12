@@ -17,9 +17,9 @@ A small library wants online reservations. Its team expects that moving to Azure
 
 ## Concept primer
 
-[![Shared responsibility matrix comparing customer and provider duties in IaaS, PaaS, and SaaS](../../docs/assets/diagrams/shared-responsibility.svg)](../../docs/assets/diagrams/shared-responsibility.svg)
+[![Pictorial customer and provider responsibility stacks for data and access, applications, operating systems, and physical infrastructure](../../docs/assets/diagrams/shared-responsibility.svg)](../../docs/assets/diagrams/shared-responsibility.svg)
 
-*Simplified comparison: use the specific service documentation to resolve shared duties and configuration details.*
+*Simplified comparison. Customers retain data and access decisions; consult the specific service documentation for shared duties.* [Open visual at full size](../../docs/assets/diagrams/shared-responsibility.svg).
 
 Cloud computing supplies services such as compute, storage, and networking through a provider. Resources can be provisioned when needed rather than bought as physical hardware first. A hosted application still needs deliberate access control, data handling, and availability design.
 

@@ -18,6 +18,10 @@ A publisher needs an old desktop application, a custom website, and a short file
 
 ## Concept primer
 
+[![Workload requirements linking to virtual machines, App Service, Functions, containers, and Azure Virtual Desktop](../../docs/assets/diagrams/compute-choices.svg)](../../docs/assets/diagrams/compute-choices.svg)
+
+*Conceptual hosting choices. The exercise inspects SKUs and quotas without allocating compute.* [Open visual at full size](../../docs/assets/diagrams/compute-choices.svg).
+
 A VM supplies a guest OS you control. Its core components include a size, OS image/disk, network interface, subnet/virtual network, and identity/security configuration. A public IP is optional. Persistent data disks may be added; temporary disks are not durable storage. VM Scale Sets manage a group of VM instances and support scaling. Availability sets distribute instances across fault/update domains; availability zones separate physical failure boundaries inside a region. Multiple instances and application-level failover are still needed.
 
 Azure Virtual Desktop delivers virtual desktops and applications through VM session hosts organized into host pools. Choose it when people need a managed desktop access experience; distinguish it from hosting a public website. The organization still manages its session-host images, applications, and access configuration.
