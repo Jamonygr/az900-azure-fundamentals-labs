@@ -1,0 +1,692 @@
+[
+  {
+    "id": "15-001",
+    "stem": "An organization wants to restrict resource deployment to approved regions. Which governance service is a natural fit?",
+    "choices": {
+      "A": "Azure Policy",
+      "B": "Azure Pricing Calculator",
+      "C": "Azure Service Health",
+      "D": "Azure Advisor"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A policy can enforce an allowed-location rule.",
+      "B": "The calculator estimates costs.",
+      "C": "Service Health reports service events.",
+      "D": "Advisor recommends improvements rather than applying that deployment rule."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "15-002",
+    "stem": "What is a policy definition?",
+    "choices": {
+      "A": "An automatic grant of Contributor rights",
+      "B": "A list of billed transactions",
+      "C": "A physical datacenter boundary",
+      "D": "A description of a rule and its effect"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Policy does not itself grant Azure RBAC access.",
+      "B": "That is usage information.",
+      "C": "Definitions are governance objects.",
+      "D": "The definition contains the reusable evaluation logic."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-003",
+    "stem": "A built-in policy is listed in a subscription. What is still needed to apply it to a chosen scope?",
+    "choices": {
+      "A": "Changing the billing currency",
+      "B": "Adding a Reader role definition",
+      "C": "Renaming a virtual network",
+      "D": "A policy assignment"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Currency does not apply a policy rule.",
+      "B": "A role definition is not a policy assignment.",
+      "C": "Renaming does not assign the definition.",
+      "D": "An assignment connects the definition to an evaluation scope."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-004",
+    "stem": "What is an Azure Policy initiative?",
+    "choices": {
+      "A": "A collection of authentication factors",
+      "B": "A storage redundancy option",
+      "C": "An Azure VM image",
+      "D": "A collection of policy definitions managed together"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Factors belong to identity sign-in.",
+      "B": "Redundancy describes data replication.",
+      "C": "Images define operating-system disks.",
+      "D": "Initiatives group related governance rules."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-005",
+    "stem": "A policy uses the audit effect for an unwanted configuration. What is the intended result?",
+    "choices": {
+      "A": "Grant every user permission to repair resources",
+      "B": "Record noncompliance without blocking that configuration through this effect",
+      "C": "Automatically delete every noncompliant resource",
+      "D": "Permanently freeze the subscription"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Permissions are a separate concern.",
+      "B": "Audit reports the finding rather than denying the request.",
+      "C": "Audit is not deletion.",
+      "D": "Audit does not impose a read-only lock."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-006",
+    "stem": "A new resource request violates an applicable deny policy. What can happen?",
+    "choices": {
+      "A": "The policy grants the missing permissions",
+      "B": "The request is rejected even if the user has resource-write permissions",
+      "C": "The violation is ignored for every Owner",
+      "D": "The resource is created only in the user's home tenant"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Policy does not grant RBAC rights.",
+      "B": "Authorization and policy evaluation both matter.",
+      "C": "Ownership does not universally bypass governance rules.",
+      "D": "Policy denial is not a tenant migration."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-007",
+    "stem": "What determines where a policy assignment applies?",
+    "choices": {
+      "A": "The assignment scope and any configured exclusions",
+      "B": "The resource group's location field alone",
+      "C": "The definition's display name",
+      "D": "The caller's resource role definition name"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Scope defines the governed resource boundary.",
+      "B": "Deployment location is not the complete governed hierarchy scope.",
+      "C": "The rule's label does not determine assignment scope.",
+      "D": "A role determines permitted actions rather than the policy assignment's target boundary."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-008",
+    "stem": "A team wants to report resources missing a required tag before enforcing it. Which effect fits the first stage?",
+    "choices": {
+      "A": "CanNotDelete",
+      "B": "Reader",
+      "C": "Audit",
+      "D": "Deny"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is a management lock level.",
+      "B": "Reader is an Azure RBAC role.",
+      "C": "Audit supports assessment without that rule denying deployment.",
+      "D": "Deny blocks matching noncompliant requests."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "15-009",
+    "stem": "A learner reads az policy definition list. What has the learner changed?",
+    "choices": {
+      "A": "All resources' required tags",
+      "B": "Every subscription's policy scope",
+      "C": "No policy assignment through that read command",
+      "D": "The selected tenant's users"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Listing definitions does not remediate tags.",
+      "B": "A list command does not update scopes.",
+      "C": "Listing definitions is inspection.",
+      "D": "Resource governance inspection does not create users."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "15-010",
+    "stem": "An existing resource is noncompliant with a newly assigned policy. Which statement is appropriate?",
+    "choices": {
+      "A": "Evaluation identifies the issue; remediation depends on the effect and configuration",
+      "B": "The resource necessarily moves to another region",
+      "C": "Every effect instantly fixes every property",
+      "D": "The resource's Owner automatically becomes a guest"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Not every effect repairs existing resources automatically.",
+      "B": "Policy assignment does not imply migration.",
+      "C": "Effects have different behavior.",
+      "D": "Policy does not convert identity types."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-011",
+    "stem": "Why parameterize an allowed-locations policy definition?",
+    "choices": {
+      "A": "Every parameter creates a paid VM",
+      "B": "The definition becomes an authentication token",
+      "C": "Parameters always bypass deny effects",
+      "D": "One reusable rule can be assigned with different approved values"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Parameters are not VM deployments.",
+      "B": "Parameters do not create identity credentials.",
+      "C": "They supply values rather than bypass governance.",
+      "D": "Parameters adapt the rule to a scope's requirements."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-012",
+    "stem": "Which distinction correctly separates Policy from Azure RBAC?",
+    "choices": {
+      "A": "They are two names for the same assignment",
+      "B": "RBAC is only for storage tiers; Policy is only for guests",
+      "C": "Policy grants Owner; RBAC calculates costs",
+      "D": "RBAC grants permitted actions; Policy applies governance conditions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Role and policy assignments are different objects.",
+      "B": "Both have broader management roles.",
+      "C": "Those functions are reversed or unrelated.",
+      "D": "They address complementary parts of resource access and compliance."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-013",
+    "stem": "Why might compliance results take time to reflect a change?",
+    "choices": {
+      "A": "Only newly created resources can ever be evaluated",
+      "B": "Every policy effect disables itself after a deployment",
+      "C": "Owner assignments bypass all compliance evaluation",
+      "D": "Policy evaluation and reporting have their own processing cycles"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Existing resources can also be evaluated against assigned policies.",
+      "B": "Effects do not generally turn off after one deployment.",
+      "C": "Ownership does not universally remove Policy governance.",
+      "D": "A recent change may not be reflected immediately."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-014",
+    "stem": "Which evidence helps troubleshoot a denied deployment?",
+    "choices": {
+      "A": "Only a resource-group delete lock",
+      "B": "Only the chosen VM SKU's estimated price",
+      "C": "The policy assignment and rule identified in the error",
+      "D": "Only the caller's role definition"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A deployment policy error is not explained solely by a delete restriction.",
+      "B": "The estimate does not identify the rule that rejected deployment.",
+      "C": "That explains the governance condition the request violated.",
+      "D": "Permission inspection may be useful, but the denial's policy details identify this governance rule."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-015",
+    "stem": "In this lab, how is Azure Policy explored?",
+    "choices": {
+      "A": "Remove all existing subscription assignments",
+      "B": "Create a new production initiative automatically",
+      "C": "Inspect built-in definitions without assigning them",
+      "D": "Apply a deny policy to every management group"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That alters organizational governance.",
+      "B": "The exercise is read-only for Policy.",
+      "C": "The learner observes governance logic without imposing new rules.",
+      "D": "That exceeds the lab's scope."
+    },
+    "objective_id": "M06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-016",
+    "stem": "Which lock permits authorized changes while preventing deletion?",
+    "choices": {
+      "A": "Reader",
+      "B": "CanNotDelete",
+      "C": "Deny",
+      "D": "ReadOnly"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Reader is a role rather than a lock.",
+      "B": "It blocks deletion while allowing other permitted management changes.",
+      "C": "Deny is a Policy effect rather than this lock level.",
+      "D": "ReadOnly also blocks management updates."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-017",
+    "stem": "Which lock restricts management updates as well as deletion?",
+    "choices": {
+      "A": "Contributor",
+      "B": "Audit",
+      "C": "CanNotDelete",
+      "D": "ReadOnly"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That is a role granting management permissions.",
+      "B": "That is a Policy effect reporting noncompliance.",
+      "C": "That lock permits updates.",
+      "D": "It restricts control-plane modification and deletion."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-018",
+    "stem": "A resource group has a CanNotDelete lock. What should happen to an authorized request to delete a child resource?",
+    "choices": {
+      "A": "The request always bypasses locks for Owners",
+      "B": "The inherited lock can block deletion",
+      "C": "The child ignores all parent locks",
+      "D": "The child becomes an Entra tenant"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Owners must remove applicable locks first if authorized.",
+      "B": "Parent locks apply to child resources.",
+      "C": "Locks inherit through resource scope.",
+      "D": "Locking does not change its resource type."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "15-019",
+    "stem": "Why should resource locks not be treated as blob-data backups?",
+    "choices": {
+      "A": "Locks encrypt every application response",
+      "B": "Locks replicate all data to three regions",
+      "C": "Locks protect management operations, not general data-plane content deletion",
+      "D": "Locks retain every deleted blob indefinitely"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "They are not a transport-encryption control.",
+      "B": "They do not define replication.",
+      "C": "Stored content needs suitable data protection.",
+      "D": "They do not supply universal blob version retention."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-020",
+    "stem": "An Owner cannot delete a locked resource group. What explains this?",
+    "choices": {
+      "A": "The resource group must be in a sovereign cloud",
+      "B": "Applicable locks restrict operations across user roles",
+      "C": "Owner has no resource-management permissions",
+      "D": "The resource group's tags grant Reader"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Locks are not limited to sovereign clouds.",
+      "B": "Resource ownership does not bypass an existing lock automatically.",
+      "C": "Owner normally has broad permissions.",
+      "D": "Tags do not assign roles."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-021",
+    "stem": "What is required before deleting a resource protected by a lab-owned lock?",
+    "choices": {
+      "A": "Redeploy the resource's Bicep template unchanged",
+      "B": "Remove the relevant lock with appropriate permission",
+      "C": "Change the group's CostCenter tag",
+      "D": "Assign the caller another Reader role"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Deployment does not automatically remove an applicable lock.",
+      "B": "The lock must be removed before the protected delete operation.",
+      "C": "Cost metadata does not remove the lock.",
+      "D": "Reader does not remove the protected operation restriction."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-022",
+    "stem": "A resource group is unlocked, but one child has a delete lock. What can happen when deleting the group?",
+    "choices": {
+      "A": "The group deletion is blocked by the child lock",
+      "B": "Every unlocked child must be deleted first automatically",
+      "C": "The child lock grants Owner to the caller",
+      "D": "The child resource moves itself elsewhere"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A locked child can prevent the group-wide operation.",
+      "B": "The protected group deletion is blocked rather than assumed partial.",
+      "C": "Locks do not grant permissions.",
+      "D": "Locks do not relocate resources."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-023",
+    "stem": "Why should a team avoid adding a ReadOnly lock without understanding operational effects?",
+    "choices": {
+      "A": "Some routine control-plane operations require write or POST actions",
+      "B": "The lock resets every user's MFA",
+      "C": "ReadOnly locks always cancel subscriptions",
+      "D": "The lock automatically deletes the VM disks"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The lock can block operations that appear observational or operational.",
+      "B": "It is not an authentication setting.",
+      "C": "They do not prevent or perform cancellation.",
+      "D": "It prevents changes rather than deleting disks."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "15-024",
+    "stem": "What distinguishes a resource lock from a Reader role assignment?",
+    "choices": {
+      "A": "A lock creates a new security principal",
+      "B": "Both are identical authentication-factor types",
+      "C": "Reader prevents data-plane deletion by every identity",
+      "D": "A lock restricts protected operations for applicable users; Reader grants one principal read access"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A lock does not create an identity.",
+      "B": "Neither is an authentication factor.",
+      "C": "That overstates one role assignment.",
+      "D": "They act at different control layers."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-025",
+    "stem": "Which permission issue can block creating or removing the lab's lock?",
+    "choices": {
+      "A": "The caller lacks blob-data Reader access",
+      "B": "The caller lacks Microsoft.Authorization/locks actions",
+      "C": "The caller lacks the VM login role",
+      "D": "The caller lacks permission to purchase reservations"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Blob data access does not supply management-lock permissions.",
+      "B": "Lock management needs appropriate explicit permissions.",
+      "C": "Guest-OS login rights do not manage resource locks.",
+      "D": "Billing commitments are unrelated to this lock-management action."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "15-026",
+    "stem": "A learner finds an inherited lock owned by another team. What should the lab cleanup do?",
+    "choices": {
+      "A": "Change the ownership tags to bypass checks",
+      "B": "Delete every inherited lock",
+      "C": "Cancel the subscription",
+      "D": "Stop and report the blocker without removing that lock"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Ownership mismatch should remain a refusal.",
+      "B": "That changes other teams' protections.",
+      "C": "That is far beyond lab cleanup.",
+      "D": "Unrelated governance controls must not be taken over."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "15-027",
+    "stem": "What does the lab lock named az900-protection demonstrate?",
+    "choices": {
+      "A": "Protection against accidental resource-group deletion",
+      "B": "Automatic data encryption for every file",
+      "C": "A region-wide outage prevention guarantee",
+      "D": "A billing limit that stops usage"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The CanNotDelete lock is deliberately scoped to the owned lab group.",
+      "B": "Locks do not encrypt file data.",
+      "C": "Locks do not prevent datacenter failures.",
+      "D": "Locks are not spending limits."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "15-028",
+    "stem": "Can a resource lock itself grant permission to update a resource?",
+    "choices": {
+      "A": "No; the user still needs suitable authorization",
+      "B": "Yes; removing a lock automatically grants Contributor",
+      "C": "Yes; ReadOnly assigns the Reader role to every identity",
+      "D": "Yes; CanNotDelete grants resource-write permission at its scope"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A lock restricts permitted actions rather than granting them.",
+      "B": "Removing a restriction does not add an authorization grant.",
+      "C": "A restriction is not a role assignment.",
+      "D": "The lock allows already-authorized changes but supplies no new grant."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "15-029",
+    "stem": "If a ReadOnly lock and a CanNotDelete lock both apply, which restriction is relevant?",
+    "choices": {
+      "A": "The user can choose which lock to honor",
+      "B": "The most recently named resource ignores both",
+      "C": "The most restrictive applicable lock",
+      "D": "The cheaper resource's lock wins"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The caller cannot select around the effective restriction.",
+      "B": "Resource naming does not bypass inherited locks.",
+      "C": "ReadOnly imposes stronger management restrictions.",
+      "D": "Prices do not determine lock precedence."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "15-030",
+    "stem": "What should cleanup verify after removing its own lock and deleting its owned group?",
+    "choices": {
+      "A": "That all tenant users have been removed",
+      "B": "That Azure accepted the deletion request, without checking final existence",
+      "C": "That the resource group no longer exists",
+      "D": "That every subscription is empty"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Identity deletion is outside the lab.",
+      "B": "Request acceptance alone does not prove that asynchronous deletion finished successfully.",
+      "C": "A requested deletion should be followed by absence verification.",
+      "D": "Cleanup is limited to the lab's owned group."
+    },
+    "objective_id": "M07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+    ],
+    "difficulty": "review"
+  }
+]

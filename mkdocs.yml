@@ -1,0 +1,93 @@
+site_name: AZ-900 Azure Fundamentals Labs
+site_description: 22 command-first labs and 600 original questions for Azure Fundamentals.
+site_url: https://jamonygr.github.io/az900-azure-fundamentals-labs/
+repo_url: https://github.com/Jamonygr/az900-azure-fundamentals-labs
+repo_name: Jamonygr/az900-azure-fundamentals-labs
+docs_dir: .site-docs
+site_dir: site
+theme:
+  name: material
+  language: en
+  font: false
+  features:
+  - navigation.sections
+  - navigation.top
+  - content.code.copy
+  palette:
+  - scheme: default
+    primary: blue
+    accent: cyan
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: blue
+    accent: cyan
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+plugins:
+- search
+markdown_extensions:
+- admonition
+- tables
+- fenced_code
+- attr_list
+- toc:
+    permalink: true
+- pymdownx.highlight
+- pymdownx.superfences
+extra_javascript:
+- docs/assets/learning.js
+extra_css:
+- docs/assets/learning.css
+nav:
+- Home: index.md
+- Start here:
+  - Prerequisites: docs/prerequisites.md
+  - Cost and cleanup: docs/cost-cleanup.md
+  - Permissions: docs/permissions.md
+  - Study pathways: docs/study-plan.md
+- Lab catalog: docs/catalog.md
+- Objective map: docs/objective-map.md
+- Getting started:
+  - 00 · Safe start and subscription readiness: labs/00-safe-start/README.md
+- Cloud concepts:
+  - 01 · Cloud computing and shared responsibility: labs/01-cloud-responsibility/README.md
+  - 02 · Public, private, and hybrid cloud models: labs/02-cloud-models/README.md
+  - 03 · Consumption and cloud pricing: labs/03-consumption-pricing/README.md
+  - 04 · Cloud benefits and tradeoffs: labs/04-cloud-benefits/README.md
+  - 05 · Service models and serverless decisions: labs/05-service-models/README.md
+- Architecture and services:
+  - 06 · Azure architecture and resource hierarchy: labs/06-azure-architecture/README.md
+  - 07 · Compute and application hosting choices: labs/07-compute-hosting/README.md
+  - 08 · Virtual networks and connectivity: labs/08-virtual-networking/README.md
+  - 09 · Storage services, tiers, and redundancy: labs/09-storage-services/README.md
+  - 10 · File transfer and migration decisions: labs/10-file-migration/README.md
+  - 11 · Directories and external identities: labs/11-identity-directory/README.md
+  - 12 · Authentication, Conditional Access, and RBAC: labs/12-authentication-rbac/README.md
+  - 13 · Zero Trust, defense in depth, and Defender: labs/13-security-models/README.md
+- Management and governance:
+  - 14 · Cost management and resource tags: labs/14-cost-tags/README.md
+  - 15 · Azure Policy and resource locks: labs/15-policy-locks/README.md
+  - 16 · Purview, governance, and compliance: labs/16-purview-compliance/README.md
+  - 17 · Management tools and Azure Arc: labs/17-management-tools/README.md
+  - 18 · ARM and infrastructure as code: labs/18-arm-infrastructure/README.md
+  - 19 · Advisor and Service Health: labs/19-advisor-health/README.md
+  - 20 · Monitor, logs, alerts, and Application Insights: labs/20-azure-monitor/README.md
+- Capstone:
+  - 21 · Integrated Azure fundamentals capstone: labs/21-integrated-capstone/README.md
+- Practice:
+  - Assessment guide: docs/assessments.md
+  - Interactive quiz: docs/quiz.md
+- Glossary: docs/glossary.md
+- Troubleshooting: docs/troubleshooting.md
+- Contributing: CONTRIBUTING.md
+validation:
+  nav:
+    omitted_files: ignore
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: ignore
+copyright: © 2026 Chris Panagiotidis · Independent learning project · MIT License

@@ -1,0 +1,692 @@
+[
+  {
+    "id": "12-001",
+    "stem": "What question does authentication answer?",
+    "choices": {
+      "A": "Which region stores the invoice?",
+      "B": "What operations may the identity perform?",
+      "C": "Which VM size is cheapest?",
+      "D": "Who is requesting access?"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Billing storage is unrelated to identity verification.",
+      "B": "That is authorization.",
+      "C": "That is a pricing decision.",
+      "D": "Authentication verifies the claimed identity."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-002",
+    "stem": "An employee signs in once and then opens several integrated applications without repeatedly entering credentials. Which capability is demonstrated?",
+    "choices": {
+      "A": "Azure RBAC inheritance",
+      "B": "Conditional Access",
+      "C": "Passwordless authentication",
+      "D": "Single sign-on"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Resource permission inheritance does not explain the integrated sign-in experience.",
+      "B": "Conditional Access evaluates requirements, while the described reuse of sign-in is SSO.",
+      "C": "Passwordless describes an authentication method, not access across several apps after one sign-in.",
+      "D": "SSO reuses the established sign-in across integrated applications."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-003",
+    "stem": "Which combination demonstrates two different authentication-factor categories?",
+    "choices": {
+      "A": "A password and a second password",
+      "B": "A password and a memorized recovery answer",
+      "C": "A username and password",
+      "D": "A password and possession of a registered security key"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Repeating the same factor category does not provide the requested combination.",
+      "B": "Both are knowledge factors rather than two different categories.",
+      "C": "The username identifies the account; the password supplies one knowledge factor.",
+      "D": "Knowledge and possession are different categories."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-004",
+    "stem": "Which sign-in method is an example of passwordless authentication?",
+    "choices": {
+      "A": "A password with a one-time SMS code",
+      "B": "A passkey unlocked using a device PIN or biometric",
+      "C": "A password entered once and reused through SSO",
+      "D": "A password followed by an authenticator verification"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That can be MFA but still includes a password.",
+      "B": "A passkey can authenticate without transmitting a password.",
+      "C": "SSO can reuse authentication without making the initial method passwordless.",
+      "D": "That is additional verification rather than passwordless sign-in."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-005",
+    "stem": "Why can MFA reduce the damage from a stolen password?",
+    "choices": {
+      "A": "It changes the Azure subscription's region",
+      "B": "An attacker may lack the additional required factor",
+      "C": "It grants the user fewer Azure roles automatically",
+      "D": "It replaces all network protection"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "MFA does not move resources.",
+      "B": "A password alone may be insufficient to complete sign-in.",
+      "C": "MFA and role assignment are separate controls.",
+      "D": "Other defensive controls remain necessary."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-006",
+    "stem": "A user authenticates with a passkey. What should be checked before assuming the user can delete a VM?",
+    "choices": {
+      "A": "Whether the user completed an MFA registration",
+      "B": "Their authorization for the VM scope",
+      "C": "The VM's Azure region",
+      "D": "Whether the user appears in the Entra directory"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Authentication readiness does not establish resource-delete permission.",
+      "B": "Strong authentication does not grant resource permissions.",
+      "C": "Deployment geography does not grant the user's delete action.",
+      "D": "Directory presence does not prove the applicable Azure authorization."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-007",
+    "stem": "A learner says SSO means all applications have the same access permissions. What is the correction?",
+    "choices": {
+      "A": "SSO is a network peering protocol",
+      "B": "SSO disables application identities",
+      "C": "SSO simplifies sign-in while each application still authorizes access",
+      "D": "SSO makes every user an Owner"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "It is an identity experience.",
+      "B": "Integrated applications still participate in identity flows.",
+      "C": "Authentication reuse does not merge permissions.",
+      "D": "SSO does not assign Azure roles."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-008",
+    "stem": "Which category includes a fingerprint used in a sign-in process?",
+    "choices": {
+      "A": "Something you deploy",
+      "B": "Something you have",
+      "C": "Something you are",
+      "D": "Something you know"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Deployment is not an authentication-factor category.",
+      "B": "That category includes possession of a device or key.",
+      "C": "Biometrics represent an inherence factor.",
+      "D": "That category includes memorized secrets."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-009",
+    "stem": "Why should a beginner avoid treating every MFA method as equally resistant to phishing?",
+    "choices": {
+      "A": "Every MFA method is inherently phishing-resistant",
+      "B": "Using SSO automatically makes every second factor phishing-resistant",
+      "C": "Different methods have different resistance to credential interception",
+      "D": "MFA applies only to users with Owner assignments"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Methods such as codes and origin-bound passkeys have different properties.",
+      "B": "SSO does not change an authenticator's security properties.",
+      "C": "Passkeys and phishable codes have different security properties.",
+      "D": "Authentication factors are not limited to that resource role."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-010",
+    "stem": "What does a sign-in failure prove about Azure RBAC permissions?",
+    "choices": {
+      "A": "Every role definition has been deleted",
+      "B": "A resource lock caused the identity check to fail",
+      "C": "The user must have subscription Owner",
+      "D": "It does not establish whether resource permissions would be sufficient"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A failed sign-in does not delete roles.",
+      "B": "Locks restrict resource management, not identity sign-in.",
+      "C": "A sign-in failure does not reveal that assignment.",
+      "D": "Authentication must succeed before a permitted resource action can proceed."
+    },
+    "objective_id": "A21",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-011",
+    "stem": "A policy requires MFA when a user accesses an application from an unmanaged device. Which service evaluates this rule?",
+    "choices": {
+      "A": "Azure Data Box",
+      "B": "Microsoft Entra Conditional Access",
+      "C": "Azure DNS",
+      "D": "Azure Cost Management"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Data Box transfers data offline.",
+      "B": "Conditional Access uses sign-in signals to enforce access controls.",
+      "C": "DNS resolves names.",
+      "D": "Cost Management analyzes charges."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-012",
+    "stem": "Which item is a Conditional Access signal?",
+    "choices": {
+      "A": "A Bicep filename extension",
+      "B": "Device compliance information",
+      "C": "An Azure invoice number",
+      "D": "A Blob Storage redundancy acronym"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Template filenames do not establish device trust.",
+      "B": "Device state can inform the access decision.",
+      "C": "Invoice identifiers do not describe the sign-in context.",
+      "D": "Storage replication is not a sign-in signal in this scenario."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-013",
+    "stem": "Which result can Conditional Access require?",
+    "choices": {
+      "A": "Move the application to another region",
+      "B": "Complete MFA before access is granted",
+      "C": "Create a virtual network for every login",
+      "D": "Delete the user's billing profile"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It is an access policy engine rather than a migration tool.",
+      "B": "A grant control can require additional verification.",
+      "C": "Conditional Access does not deploy a VNet per login.",
+      "D": "It does not manage billing profiles."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-014",
+    "stem": "When are Conditional Access policies generally enforced in the sign-in flow?",
+    "choices": {
+      "A": "Only when a resource group is deleted",
+      "B": "Before any identity information exists",
+      "C": "After first-factor authentication",
+      "D": "Only when a pricing estimate is saved"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is not the sign-in evaluation point.",
+      "B": "The identity and signals are needed for evaluation.",
+      "C": "The policy uses the authenticated sign-in context.",
+      "D": "Pricing estimates are unrelated."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-015",
+    "stem": "A valid password is entered, but access is blocked because the device does not meet a policy. What happened?",
+    "choices": {
+      "A": "The password must be incorrect because all valid passwords guarantee access",
+      "B": "A resource-group ReadOnly lock rejected the sign-in",
+      "C": "Azure RBAC automatically assigned Reader because the device was unmanaged",
+      "D": "Authentication succeeded but an access condition was not met"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Authentication success can still be followed by an access condition failure.",
+      "B": "Management locks restrict resource operations rather than cloud-app device conditions.",
+      "C": "Device policy evaluation does not imply creation of that resource-role grant.",
+      "D": "Conditional Access can block an otherwise authenticated sign-in."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-016",
+    "stem": "What is a useful way to describe a Conditional Access policy?",
+    "choices": {
+      "A": "A resource rule requiring approved deployment regions",
+      "B": "A role assignment granting resource actions at a scope",
+      "C": "A rule connecting sign-in conditions to access requirements",
+      "D": "A restriction preventing management deletion of a group"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That describes Azure Policy resource governance.",
+      "B": "That describes Azure RBAC rather than sign-in policy.",
+      "C": "Signals drive a grant or block decision.",
+      "D": "That describes a management lock."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-017",
+    "stem": "Why should an administrator plan and test Conditional Access changes carefully?",
+    "choices": {
+      "A": "The policy bypasses licensing requirements",
+      "B": "The policy always deletes storage accounts",
+      "C": "A poorly scoped policy can block legitimate users or administrators",
+      "D": "Every policy creates a new Azure region"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Licensing requirements still apply.",
+      "B": "Conditional Access does not delete accounts.",
+      "C": "Access-policy mistakes can cause lockout.",
+      "D": "Regions are provider infrastructure."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-018",
+    "stem": "A sign-in from an unfamiliar location requires extra verification. Which relationship is demonstrated?",
+    "choices": {
+      "A": "A budget increased authentication strength",
+      "B": "A location signal influenced an access control",
+      "C": "An archive tier rehydrated an identity",
+      "D": "A resource tag inherited an Azure role"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Budgets monitor spending.",
+      "B": "Conditional Access can use network-location context.",
+      "C": "Storage tier operations do not authenticate users.",
+      "D": "Tags do not create role assignments."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-019",
+    "stem": "Which control is a better match for preventing an authenticated user on a noncompliant device from accessing a cloud app?",
+    "choices": {
+      "A": "A CanNotDelete resource lock",
+      "B": "An Azure region pair",
+      "C": "Conditional Access",
+      "D": "A storage lifecycle policy"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That lock protects resource deletion.",
+      "B": "Region pairing supports regional design considerations.",
+      "C": "It evaluates identity and device context for application access.",
+      "D": "Lifecycle policies manage stored data tiers and retention."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-020",
+    "stem": "A learner has a free lab subscription but no authority over workforce identity policy. What is an appropriate exercise?",
+    "choices": {
+      "A": "Evaluate synthetic sign-in cases and explain decisions",
+      "B": "Create guest accounts to bypass policy",
+      "C": "Disable the organization's MFA requirements",
+      "D": "Enable a broad policy against all users"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "This teaches Conditional Access without tenant changes.",
+      "B": "Guests are not a policy bypass.",
+      "C": "That weakens security and is outside the lab.",
+      "D": "That may lock out real users and requires authority."
+    },
+    "objective_id": "A23",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-021",
+    "stem": "Which three elements form an Azure RBAC role assignment?",
+    "choices": {
+      "A": "Tenant, subscription, and resource group",
+      "B": "Principal, role definition, and scope",
+      "C": "Role name, password method, and region",
+      "D": "User, device-compliance signal, and MFA requirement"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "These identify hierarchy boundaries but omit the assignment's principal and role definition.",
+      "B": "These identify who receives which permissions over what boundary.",
+      "C": "Authentication method and location are not the three role-assignment elements.",
+      "D": "These describe possible Conditional Access inputs and controls."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-022",
+    "stem": "A support technician needs to inspect resources in one resource group. Which general built-in role fits?",
+    "choices": {
+      "A": "Owner at subscription scope",
+      "B": "User Access Administrator at subscription scope",
+      "C": "Contributor at management-group scope",
+      "D": "Reader at that resource-group scope"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That grants unnecessary management and access delegation.",
+      "B": "That role manages access rather than meeting a simple viewing need.",
+      "C": "That grants broad modification rights.",
+      "D": "Reader grants viewing without resource modifications."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-023",
+    "stem": "What distinguishes Contributor from Owner among the general Azure built-in roles?",
+    "choices": {
+      "A": "Both roles are authentication methods",
+      "B": "Contributor manages resources but cannot assign Azure RBAC roles",
+      "C": "Owner can only read resource metadata",
+      "D": "Contributor can assign roles but cannot modify resources"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "They are authorization roles.",
+      "B": "Owner also has access-delegation authority.",
+      "C": "Owner has broad management permissions.",
+      "D": "That reverses the general capabilities."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-024",
+    "stem": "A user has Contributor at subscription scope and Reader on one child resource group. Which effect should be expected?",
+    "choices": {
+      "A": "The resource group moves to a new tenant",
+      "B": "The child Reader assignment does not remove inherited Contributor permissions",
+      "C": "The child Reader assignment overrides Contributor",
+      "D": "The user loses all subscription access"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Role assignments do not move resources between tenants.",
+      "B": "Role grants are generally additive across applicable scopes.",
+      "C": "A narrower grant does not revoke a broader grant.",
+      "D": "Adding Reader does not remove existing grants."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "12-025",
+    "stem": "Which scope is the narrowest of these choices?",
+    "choices": {
+      "A": "An individual resource",
+      "B": "A subscription",
+      "C": "A resource group",
+      "D": "A management group"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A resource is narrower than its parent containers.",
+      "B": "A subscription contains resource groups.",
+      "C": "A resource group can contain several resources.",
+      "D": "A management group can contain subscriptions."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "12-026",
+    "stem": "An app needs access without a human signing in each time. Which entity can receive an Azure role assignment?",
+    "choices": {
+      "A": "A managed identity",
+      "B": "An availability zone",
+      "C": "A pricing calculator estimate",
+      "D": "A resource-group display tag"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A managed identity is a security principal for a workload.",
+      "B": "A zone is infrastructure, not a principal.",
+      "C": "An estimate is not an identity.",
+      "D": "A tag is metadata, not a principal."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "12-027",
+    "stem": "What does az role definition list inspect?",
+    "choices": {
+      "A": "The exact effective permissions for every action in the subscription",
+      "B": "Available role definitions and their permissions",
+      "C": "The application's Conditional Access requirements",
+      "D": "All current role assignments for the signed-in user"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Effective access also depends on assignments, scope, and other applicable controls.",
+      "B": "It reads what roles permit without creating assignments.",
+      "C": "Resource role definitions do not list sign-in policy requirements.",
+      "D": "Definitions describe available roles rather than who currently receives them."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "12-028",
+    "stem": "Why might someone who can manage a storage account still be unable to read blobs using Entra authentication?",
+    "choices": {
+      "A": "Storage accounts have no data permissions",
+      "B": "Resource tags always deny blob access",
+      "C": "Every Contributor automatically receives every data role",
+      "D": "Management-plane and data-plane permissions can differ"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "They do support data authorization.",
+      "B": "Tags do not perform that authorization.",
+      "C": "Resource management does not imply all Entra data actions.",
+      "D": "Blob data access may require an appropriate data role."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "12-029",
+    "stem": "A role assignment on a resource group can apply to which resources?",
+    "choices": {
+      "A": "Every resource in unrelated subscriptions",
+      "B": "Only resources in the tenant's oldest region",
+      "C": "Applicable child resources within that scope",
+      "D": "Only the group's display name"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A group assignment is bounded by its scope.",
+      "B": "Inheritance is not based on deployment age or region.",
+      "C": "Permissions inherit down the resource hierarchy.",
+      "D": "It controls resource operations rather than a display name."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "12-030",
+    "stem": "What should be examined when an Azure resource operation returns AuthorizationFailed?",
+    "choices": {
+      "A": "Only the resource group's CanNotDelete setting",
+      "B": "Only the Azure Policy allowed-location list",
+      "C": "Only the user's MFA enrollment status",
+      "D": "The requested action, principal, and applicable scope permissions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A lock can cause a different operation restriction, but AuthorizationFailed requires permission investigation.",
+      "B": "Policy denial is a different control outcome from missing applicable authorization.",
+      "C": "Enrollment alone does not establish resource-action permissions.",
+      "D": "These determine whether the operation is authorized."
+    },
+    "objective_id": "A24",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    ],
+    "difficulty": "review"
+  }
+]

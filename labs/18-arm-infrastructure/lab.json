@@ -1,0 +1,19 @@
+{
+  "id": "18",
+  "slug": "arm-infrastructure",
+  "title": "ARM and infrastructure as code",
+  "domain": "management",
+  "objectives": [
+    "M11",
+    "M12"
+  ],
+  "duration_minutes": 50,
+  "mode": "live",
+  "resource_profile": "bicep",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

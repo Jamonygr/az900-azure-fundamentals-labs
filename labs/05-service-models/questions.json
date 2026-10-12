@@ -1,0 +1,782 @@
+[
+  {
+    "id": "05-001",
+    "stem": "Which service model gives a customer control over a VM guest OS?",
+    "choices": {
+      "A": "Public cloud",
+      "B": "IaaS",
+      "C": "SaaS",
+      "D": "PaaS"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is a deployment model rather than this responsibility boundary.",
+      "B": "Infrastructure services expose guest operating-system control.",
+      "C": "Finished software normally hides its OS.",
+      "D": "Managed platforms operate the underlying OS."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-002",
+    "stem": "Who normally maintains an IaaS guest application?",
+    "choices": {
+      "A": "The hardware manufacturer",
+      "B": "No one",
+      "C": "Every website visitor",
+      "D": "The customer"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Manufacturing does not maintain application logic.",
+      "B": "Applications still need maintenance.",
+      "C": "Visitors do not administer the app.",
+      "D": "The customer operates its code on the infrastructure."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-003",
+    "stem": "A legacy app requires OS-level customization. Which model deserves evaluation?",
+    "choices": {
+      "A": "Archive storage",
+      "B": "SaaS email",
+      "C": "A managed platform with no OS access",
+      "D": "IaaS"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Offline data storage is not application compute.",
+      "B": "A finished email service does not host this legacy app.",
+      "C": "That cannot satisfy the stated customization.",
+      "D": "VM control can meet guest OS requirements."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-004",
+    "stem": "Which duty belongs to the IaaS provider?",
+    "choices": {
+      "A": "Approving customer data retention",
+      "B": "Fixing every custom-code error",
+      "C": "Maintaining the physical host hardware",
+      "D": "Choosing every employee's permissions"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Business data policy remains customer-owned.",
+      "B": "Application logic remains customer-owned.",
+      "C": "Provider infrastructure supports the VM.",
+      "D": "Business access remains customer-owned."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-005",
+    "stem": "A container is hosted on a customer-managed VM. What duty remains?",
+    "choices": {
+      "A": "Publishing all container data",
+      "B": "No infrastructure work of any kind",
+      "C": "Guest OS patching",
+      "D": "Replacing Azure cooling systems"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Packaging does not require public information.",
+      "B": "The VM remains customer-managed.",
+      "C": "Container packaging does not transfer host maintenance.",
+      "D": "Facility systems belong to Microsoft."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-006",
+    "stem": "What tradeoff accompanies IaaS control?",
+    "choices": {
+      "A": "Automatic elimination of dependencies",
+      "B": "No need for security updates",
+      "C": "More guest OS and application operational responsibility",
+      "D": "Finished business software by definition"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Workloads retain their dependencies.",
+      "B": "Guest systems still need updates.",
+      "C": "Control includes maintenance duties.",
+      "D": "That describes SaaS rather than infrastructure."
+    },
+    "objective_id": "C12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-007",
+    "stem": "What does PaaS primarily provide?",
+    "choices": {
+      "A": "A managed platform for customer applications",
+      "B": "Infrastructure with customer-managed guest operating systems",
+      "C": "Customer ownership of provider servers",
+      "D": "A mandatory finished email product"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Customers deploy code without operating the underlying platform.",
+      "B": "That describes the IaaS responsibility boundary.",
+      "C": "Service use does not transfer hardware.",
+      "D": "That is a SaaS example."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-008",
+    "stem": "A team wants custom web code without underlying OS administration. What model fits?",
+    "choices": {
+      "A": "IaaS with fully customer-managed guests",
+      "B": "Private cloud as a service model",
+      "C": "SaaS that does not support deploying this custom code",
+      "D": "PaaS"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That retains OS administration.",
+      "B": "Private classifies deployment rather than service responsibility.",
+      "C": "A finished application may not meet the custom-code requirement.",
+      "D": "A managed application platform matches the requirement."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-009",
+    "stem": "Which responsibility remains for a PaaS web-app customer?",
+    "choices": {
+      "A": "Datacenter cooling design",
+      "B": "Physical host fan replacement",
+      "C": "Application logic and permitted configuration",
+      "D": "Underlying platform OS patching directly"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is provider infrastructure.",
+      "B": "That is provider work.",
+      "C": "The provider manages the platform, not all customer behavior.",
+      "D": "PaaS normally handles that layer."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-010",
+    "stem": "What can prevent a particular app from fitting a PaaS service?",
+    "choices": {
+      "A": "The team wants monitoring",
+      "B": "An unsupported runtime or OS-level dependency",
+      "C": "The app has confidential data",
+      "D": "The app uses network communication"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "PaaS can be monitored.",
+      "B": "Managed platforms have supported capabilities.",
+      "C": "Confidentiality alone does not rule out PaaS.",
+      "D": "Network use is normal for platforms."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-011",
+    "stem": "A PaaS deployment succeeds but code returns wrong results. Who investigates the code?",
+    "choices": {
+      "A": "The customer",
+      "B": "Only the rack manufacturer",
+      "C": "Only the cooling operator",
+      "D": "No one because PaaS code cannot fail"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Managed hosting does not fix application logic.",
+      "B": "The issue is application behavior.",
+      "C": "Facility cooling does not debug code.",
+      "D": "Managed platforms can run faulty code."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-012",
+    "stem": "Which PaaS claim is accurate?",
+    "choices": {
+      "A": "All accounts become automatically authorized",
+      "B": "Underlying platform work is reduced while customer code duties remain",
+      "C": "Customers must replace Azure disks physically",
+      "D": "Every application dependency is supported"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Access still needs configuration.",
+      "B": "Responsibility shifts rather than vanishes.",
+      "C": "Providers maintain hardware.",
+      "D": "Services have capability boundaries."
+    },
+    "objective_id": "C13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-013",
+    "stem": "Which example most clearly represents SaaS?",
+    "choices": {
+      "A": "A runtime for deploying custom web code",
+      "B": "An empty resource group",
+      "C": "A finished hosted email application",
+      "D": "A VM requiring guest OS management"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is PaaS.",
+      "B": "That is a management container.",
+      "C": "The customer consumes ready business software.",
+      "D": "That is IaaS."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-014",
+    "stem": "What does a SaaS customer generally configure?",
+    "choices": {
+      "A": "Users, access, and permitted application settings",
+      "B": "Datacenter generator design",
+      "C": "Provider hypervisor source code",
+      "D": "Every physical disk controller"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The finished product still needs customer administration.",
+      "B": "Facilities are provider-operated.",
+      "C": "The provider maintains underlying infrastructure.",
+      "D": "Hardware is provider-maintained."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-015",
+    "stem": "A charity needs standard email without writing an email app. Which model fits?",
+    "choices": {
+      "A": "Archive tier",
+      "B": "PaaS requiring email-app development",
+      "C": "IaaS requiring custom email-server operation",
+      "D": "SaaS"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A blob tier is not email software.",
+      "B": "That adds custom development.",
+      "C": "That adds OS/application operations.",
+      "D": "Finished software meets the stated business need."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-016",
+    "stem": "Which obligation remains in SaaS?",
+    "choices": {
+      "A": "Protecting customer information and identities",
+      "B": "Maintaining facility racks",
+      "C": "Implementing the SaaS vendor's entire source code",
+      "D": "Patching the provider's OS directly"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Managed software does not remove these duties.",
+      "B": "Provider infrastructure covers racks.",
+      "C": "The vendor maintains the product.",
+      "D": "The provider operates its software platform."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-017",
+    "stem": "What distinguishes SaaS from PaaS for a learner?",
+    "choices": {
+      "A": "SaaS always uses private cloud",
+      "B": "SaaS supplies a finished application rather than a custom-code platform",
+      "C": "PaaS has no underlying servers",
+      "D": "SaaS has no customer permissions"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It is a service model independent of deployment.",
+      "B": "The consumed capability differs.",
+      "C": "Managed services still run on infrastructure.",
+      "D": "Customer access still needs control."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-018",
+    "stem": "An organization purchases SaaS. What should it avoid assuming?",
+    "choices": {
+      "A": "The vendor maintains its product",
+      "B": "The app has configuration options",
+      "C": "All data governance transfers to the vendor",
+      "D": "The customer manages its users"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is expected for SaaS.",
+      "B": "SaaS commonly provides controlled settings.",
+      "C": "Customer information policies remain relevant.",
+      "D": "That duty remains."
+    },
+    "objective_id": "C14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-019",
+    "stem": "What does serverless abstract for a developer?",
+    "choices": {
+      "A": "Server provisioning and management",
+      "B": "All authorization decisions",
+      "C": "Every application error",
+      "D": "The existence of all physical servers"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The provider operates the compute environment.",
+      "B": "Access policy remains necessary.",
+      "C": "Logic and error handling remain customer duties.",
+      "D": "Servers still exist."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-020",
+    "stem": "Which task naturally matches event-driven functions?",
+    "choices": {
+      "A": "Manually replace datacenter fans",
+      "B": "Maintain a required custom OS kernel",
+      "C": "Provide a finished email suite",
+      "D": "Process an image when a new upload arrives"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That is physical maintenance.",
+      "B": "Functions do not supply guest OS administration.",
+      "C": "That is a SaaS requirement.",
+      "D": "An upload event can trigger short processing."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-021",
+    "stem": "Which statement about Azure Functions pricing is safest?",
+    "choices": {
+      "A": "All functions run free forever",
+      "B": "Billing depends on hosting plan and usage",
+      "C": "A function has no meters",
+      "D": "Every plan charges only per execution"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Free allowances and pricing are bounded.",
+      "B": "Functions supports multiple plans with different economics.",
+      "C": "Functions hosting can incur costs.",
+      "D": "That blanket claim is false."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-022",
+    "stem": "Why should an event handler consider idempotency?",
+    "choices": {
+      "A": "It guarantees unlimited memory",
+      "B": "It removes all identity checks",
+      "C": "It removes the provider's servers",
+      "D": "An event may be retried and must not duplicate harmful effects"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Resource limits still exist.",
+      "B": "Idempotency does not authorize access.",
+      "C": "Serverless still uses infrastructure.",
+      "D": "Retry-safe logic supports robust processing."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-023",
+    "stem": "Who remains responsible for a function's application logic?",
+    "choices": {
+      "A": "No one",
+      "B": "The storage hardware vendor",
+      "C": "The customer",
+      "D": "The datacenter electrician"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The function needs maintenance.",
+      "B": "Manufacturing does not own function behavior.",
+      "C": "Serverless abstracts infrastructure, not business code.",
+      "D": "Facility operation does not maintain customer logic."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-024",
+    "stem": "What should be checked before assuming function cold-start behavior?",
+    "choices": {
+      "A": "Only the assumption that every plan bills per execution",
+      "B": "The selected hosting plan and configuration",
+      "C": "Whether all cloud apps are identical",
+      "D": "Only its code's programming language regardless of plan"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Billing and startup behavior differ among plans.",
+      "B": "Plans differ in execution and scaling characteristics.",
+      "C": "Applications and plans differ.",
+      "D": "Hosting behavior also depends on the selected plan."
+    },
+    "objective_id": "C07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-025",
+    "stem": "A custom website needs supported runtime hosting and minimal OS work. What is a reasoned choice?",
+    "choices": {
+      "A": "Evaluate a managed PaaS web platform",
+      "B": "Choose archive blobs as compute",
+      "C": "Choose SaaS email as the website host",
+      "D": "Choose an OS-customized VM without checking need"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It fits custom code with managed OS operation.",
+      "B": "Archive is offline storage.",
+      "C": "Email software is not a custom-code platform.",
+      "D": "That adds maintenance unnecessarily."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-026",
+    "stem": "A design requires an unsupported kernel driver. What should change?",
+    "choices": {
+      "A": "Reassess hosting for required OS control",
+      "B": "Remove all data protection",
+      "C": "Assume every managed platform supports it",
+      "D": "Call the app SaaS"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A VM may satisfy controls unavailable in managed hosting.",
+      "B": "That does not address OS compatibility.",
+      "C": "Capability boundaries must be checked.",
+      "D": "Renaming does not add capabilities."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-027",
+    "stem": "Which dimensions should guide service-model selection?",
+    "choices": {
+      "A": "Only service popularity",
+      "B": "Only whether the service uses a private IP",
+      "C": "Only the lowest advertised price without checking compatibility",
+      "D": "Required control, functionality, and maintenance burden"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Popularity does not establish fit.",
+      "B": "Networking alone does not select responsibility boundaries.",
+      "C": "An incompatible platform cannot satisfy the requirement.",
+      "D": "The choice must fit workload requirements."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "05-028",
+    "stem": "A team packages a container. Has it fully selected its service model?",
+    "choices": {
+      "A": "No, containers cannot run in Azure",
+      "B": "No, the hosting service still determines operational responsibilities",
+      "C": "Yes, every container is SaaS",
+      "D": "Yes, every container requires customer-owned hardware"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Azure supports container services.",
+      "B": "Packaging and hosting are separate choices.",
+      "C": "Containers are not inherently finished software.",
+      "D": "Managed container hosting exists."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "05-029",
+    "stem": "Two hosting approaches both fit basic functionality. What can decide between them?",
+    "choices": {
+      "A": "Whether administrators can ignore security",
+      "B": "Operational control and acceptable maintenance effort",
+      "C": "Whether both are called cloud services",
+      "D": "Whether one eliminates every dependency"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Security remains necessary.",
+      "B": "Responsibilities provide a meaningful tradeoff.",
+      "C": "The generic label does not distinguish maintenance duties.",
+      "D": "No general hosting model does that."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "05-030",
+    "stem": "What makes a service-model recommendation defensible?",
+    "choices": {
+      "A": "Map workload requirements to capability and remaining duties",
+      "B": "Claim the model removes all responsibility",
+      "C": "Select solely by public or private IP",
+      "D": "Use the same model for every workload"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A reasoned choice explains both fit and obligations.",
+      "B": "Customer duties remain.",
+      "C": "Networking does not define service responsibility.",
+      "D": "Different requirements can need different services."
+    },
+    "objective_id": "C15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+    ],
+    "difficulty": "review"
+  }
+]

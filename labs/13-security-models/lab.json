@@ -1,0 +1,20 @@
+{
+  "id": "13",
+  "slug": "security-models",
+  "title": "Zero Trust, defense in depth, and Defender",
+  "domain": "architecture",
+  "objectives": [
+    "A25",
+    "A26",
+    "A27"
+  ],
+  "duration_minutes": 40,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "21",
+  "slug": "integrated-capstone",
+  "title": "Integrated Azure fundamentals capstone",
+  "domain": "capstone",
+  "objectives": [],
+  "duration_minutes": 90,
+  "mode": "live",
+  "resource_profile": "capstone",
+  "status": "offline-validated",
+  "assessment_count": 0,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

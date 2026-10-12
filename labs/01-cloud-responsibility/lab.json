@@ -1,0 +1,19 @@
+{
+  "id": "01",
+  "slug": "cloud-responsibility",
+  "title": "Cloud computing and shared responsibility",
+  "domain": "cloud",
+  "objectives": [
+    "C01",
+    "C02"
+  ],
+  "duration_minutes": 35,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

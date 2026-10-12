@@ -1,0 +1,692 @@
+[
+  {
+    "id": "18-001",
+    "stem": "What does infrastructure as code mean?",
+    "choices": {
+      "A": "Replace Azure role assignments with comments",
+      "B": "Describe and manage infrastructure using versioned code or templates",
+      "C": "Create resources only through undocumented clicks",
+      "D": "Store application passwords in source files"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Comments do not authorize operations.",
+      "B": "Infrastructure definitions become reviewable artifacts.",
+      "C": "That does not preserve an executable definition.",
+      "D": "Secrets are not the purpose of infrastructure as code."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-002",
+    "stem": "A team wants to reproduce a test network with the same configuration next week. Which practice helps?",
+    "choices": {
+      "A": "Use a manual checklist without capturing parameter values",
+      "B": "Keep its declarative definition in version control",
+      "C": "Use only a cost forecast for the project",
+      "D": "Record only the resource group's display name"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Incomplete inputs make repeated results harder to reproduce.",
+      "B": "A reviewed definition records the intended configuration.",
+      "C": "Financial estimates do not specify the deployed network.",
+      "D": "A name omits the network's required configuration."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-003",
+    "stem": "What does a declarative template emphasize?",
+    "choices": {
+      "A": "Every manual mouse movement",
+      "B": "The desired resource state",
+      "C": "Only the resource's monthly invoice",
+      "D": "The user's authentication-factor history"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is not declarative infrastructure.",
+      "B": "The platform interprets the definition to deploy that state.",
+      "C": "Invoices record charges rather than desired configuration.",
+      "D": "That is identity evidence."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-004",
+    "stem": "Why parameterize a template's location?",
+    "choices": {
+      "A": "The same definition can be reused with an explicit region value",
+      "B": "The deployment becomes independent of service availability",
+      "C": "Every parameter value is a secret",
+      "D": "The parameter grants subscription Owner"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Parameters separate environment inputs from reusable resource logic.",
+      "B": "The chosen region still must support the resource.",
+      "C": "A region identifier is normally non-sensitive configuration.",
+      "D": "Parameters do not grant permissions."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-005",
+    "stem": "Which benefit does code review provide for an infrastructure change?",
+    "choices": {
+      "A": "A replacement for postdeployment validation",
+      "B": "Automatic removal of every resource lock",
+      "C": "A guarantee that no runtime operation can fail",
+      "D": "A chance to inspect intended configuration before deployment"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Actual state still needs verification.",
+      "B": "Review does not change Azure.",
+      "C": "Permissions, policies, and services can still cause failures.",
+      "D": "Review can identify unexpected resource or security changes."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-006",
+    "stem": "What is configuration drift?",
+    "choices": {
+      "A": "A user forgets an MFA method",
+      "B": "The VM moves physically while running",
+      "C": "The billing currency changes on every API call",
+      "D": "Actual resource settings diverge from the intended definition"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That is an identity-management issue.",
+      "B": "That is not the meaning of configuration drift.",
+      "C": "That is not expected drift behavior.",
+      "D": "Manual or external changes can create drift."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-007",
+    "stem": "An operator manually changes a network prefix after a template deployment. What should the team do?",
+    "choices": {
+      "A": "Delete all unrelated resource groups",
+      "B": "Assume the template file was automatically updated",
+      "C": "Compare the actual state with the reviewed definition",
+      "D": "Ignore the difference because the name is unchanged"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is unrelated and destructive.",
+      "B": "Azure does not rewrite local source to match every manual change.",
+      "C": "The difference may need reconciliation or an intentional code change.",
+      "D": "Names alone do not prove configuration consistency."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-008",
+    "stem": "Which item should remain outside a public infrastructure repository?",
+    "choices": {
+      "A": "Credentials and access tokens",
+      "B": "A subnet address prefix used for a training scenario",
+      "C": "A non-sensitive region parameter name",
+      "D": "A description of the intended resource types"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Secrets must not be published.",
+      "B": "An invented lab address range is not inherently a credential.",
+      "C": "That can be part of reviewed source.",
+      "D": "That is useful documentation."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-009",
+    "stem": "Why include a validation step after deployment?",
+    "choices": {
+      "A": "Validation moves resources to a cheaper region",
+      "B": "Validation grants missing RBAC permissions",
+      "C": "Successful submission does not prove every learning requirement is met",
+      "D": "Validation eliminates all usage charges"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is not a read-only validation action.",
+      "B": "It should observe rather than grant access.",
+      "C": "Validation inspects the resulting state.",
+      "D": "Reading state does not stop meters."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-010",
+    "stem": "What does a deployment preview help with?",
+    "choices": {
+      "A": "Guaranteeing a deployment will succeed later",
+      "B": "Creating the network without an execute action",
+      "C": "Making chargeable resources free",
+      "D": "Understanding expected changes before execution"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Environment and permissions can still change.",
+      "B": "A preview should not perform the change.",
+      "C": "Preview does not alter service pricing.",
+      "D": "Preview improves reviewability."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-011",
+    "stem": "A resource name and scope remain the same on redeployment. What is a common declarative outcome?",
+    "choices": {
+      "A": "The subscription is canceled",
+      "B": "The existing resource is evaluated and updated toward the definition",
+      "C": "All resources outside the template are always deleted",
+      "D": "A duplicate is always created with a random name"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Redeployment does not cancel subscriptions.",
+      "B": "The resource identity is not recreated under a new name automatically.",
+      "C": "Deletion behavior depends on deployment mechanisms and modes.",
+      "D": "Stable identities avoid that automatic duplication."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-012",
+    "stem": "Which artifact best supports a repeatable network change request?",
+    "choices": {
+      "A": "Only a subscription budget",
+      "B": "Only a deployment-record name",
+      "C": "A version-controlled template diff with explicit parameter values",
+      "D": "A portal screenshot that omits prefixes and deployment inputs"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A spending threshold does not define infrastructure state.",
+      "B": "The record label does not describe the proposed configuration.",
+      "C": "This records both the intended change and its environment inputs.",
+      "D": "That cannot specify the complete intended network change."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-013",
+    "stem": "Why should deployment inputs be explicit in a learning script?",
+    "choices": {
+      "A": "They make a template exempt from Azure Policy",
+      "B": "They make the target subscription, region, and run unambiguous",
+      "C": "They automatically approve every future deployment",
+      "D": "They remove provider registration requirements"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Policies still evaluate requests.",
+      "B": "Explicit inputs reduce accidental use of defaults.",
+      "C": "Inputs are not blanket authorization.",
+      "D": "Resources still require supported providers."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-014",
+    "stem": "How should a team handle an intentional infrastructure change found during drift review?",
+    "choices": {
+      "A": "Remove all validation because state changed",
+      "B": "Publish the operator's token as evidence",
+      "C": "Silently overwrite source with every observed setting",
+      "D": "Update and review the definition before applying the agreed state"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Changed state makes validation more useful.",
+      "B": "Tokens should remain private.",
+      "C": "Not every change is intended or safe.",
+      "D": "Source should reflect the intended architecture."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-015",
+    "stem": "What does offline validation of this IaC lab establish?",
+    "choices": {
+      "A": "The source and safeguards were checked without a live Azure deployment",
+      "B": "No deployment can ever incur a charge",
+      "C": "Every Azure region has been deployed successfully",
+      "D": "The learner's RBAC roles are sufficient"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It supports readiness while leaving live behavior to learner testing.",
+      "B": "Actual resources and usage determine costs.",
+      "C": "Offline checks cannot prove that.",
+      "D": "Live authorization has not been verified."
+    },
+    "objective_id": "M11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-016",
+    "stem": "What is Azure Resource Manager's role?",
+    "choices": {
+      "A": "A protocol for employee passwordless sign-in",
+      "B": "The management layer for deploying and organizing Azure resources",
+      "C": "The guest operating system inside every VM",
+      "D": "A replacement for all application data APIs"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is an identity concern.",
+      "B": "ARM handles resource management requests.",
+      "C": "ARM is not a guest OS.",
+      "D": "Data-plane services have their own interfaces."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-017",
+    "stem": "Which tools can send resource-management requests to ARM?",
+    "choices": {
+      "A": "Only Entra guest invitations",
+      "B": "The Azure portal, CLI, PowerShell, and APIs",
+      "C": "Only the Azure portal",
+      "D": "Only Storage Explorer file uploads"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Identity invitations are not the complete resource-management scope.",
+      "B": "These interfaces can use the resource management layer.",
+      "C": "ARM is accessible through several tools.",
+      "D": "Data uploads are not its only or defining interface."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-018",
+    "stem": "What is an ARM template?",
+    "choices": {
+      "A": "An MFA authentication method",
+      "B": "A declarative JSON description for Azure deployments",
+      "C": "A CSV of Azure invoices",
+      "D": "A compressed copy of every VM disk"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Templates do not verify users.",
+      "B": "The template describes intended resources and related deployment inputs.",
+      "C": "That is billing data.",
+      "D": "That is a backup artifact."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-019",
+    "stem": "How does Bicep relate to ARM templates?",
+    "choices": {
+      "A": "Bicep is an identity directory",
+      "B": "Bicep is a declarative language compiled for ARM deployment",
+      "C": "Bicep bypasses Azure policies and permissions",
+      "D": "Bicep is a separate cloud provider"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It does not manage directory sign-in.",
+      "B": "It offers concise authoring over the same deployment platform.",
+      "C": "Deployment checks still apply.",
+      "D": "It targets Azure infrastructure."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-020",
+    "stem": "A Bicep file declares targetScope='resourceGroup'. Where is that template intended to deploy?",
+    "choices": {
+      "A": "At subscription scope",
+      "B": "At management-group scope",
+      "C": "At resource-group scope",
+      "D": "At tenant scope"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Subscription scope would require a subscription-targeted deployment definition.",
+      "B": "Management-group scope is a different explicit Bicep deployment target.",
+      "C": "The target scope specifies the deployment boundary.",
+      "D": "Tenant scope is distinct from the declared resource-group target."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-021",
+    "stem": "What does a resource's API version specify in Bicep?",
+    "choices": {
+      "A": "The resource-provider contract used for its properties",
+      "B": "The version of the workload's guest operating system",
+      "C": "The Bicep CLI's installed version",
+      "D": "The deployment mode incremental or complete"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "API versions define supported schema and behavior.",
+      "B": "The OS version is not the Azure resource schema version.",
+      "C": "The compiler version is different from the resource provider's API contract.",
+      "D": "Deployment mode controls deployment behavior rather than the resource API contract."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-022",
+    "stem": "What does a template output provide?",
+    "choices": {
+      "A": "Automatic Contributor access for every reader",
+      "B": "A guarantee of zero monthly cost",
+      "C": "A replacement for the resource ID hierarchy",
+      "D": "A deployment result such as a created resource's name"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Outputs do not grant access.",
+      "B": "Outputs are not pricing controls.",
+      "C": "They can report identifiers without replacing the hierarchy.",
+      "D": "Outputs expose useful values after evaluation."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-023",
+    "stem": "What can ARM use to order related resource deployment?",
+    "choices": {
+      "A": "The resource display names alone",
+      "B": "Resource dependencies",
+      "C": "The expected monthly cost of each resource",
+      "D": "The order in which operators last viewed resources in the portal"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Names identify resources but do not fully express deployment dependency relationships.",
+      "B": "Dependencies help ensure prerequisites are deployed before dependent resources.",
+      "C": "Price is not ARM's dependency ordering mechanism.",
+      "D": "Observation order does not define the template's resource dependencies."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-024",
+    "stem": "What does az bicep build perform?",
+    "choices": {
+      "A": "Compile the Bicep source to an ARM template locally",
+      "B": "Start an application telemetry workspace",
+      "C": "Create the VNet in Azure",
+      "D": "Assign Reader to the learner"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Compilation checks authoring without deploying resources.",
+      "B": "That is unrelated to compilation.",
+      "C": "Build is not a deployment command.",
+      "D": "Compilation does not change roles."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "18-025",
+    "stem": "What does a group deployment require in addition to a valid template?",
+    "choices": {
+      "A": "A public storage access key in Git",
+      "B": "A guarantee that the user is Entra Global Administrator",
+      "C": "Every resource must already exist in another cloud",
+      "D": "A target resource group and appropriate deployment permissions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Public secrets are unnecessary.",
+      "B": "That role is not a universal resource deployment prerequisite.",
+      "C": "That is not an ARM requirement.",
+      "D": "Syntax validity alone does not provide scope or authorization."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "18-026",
+    "stem": "What does ARM what-if aim to show?",
+    "choices": {
+      "A": "A guaranteed future invoice",
+      "B": "Every possible guest sign-in",
+      "C": "All application requests after deployment",
+      "D": "Predicted resource changes for a proposed deployment"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It previews configuration changes rather than exact bills.",
+      "B": "It is not an identity simulator.",
+      "C": "That is telemetry rather than deployment preview.",
+      "D": "It helps inspect a deployment's expected effects."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "18-027",
+    "stem": "The lab template declares vnet-az900 and subnet-default. Which validation matches it?",
+    "choices": {
+      "A": "Verify that a VM was created automatically",
+      "B": "Inspect the VNet and subnet names and address prefixes",
+      "C": "Verify that every tenant guest became an Owner",
+      "D": "Verify that a paid Purview scan was enabled"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The template does not declare a VM.",
+      "B": "These properties demonstrate the deployed network matches the definition.",
+      "C": "The template does not assign those roles.",
+      "D": "The template does not declare that service."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "18-028",
+    "stem": "Why can a valid Bicep template still fail during Azure deployment?",
+    "choices": {
+      "A": "Permissions, policy, provider support, or quota may block it",
+      "B": "Valid source automatically bypasses resource locks",
+      "C": "Compilation guarantees all live prerequisites",
+      "D": "ARM ignores the selected subscription"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Local syntax success is only one requirement.",
+      "B": "Applicable locks still matter.",
+      "C": "It does not verify every environment condition.",
+      "D": "Deployment remains scoped."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "18-029",
+    "stem": "An incremental deployment omits an unrelated resource already in the group. What should a beginner generally expect?",
+    "choices": {
+      "A": "Every omitted resource is always deleted",
+      "B": "The omitted resource becomes a tenant user",
+      "C": "The resource moves to a new subscription",
+      "D": "Omission alone does not delete that unrelated resource"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That describes neither general incremental behavior nor the safe lab intent.",
+      "B": "Deployment omission does not change resource types.",
+      "C": "Omission does not imply a move.",
+      "D": "Incremental mode does not remove resources simply because they are absent."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "18-030",
+    "stem": "Which distinction separates a resource group from an ARM deployment record?",
+    "choices": {
+      "A": "A group is only a JSON compiler output",
+      "B": "The deployment record is the customer's identity directory",
+      "C": "Deleting a deployment record necessarily deletes every deployed resource",
+      "D": "The group contains resources; the deployment record reports a deployment operation"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Groups are Azure management containers.",
+      "B": "That is the tenant.",
+      "C": "The record and resource lifetimes differ.",
+      "D": "A deployment is not a replacement for its resource container."
+    },
+    "objective_id": "M12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+    ],
+    "difficulty": "review"
+  }
+]

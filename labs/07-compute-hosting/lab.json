@@ -1,0 +1,21 @@
+{
+  "id": "07",
+  "slug": "compute-hosting",
+  "title": "Compute and application hosting choices",
+  "domain": "architecture",
+  "objectives": [
+    "A08",
+    "A09",
+    "A10",
+    "A11"
+  ],
+  "duration_minutes": 45,
+  "mode": "read-only",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

@@ -1,0 +1,812 @@
+[
+  {
+    "id": "07-001",
+    "stem": "Which compute option gives direct control of the guest operating system?",
+    "choices": {
+      "A": "Azure Container Instances",
+      "B": "Azure App Service",
+      "C": "Virtual machine",
+      "D": "Azure Functions"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "ACI runs containers without customer VM administration.",
+      "B": "App Service manages the underlying web platform.",
+      "C": "A VM exposes guest OS configuration and maintenance.",
+      "D": "Functions abstracts the host OS from the developer."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-002",
+    "stem": "Which feature distinguishes containers from separate full VMs at a high level?",
+    "choices": {
+      "A": "Containers share a host kernel",
+      "B": "Containers are finished business applications by definition",
+      "C": "Containers never use operating systems",
+      "D": "Each container must own a separate physical server"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Containers package applications while sharing OS kernel infrastructure.",
+      "B": "Packaging does not make an app SaaS.",
+      "C": "They depend on a host kernel.",
+      "D": "Container hosts can run multiple containers."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-003",
+    "stem": "A short task starts when a file arrives. Which compute approach naturally matches?",
+    "choices": {
+      "A": "Azure Virtual Desktop",
+      "B": "Azure Functions",
+      "C": "A permanently running manually managed desktop VM",
+      "D": "An availability set"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "AVD supplies desktop/app access rather than this event abstraction.",
+      "B": "Events can trigger function execution.",
+      "C": "That adds continuous guest management for a short event.",
+      "D": "A set groups VMs rather than executing event code."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-004",
+    "stem": "What does Azure Container Instances offer?",
+    "choices": {
+      "A": "Managed execution of containers without managing VMs",
+      "B": "A finished hosted email suite",
+      "C": "An offline blob tier",
+      "D": "A fleet of customer-managed desktop sessions"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "ACI abstracts the container host infrastructure.",
+      "B": "That is a SaaS capability.",
+      "C": "That is archive storage.",
+      "D": "That is a virtual desktop scenario."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-005",
+    "stem": "What is Azure Kubernetes Service primarily suited to?",
+    "choices": {
+      "A": "Orchestrating container workloads",
+      "B": "Replacing all application data with email",
+      "C": "Choosing a VM's guest password only",
+      "D": "Serving as a storage access tier"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "AKS provides managed Kubernetes orchestration.",
+      "B": "That is not container orchestration.",
+      "C": "AKS manages broader container scheduling and operation.",
+      "D": "AKS is compute orchestration."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-006",
+    "stem": "A container runs on a self-managed VM. Which conclusion is accurate?",
+    "choices": {
+      "A": "Microsoft necessarily patches every customer guest",
+      "B": "Containers automatically make the host SaaS",
+      "C": "No host exists after packaging",
+      "D": "The customer still maintains the VM guest OS"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Host and guest duties remain distinct.",
+      "B": "Container packaging does not select service model.",
+      "C": "Containers still need infrastructure.",
+      "D": "Packaging does not transfer host responsibility."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-007",
+    "stem": "What should guide a comparison of VMs, containers, and functions?",
+    "choices": {
+      "A": "Required control, packaging, event behavior, and operations",
+      "B": "An assumption all three have identical billing",
+      "C": "Only whether all three can execute code",
+      "D": "An assumption all three require guest OS control"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Workload needs determine the useful abstraction.",
+      "B": "Plans and meters differ.",
+      "C": "That does not distinguish their operational tradeoffs.",
+      "D": "Managed services abstract that control."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-008",
+    "stem": "Which statement about serverless functions is accurate?",
+    "choices": {
+      "A": "They use provider infrastructure while abstracting server operation",
+      "B": "They eliminate application error handling",
+      "C": "They run without any compute hardware",
+      "D": "They always use the same billing model"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Servers exist even when customers do not manage them.",
+      "B": "Customer logic still needs resilience.",
+      "C": "Physical compute remains necessary.",
+      "D": "Hosting plans differ."
+    },
+    "objective_id": "A08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-009",
+    "stem": "What is a VM Scale Set designed to manage?",
+    "choices": {
+      "A": "A resource-group deletion lock only",
+      "B": "A group of VM instances with scaling capabilities",
+      "C": "A directory of external identities",
+      "D": "A single storage account's archive tier"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is governance metadata.",
+      "B": "Scale sets organize and scale instances.",
+      "C": "That is identity management.",
+      "D": "That is storage configuration."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-010",
+    "stem": "What does an availability set distribute VMs across?",
+    "choices": {
+      "A": "Separate countries automatically",
+      "B": "Every paired region automatically",
+      "C": "Blob hot and archive tiers",
+      "D": "Fault and update domains"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Sets are not cross-country deployment.",
+      "B": "Sets do not create multiregion replicas.",
+      "C": "Those concern storage.",
+      "D": "Sets reduce correlated host/rack and maintenance effects."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-011",
+    "stem": "How do availability zones differ from availability sets?",
+    "choices": {
+      "A": "Zones are always separate subscriptions",
+      "B": "Sets guarantee cross-region recovery",
+      "C": "Zones only rename existing VMs",
+      "D": "Zones provide physically separated in-region failure boundaries"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Zones are regional placement boundaries.",
+      "B": "Sets do not provide region-wide disaster recovery.",
+      "C": "Placement affects physical fault isolation.",
+      "D": "Sets use fault/update domains while zones isolate facilities."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-012",
+    "stem": "One VM is deployed in one zone. What is still required to survive its zone failing?",
+    "choices": {
+      "A": "Other healthy instances and an appropriate failover design",
+      "B": "Only a resource tag saying resilient",
+      "C": "Only a larger disk on that same VM",
+      "D": "Only a subscription budget"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A single zonal instance is not multizone resilience.",
+      "B": "Tags do not create replicas.",
+      "C": "Capacity does not provide another zone.",
+      "D": "Budgets do not provide failover."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-013",
+    "stem": "A workload needs more similar VM instances as demand grows. Which option merits evaluation?",
+    "choices": {
+      "A": "A read-only resource lock",
+      "B": "Azure Files cloud tiering",
+      "C": "VM Scale Sets",
+      "D": "One availability set without additional instances"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A lock does not scale compute.",
+      "B": "That optimizes file placement rather than VM counts.",
+      "C": "The service supports grouped VM scaling.",
+      "D": "Placement alone does not add capacity."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-014",
+    "stem": "A VM SKU is listed in the selected region. What does that prove?",
+    "choices": {
+      "A": "The subscription has unlimited quota",
+      "B": "A VM was created by the listing command",
+      "C": "The SKU is in the catalog, not guaranteed deployable capacity",
+      "D": "That the SKU is the cheapest worldwide"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Quota is separate.",
+      "B": "Read-only inspection does not allocate compute.",
+      "C": "Restrictions, quota, and capacity still matter.",
+      "D": "The list is not a price guarantee."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-015",
+    "stem": "What does az vm list-usage help inspect?",
+    "choices": {
+      "A": "Guaranteed host capacity at deployment time",
+      "B": "Every guest OS file",
+      "C": "Current regional usage and quota information",
+      "D": "The app's code correctness"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Quota visibility is not a capacity reservation.",
+      "B": "Usage listing does not inspect file content.",
+      "C": "It reports subscription usage/limits.",
+      "D": "Usage does not validate logic."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-016",
+    "stem": "A selected VM size is restricted for the subscription. What is a reasonable next step?",
+    "choices": {
+      "A": "Ignore the restriction because the name exists",
+      "B": "Review approved supported sizes and quota/access constraints",
+      "C": "Delete unrelated network resources",
+      "D": "Assume the listing reserved capacity"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Catalog presence does not guarantee eligibility.",
+      "B": "Resolve the actual restriction within governance.",
+      "C": "That does not resolve the size restriction.",
+      "D": "Listing makes no reservation."
+    },
+    "objective_id": "A09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-017",
+    "stem": "Which networking component is normally required by an Azure VM?",
+    "choices": {
+      "A": "Network interface attached to a subnet",
+      "B": "Public IP in every case",
+      "C": "ExpressRoute circuit in every case",
+      "D": "Private endpoint for the VM itself in every case"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The VM connects through a NIC within a VNet.",
+      "B": "Public IPs are optional.",
+      "C": "Private circuits are not mandatory for every VM.",
+      "D": "Private endpoints are service-access constructs."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-018",
+    "stem": "Which disk holds a VM's operating system?",
+    "choices": {
+      "A": "An Azure Queue",
+      "B": "Only the temporary disk",
+      "C": "An availability set",
+      "D": "OS disk"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Queues store messages.",
+      "B": "Temporary storage is not the durable OS disk.",
+      "C": "A set is placement metadata.",
+      "D": "The guest operating system resides there."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-019",
+    "stem": "Why not store the only copy of important data on a VM temporary disk?",
+    "choices": {
+      "A": "Temporary disks automatically enforce business retention",
+      "B": "Temporary disks are always geo-replicated backups",
+      "C": "Temporary disk means archive blob",
+      "D": "Temporary storage is not durable"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Retention is not automatic.",
+      "B": "They do not provide that guarantee.",
+      "C": "These are different storage concepts.",
+      "D": "Data can be lost through VM lifecycle events."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-020",
+    "stem": "Which component is optional for a VM with suitable private management connectivity?",
+    "choices": {
+      "A": "Network interface",
+      "B": "OS disk",
+      "C": "VM size",
+      "D": "Public IP"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "The VM needs a network attachment.",
+      "B": "A normal VM still needs an OS disk.",
+      "C": "Compute capacity must be selected.",
+      "D": "Private access can avoid internet exposure."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-021",
+    "stem": "What determines a VM's CPU and memory capacity?",
+    "choices": {
+      "A": "Its storage container name",
+      "B": "Its selected size",
+      "C": "Its resource-group location alone",
+      "D": "Its role-assignment count"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Container names do not size compute.",
+      "B": "The VM size specifies compute resources.",
+      "C": "Group metadata does not set size.",
+      "D": "Permissions do not set CPU capacity."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-022",
+    "stem": "What can additional managed data disks provide?",
+    "choices": {
+      "A": "Automatic multiregion app failover",
+      "B": "Persistent block storage for application data",
+      "C": "A finished email application",
+      "D": "A replacement for all networking"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Disks alone do not provide whole-app failover.",
+      "B": "They extend durable VM storage.",
+      "C": "Storage is not SaaS email.",
+      "D": "Disks do not supply connectivity."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-023",
+    "stem": "Which plan correctly separates VM components?",
+    "choices": {
+      "A": "Image/OS disk for boot, NIC/subnet for networking, size for compute",
+      "B": "Resource tag for boot and budget for networking",
+      "C": "Public IP for all persistent storage",
+      "D": "Availability set for application authentication"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Each component serves its own role.",
+      "B": "Metadata does not supply those capabilities.",
+      "C": "An address is not storage.",
+      "D": "Placement does not authenticate users."
+    },
+    "objective_id": "A10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-024",
+    "stem": "A team wants a managed website platform without guest OS administration. Which service fits?",
+    "choices": {
+      "A": "Data Box",
+      "B": "Azure Virtual Desktop",
+      "C": "Azure App Service",
+      "D": "An unmanaged VM by default"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That transfers data physically.",
+      "B": "That provides desktop/app sessions rather than this web platform.",
+      "C": "It hosts web applications on a managed platform.",
+      "D": "That retains guest OS maintenance."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-025",
+    "stem": "A legacy app needs unsupported OS-level components. What hosting option provides more control?",
+    "choices": {
+      "A": "Functions assuming unrestricted kernel access",
+      "B": "Azure VM",
+      "C": "App Service assuming all OS drivers are supported",
+      "D": "SaaS email"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Functions does not provide guest kernel administration.",
+      "B": "Guest OS control can meet those dependencies.",
+      "C": "Managed platforms have capability boundaries.",
+      "D": "Finished email does not host the custom dependency."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-026",
+    "stem": "What should be assessed before hosting an existing web app on App Service?",
+    "choices": {
+      "A": "An assumption code ownership transfers to Microsoft",
+      "B": "Only whether it already has a web address",
+      "C": "Supported runtime, dependencies, and configuration needs",
+      "D": "An assumption every executable can run unchanged"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Customer code remains customer-owned.",
+      "B": "A URL does not prove platform compatibility.",
+      "C": "Compatibility matters for managed hosting.",
+      "D": "Supported capabilities must be checked."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-027",
+    "stem": "How does Azure Virtual Desktop differ from App Service?",
+    "choices": {
+      "A": "It is the same as a web-app runtime",
+      "B": "It supplies virtual desktop and app experiences",
+      "C": "It removes the need for session-host planning",
+      "D": "It is a blob access tier"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The user experience and architecture differ.",
+      "B": "AVD addresses interactive desktop access.",
+      "C": "Desktop capacity and configuration remain relevant.",
+      "D": "AVD is not storage tiering."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "07-028",
+    "stem": "A containerized web app could use several Azure hosts. What must still be chosen?",
+    "choices": {
+      "A": "A mandatory SaaS classification",
+      "B": "A mandatory customer-owned datacenter",
+      "C": "A hosting service and its operational responsibilities",
+      "D": "Whether containers have any dependencies"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Containers are not inherently SaaS.",
+      "B": "Azure has managed container hosting.",
+      "C": "Packaging alone does not select host management.",
+      "D": "They can include dependencies."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "07-029",
+    "stem": "Which evidence strengthens a hosting recommendation?",
+    "choices": {
+      "A": "Only a list of resource names",
+      "B": "An assumption price always outweighs compatibility",
+      "C": "A promise that the selected service cannot fail",
+      "D": "Requirements mapped to platform capabilities and duties"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Names do not demonstrate suitability.",
+      "B": "A cheap incompatible platform cannot meet requirements.",
+      "C": "No such general guarantee exists.",
+      "D": "The rationale shows fit and remaining maintenance."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "07-030",
+    "stem": "Read-only SKU inspection succeeded. What Azure cleanup is required by this lab?",
+    "choices": {
+      "A": "Delete all listed VM sizes",
+      "B": "None, because no resources were created",
+      "C": "Remove every regional resource group",
+      "D": "Delete the subscription"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "SKUs are provider catalog entries.",
+      "B": "Catalog queries do not allocate services.",
+      "C": "Unrelated resources are not part of this lab.",
+      "D": "That is unnecessary and destructive."
+    },
+    "objective_id": "A11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+      "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+    ],
+    "difficulty": "review"
+  }
+]

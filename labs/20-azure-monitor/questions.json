@@ -1,0 +1,693 @@
+[
+  {
+    "id": "20-001",
+    "stem": "Which Azure service brings together metrics, logs, traces, and events to help understand application and infrastructure behavior?",
+    "choices": {
+      "A": "Azure Policy",
+      "B": "Azure Cost Management",
+      "C": "Azure Monitor",
+      "D": "Azure Resource Manager templates"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Policy evaluates and enforces governance rules rather than acting as the primary telemetry platform.",
+      "B": "Cost Management addresses expenditure and usage analysis rather than all operational telemetry.",
+      "C": "Monitor is the Azure telemetry collection and analysis service.",
+      "D": "Templates declare deployment infrastructure rather than collect runtime observations."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-002",
+    "stem": "A team wants a time series of a resource's numerical CPU utilization measurements. Which telemetry form best matches?",
+    "choices": {
+      "A": "Metrics",
+      "B": "Resource-group tags",
+      "C": "Deployment templates",
+      "D": "Service Health maintenance notices"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Metrics represent numerical measurements over time.",
+      "B": "Tags are management metadata rather than a CPU time series.",
+      "C": "Templates describe desired infrastructure rather than measured CPU behavior.",
+      "D": "Maintenance communications do not supply the resource's CPU measurements."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-003",
+    "stem": "An investigator needs the context and fields of individual recorded events rather than only a numeric trend. Which data form is most useful?",
+    "choices": {
+      "A": "Only a single metric average",
+      "B": "Only a subscription budget amount",
+      "C": "Only a resource's region name",
+      "D": "Logs"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "An average can summarize a trend but omit individual event context.",
+      "B": "A budget is a financial threshold rather than an event record.",
+      "C": "Location metadata does not contain individual runtime events.",
+      "D": "Log records can carry detailed event context that supports filtering and analysis."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-004",
+    "stem": "Which Azure portal experience is primarily used to edit and run KQL queries against Azure Monitor Logs?",
+    "choices": {
+      "A": "Azure Pricing Calculator",
+      "B": "Log Analytics",
+      "C": "Azure Advisor Cost recommendations",
+      "D": "Resource-group lock management"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The calculator estimates spending rather than querying monitoring logs.",
+      "B": "Log Analytics provides the interactive log-query experience.",
+      "C": "Advisor suggestions do not replace the KQL log-query editor.",
+      "D": "Lock management protects resources from certain control-plane changes rather than analyzing logs."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-005",
+    "stem": "What role does a Log Analytics workspace have in a monitoring design?",
+    "choices": {
+      "A": "It automatically grants Owner access to every resource in a tenant",
+      "B": "It provides a storage and access boundary for collected log data",
+      "C": "It replaces every source application's instrumentation",
+      "D": "It guarantees that every possible Azure data operation is already recorded"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A workspace does not confer tenant-wide resource ownership.",
+      "B": "Workspaces support the organization and analysis of monitoring log data.",
+      "C": "Data still needs an appropriate collection path.",
+      "D": "Collection and data availability depend on configuration and source capabilities."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-006",
+    "stem": "A team wants to inspect Azure resource creation and configuration-change events. Which log is the appropriate starting point?",
+    "choices": {
+      "A": "Azure Activity log",
+      "B": "Only application request traces",
+      "C": "Only blob content",
+      "D": "Only a pricing estimate"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The Activity log records control-plane resource-management events.",
+      "B": "Request traces concern application behavior rather than all Azure management operations.",
+      "C": "Stored payloads are not the subscription's management-event history.",
+      "D": "An estimate does not record which management operations occurred."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/monitor/activity-log?view=azure-cli-latest"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-007",
+    "stem": "Users report a slow web request, and the developer wants request and dependency-call context. Which Monitor feature is designed for application performance investigation?",
+    "choices": {
+      "A": "Only resource-group locks",
+      "B": "Only Azure Policy compliance results",
+      "C": "Only subscription budgets",
+      "D": "Application Insights"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Locks control management changes rather than observe request performance.",
+      "B": "Compliance findings do not replace request and dependency telemetry.",
+      "C": "Budgets concern spending rather than transaction timing.",
+      "D": "Application Insights helps analyze suitably collected application requests and dependencies."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-008",
+    "stem": "Which statement correctly describes Application Insights in relation to Azure Monitor?",
+    "choices": {
+      "A": "It is the service that assigns management-group membership",
+      "B": "It is only an offline server-migration appliance",
+      "C": "It is Azure Monitor's application performance monitoring feature",
+      "D": "It replaces Azure's resource deployment control plane"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Management groups are part of Azure governance and hierarchy, not Application Insights.",
+      "B": "That describes a different capability from application monitoring.",
+      "C": "Application Insights extends the monitoring experience with application telemetry analysis.",
+      "D": "Application monitoring is not the resource deployment control plane."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-009",
+    "stem": "An application runs in Azure but emits no relevant application telemetry. What must a developer consider before expecting useful request traces?",
+    "choices": {
+      "A": "Only creating another resource-group tag",
+      "B": "Only opening the Activity log",
+      "C": "Appropriate instrumentation and telemetry collection",
+      "D": "Only dismissing an Advisor recommendation"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Tags do not instrument request execution.",
+      "B": "Control-plane logs do not supply all custom request traces.",
+      "C": "Application Insights requires a suitable data-collection path for the desired application observations.",
+      "D": "Recommendation state does not establish application instrumentation."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-010",
+    "stem": "Which part of an Azure Monitor alert rule determines when the selected signal should trigger an alert?",
+    "choices": {
+      "A": "Only the receiver's email address",
+      "B": "Only the subscription's display name",
+      "C": "Only an application's source repository URL",
+      "D": "The condition"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A receiver address determines a delivery destination rather than the signal threshold.",
+      "B": "A display name does not define an operational threshold.",
+      "C": "A repository link does not define the monitored signal's condition.",
+      "D": "The condition evaluates whether the monitored signal meets the specified criteria."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-011",
+    "stem": "What does an action group primarily configure for an alert design?",
+    "choices": {
+      "A": "Notification and action destinations",
+      "B": "The exact metric's measured values",
+      "C": "The source application's full business logic",
+      "D": "The target resource's Azure region pairing"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Action groups define reusable receivers or actions used by alert rules.",
+      "B": "Values come from the monitoring data source rather than receiver configuration.",
+      "C": "An action group does not define the whole application.",
+      "D": "Receiver configuration does not determine Azure geography."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-012",
+    "stem": "An alert condition fires, but an intended operator receives no message. Which area should be checked?",
+    "choices": {
+      "A": "Only whether the source resource has a friendly name",
+      "B": "The associated action group and notification delivery configuration",
+      "C": "Only whether Azure Advisor has cost suggestions",
+      "D": "Only whether a deployment template compiles"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A friendly name does not verify a working notification route.",
+      "B": "Triggering and notification delivery are distinct parts of the alert workflow.",
+      "C": "Cost advice does not establish receiver delivery.",
+      "D": "Template compilation alone does not prove the alert's notification routing."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-013",
+    "stem": "Which monitoring choice is most suitable for detecting a numerical latency threshold over a defined interval?",
+    "choices": {
+      "A": "A metric alert on the appropriate latency signal and aggregation",
+      "B": "A resource-group CanNotDelete lock",
+      "C": "An Azure Policy allowed-location rule",
+      "D": "A storage account's redundancy setting alone"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Metric conditions can evaluate numerical measurements over specified windows.",
+      "B": "A deletion lock does not evaluate latency measurements.",
+      "C": "A location restriction does not detect runtime latency.",
+      "D": "Redundancy does not itself configure a latency alert."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-014",
+    "stem": "A team wants to alert when a KQL query finds a defined set of failure records. Which alert type fits?",
+    "choices": {
+      "A": "A resource deletion lock",
+      "B": "A cost budget alert alone",
+      "C": "A public status-page bookmark",
+      "D": "A log search alert"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A lock prevents certain changes rather than evaluates query results.",
+      "B": "Budget thresholds concern cost rather than the specified failure query.",
+      "C": "A bookmark does not execute and evaluate the KQL failure query.",
+      "D": "Log search alerts evaluate query results from collected monitoring logs."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-015",
+    "stem": "Why can a whole-day mean response time miss a short but severe slowdown?",
+    "choices": {
+      "A": "Azure Monitor never supports numerical measurements",
+      "B": "An average always equals the slowest request",
+      "C": "Aggregation over a long window can hide short periods and outliers",
+      "D": "A resource-group tag automatically removes slow samples"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Monitor supports metrics and other telemetry.",
+      "B": "An average is different from a maximum or a high percentile.",
+      "C": "Window and aggregation choices affect which operational problems are visible.",
+      "D": "Tags do not inherently filter application timing records."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-016",
+    "stem": "What does the KQL where operator do in the lab's synthetic example?",
+    "choices": {
+      "A": "Writes the selected records into the source application's database",
+      "B": "Filters records that meet the specified expression",
+      "C": "Creates an Azure alert receiver",
+      "D": "Changes the workspace's Azure region"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "This query operator does not perform that application write.",
+      "B": "The example retains records whose Success value is false.",
+      "C": "Filtering records does not create a notification destination.",
+      "D": "A log query filter does not relocate a workspace."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "20-017",
+    "stem": "What does summarize count() by Name accomplish in a log query?",
+    "choices": {
+      "A": "Counts records separately for each Name value",
+      "B": "Automatically deploys each named resource",
+      "C": "Deletes all records that share a name",
+      "D": "Adds the Name field to every resource's ownership tags"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Grouping makes an aggregate for each name represented by the selected records.",
+      "B": "A query aggregation is not an infrastructure deployment.",
+      "C": "Summarization does not perform that deletion.",
+      "D": "Log aggregation does not mutate Azure resource tags."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-018",
+    "stem": "In the synthetic data, failed requests have durations 900 ms and 1100 ms. What mean does filtering failures and averaging duration produce?",
+    "choices": {
+      "A": "555 ms",
+      "B": "1100 ms",
+      "C": "1000 ms",
+      "D": "2000 ms"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is the mean across all four sample requests, not only failures.",
+      "B": "That is the larger failed duration, not their mean.",
+      "C": "The average is (900 + 1100) divided by two.",
+      "D": "That is the sum of failed durations rather than the mean."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-019",
+    "stem": "The local sample contains four requests, two marked unsuccessful. What failure rate does that sample show?",
+    "choices": {
+      "A": "25 percent",
+      "B": "100 percent",
+      "C": "2 percent",
+      "D": "50 percent"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "One failure out of four would give 25 percent; the sample has two.",
+      "B": "Two of the four requests succeeded.",
+      "C": "The failure count is not itself a percentage denominator.",
+      "D": "Two failures divided by four requests gives one half."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-020",
+    "stem": "A read-only Activity log query returns no rows for a short window. What should be checked before concluding that no relevant events exist?",
+    "choices": {
+      "A": "Only the application's storage redundancy",
+      "B": "Subscription, permissions, time range, filters, and result limits",
+      "C": "Only whether an Advisor recommendation was dismissed",
+      "D": "Only the number of workspaces in another tenant"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Redundancy does not determine all management-event query scope.",
+      "B": "These factors control which records the query can return.",
+      "C": "Recommendation state does not validate this log query's scope.",
+      "D": "Unrelated tenant workspace counts do not establish the selected Activity log results."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/monitor/activity-log?view=azure-cli-latest"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-021",
+    "stem": "Which event should not be assumed to appear in the Activity log simply because it happened in Azure?",
+    "choices": {
+      "A": "A resource-management creation operation",
+      "B": "Every successful blob-data read",
+      "C": "A recorded management operation's status",
+      "D": "A recorded operation's timestamp"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Management creation is an appropriate Activity log use.",
+      "B": "Blob reads are data-plane events and are not all recorded by the control-plane Activity log.",
+      "C": "Operation status is a field exposed by the Activity log query.",
+      "D": "Event timestamps are part of Activity log records."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/monitor/activity-log?view=azure-cli-latest"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-022",
+    "stem": "A developer wants to connect a failed request to a slow downstream call. Which telemetry capability is most useful?",
+    "choices": {
+      "A": "Only the subscription's currency",
+      "B": "Only an allowed-region policy result",
+      "C": "Only a resource-group delete lock",
+      "D": "Correlated application request and dependency traces"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Billing currency does not connect execution steps.",
+      "B": "Governance compliance does not reveal the request's dependency path.",
+      "C": "A lock does not record application transaction relationships.",
+      "D": "Correlation supports following a transaction across its observed components."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-023",
+    "stem": "Application Insights shows no recent request data. Which explanation should be investigated before concluding the application had no users?",
+    "choices": {
+      "A": "Instrumentation, collection path, query scope, and time range",
+      "B": "Application Insights proves all users stopped using every Azure service",
+      "C": "A workspace automatically records requests from every uninstrumented application",
+      "D": "A public Azure Status report guarantees each application's request count"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Absent displayed telemetry can reflect a data-collection or query-context issue.",
+      "B": "A blank application view does not establish a worldwide usage claim.",
+      "C": "Collection is not universally automatic for arbitrary applications.",
+      "D": "Platform status does not establish an individual application's request telemetry."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-024",
+    "stem": "Which statement correctly relates KQL and JMESPath in this curriculum?",
+    "choices": {
+      "A": "JMESPath creates Log Analytics workspaces whenever --query is used",
+      "B": "KQL is the PowerShell command used for resource-group deletion",
+      "C": "KQL analyzes monitoring logs; JMESPath filters Azure CLI JSON output",
+      "D": "Both languages guarantee that source telemetry has already been collected"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A CLI JSON projection does not create a workspace.",
+      "B": "KQL is a query language, not that lifecycle command.",
+      "C": "The languages serve different query contexts in these exercises.",
+      "D": "A query cannot guarantee that its required source data exists."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview",
+      "https://learn.microsoft.com/en-us/cli/azure/monitor/activity-log?view=azure-cli-latest"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-025",
+    "stem": "The lesson presents a KQL datatable containing invented request records. What does reasoning through it demonstrate?",
+    "choices": {
+      "A": "That a real Azure collection pipeline has been deployed and tested",
+      "B": "That an action group notification has been delivered",
+      "C": "That the production application's latency equals the sample mean",
+      "D": "Understanding filtering and aggregation on synthetic data"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Reading synthetic data does not deploy or validate a collection pipeline.",
+      "B": "The example creates no alert or receiver.",
+      "C": "Invented records do not establish production measurements.",
+      "D": "The exercise teaches query logic without claiming to inspect production telemetry."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-026",
+    "stem": "Which feature is most appropriate for examining application exceptions and failed requests when telemetry has been collected?",
+    "choices": {
+      "A": "Application Insights",
+      "B": "Azure Pricing Calculator",
+      "C": "Only Azure Resource Health",
+      "D": "Only management-group inheritance"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Its application performance experiences support investigating failures and exceptions.",
+      "B": "The calculator estimates costs rather than application exceptions.",
+      "C": "Resource availability does not provide every custom application's exception context.",
+      "D": "Governance hierarchy does not supply request-level failure telemetry."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-027",
+    "stem": "Why should an alert design name a response owner and investigation procedure?",
+    "choices": {
+      "A": "A response owner changes every signal into a cost meter",
+      "B": "A procedure replaces the need for any collected signal",
+      "C": "An alert needs an operational response to become useful",
+      "D": "An owner guarantees that custom code cannot fail"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Responsibility assignment does not redefine telemetry as billing.",
+      "B": "A monitoring alert still depends on a relevant signal and condition.",
+      "C": "A condition and notification alone do not ensure that someone investigates or fixes the issue.",
+      "D": "Responsibility does not eliminate application defects."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "20-028",
+    "stem": "What should be considered before enabling new log collection or application telemetry in a real environment?",
+    "choices": {
+      "A": "Only whether the resource group has a deletion lock",
+      "B": "Collection requirements, access, retention, and potential cost",
+      "C": "Only whether the VM has a public IP",
+      "D": "Assume every amount of ingestion is free indefinitely"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Deletion protection alone does not define telemetry collection, privacy, or retention.",
+      "B": "A collection design needs appropriate data handling and economic assumptions.",
+      "C": "A public IP choice alone does not establish a telemetry collection and retention design.",
+      "D": "Monitoring collection and retention can incur charges."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-029",
+    "stem": "A monitoring design alerts on failure percentage with only one request in its window. What improvement helps avoid misleading percentages?",
+    "choices": {
+      "A": "Convert every failed request into a successful record",
+      "B": "Use only a resource deletion lock",
+      "C": "Consider a suitable minimum request volume and evaluation window",
+      "D": "Disable all notifications permanently"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Changing evidence would hide real failures.",
+      "B": "A lock does not solve the failure-rate denominator issue.",
+      "C": "A low denominator can exaggerate a percentage; the design should match actual operating needs.",
+      "D": "Removing all alerts does not provide a useful detection design."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "20-030",
+    "stem": "Which combination best supports investigating both a recent resource configuration change and a resulting application failure?",
+    "choices": {
+      "A": "Activity log management events plus Application Insights telemetry",
+      "B": "Only a current monthly budget amount",
+      "C": "Only an Azure region map",
+      "D": "Only an empty list of Advisor recommendations"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Management history and application observations answer complementary questions.",
+      "B": "A budget amount does not record the change or transaction failure.",
+      "C": "Geography does not provide management history and request errors.",
+      "D": "No optimization findings do not establish either event timeline."
+    },
+    "objective_id": "M15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+    ],
+    "difficulty": "review"
+  }
+]

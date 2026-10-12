@@ -1,0 +1,19 @@
+{
+  "id": "15",
+  "slug": "policy-locks",
+  "title": "Azure Policy and resource locks",
+  "domain": "management",
+  "objectives": [
+    "M06",
+    "M07"
+  ],
+  "duration_minutes": 50,
+  "mode": "live",
+  "resource_profile": "governance",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

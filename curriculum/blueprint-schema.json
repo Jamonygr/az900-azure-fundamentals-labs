@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "exam": {
+      "const": "AZ-900"
+    },
+    "blueprint_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reviewed_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "enum": [
+              "cloud",
+              "architecture",
+              "management"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weight": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "weight"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 57,
+      "maxItems": 57,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[CAM][0-9]{2}$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "enum": [
+              "cloud",
+              "architecture",
+              "management"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "domain"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "exam",
+    "blueprint_date",
+    "reviewed_on",
+    "source_url",
+    "domains",
+    "objectives"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,310 @@
+{
+  "exam": "AZ-900",
+  "blueprint_date": "2026-07-20",
+  "reviewed_on": "2026-10-12",
+  "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+  "domains": [
+    {
+      "id": "cloud",
+      "name": "Cloud concepts",
+      "weight": "25\u201330%"
+    },
+    {
+      "id": "architecture",
+      "name": "Azure architecture and services",
+      "weight": "35\u201340%"
+    },
+    {
+      "id": "management",
+      "name": "Azure management and governance",
+      "weight": "30\u201335%"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "C01",
+      "description": "Explain what cloud computing provides.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C02",
+      "description": "Allocate responsibilities between a cloud provider and a customer.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C03",
+      "description": "Distinguish public, private, and hybrid cloud models.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C04",
+      "description": "Select a cloud model for a workload.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C05",
+      "description": "Explain consumption-based billing.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C06",
+      "description": "Compare cloud pricing approaches.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C07",
+      "description": "Explain serverless computing.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C08",
+      "description": "Explain availability and scaling benefits.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C09",
+      "description": "Explain reliability and predictability benefits.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C10",
+      "description": "Explain security and governance benefits.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C11",
+      "description": "Explain cloud manageability benefits.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C12",
+      "description": "Explain infrastructure as a service.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C13",
+      "description": "Explain platform as a service.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C14",
+      "description": "Explain software as a service.",
+      "domain": "cloud"
+    },
+    {
+      "id": "C15",
+      "description": "Select a service model for a workload.",
+      "domain": "cloud"
+    },
+    {
+      "id": "A01",
+      "description": "Explain regions, paired regions, and sovereign clouds.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A02",
+      "description": "Explain availability-zone boundaries.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A03",
+      "description": "Explain the role of Azure datacenters.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A04",
+      "description": "Distinguish resources from resource groups.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A05",
+      "description": "Explain subscription boundaries.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A06",
+      "description": "Explain management groups.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A07",
+      "description": "Navigate the Azure resource hierarchy.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A08",
+      "description": "Compare virtual machines, containers, and functions.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A09",
+      "description": "Select among Azure VM deployment options.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A10",
+      "description": "Identify the components needed by a virtual machine.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A11",
+      "description": "Choose an application hosting approach.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A12",
+      "description": "Explain virtual networks, subnets, peering, DNS, VPN Gateway, and ExpressRoute.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A13",
+      "description": "Distinguish public endpoints from private endpoints.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A14",
+      "description": "Choose among Azure Storage services.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A15",
+      "description": "Explain storage access tiers.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A16",
+      "description": "Select a storage redundancy model.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A17",
+      "description": "Explain storage account kinds and types.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A18",
+      "description": "Select AzCopy, Storage Explorer, or File Sync for file movement.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A19",
+      "description": "Select Azure Migrate or Data Box for migration.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A20",
+      "description": "Compare Microsoft Entra ID and Microsoft Entra Domain Services.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A21",
+      "description": "Explain SSO, MFA, and passwordless authentication.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A22",
+      "description": "Explain external identities.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A23",
+      "description": "Explain Conditional Access decisions.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A24",
+      "description": "Explain Azure RBAC scope and role assignments.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A25",
+      "description": "Apply Zero Trust principles.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A26",
+      "description": "Explain layered defense in depth.",
+      "domain": "architecture"
+    },
+    {
+      "id": "A27",
+      "description": "Explain the purpose of Defender for Cloud.",
+      "domain": "architecture"
+    },
+    {
+      "id": "M01",
+      "description": "Identify Azure cost drivers.",
+      "domain": "management"
+    },
+    {
+      "id": "M02",
+      "description": "Use the Azure pricing calculator.",
+      "domain": "management"
+    },
+    {
+      "id": "M03",
+      "description": "Explain Cost Management capabilities.",
+      "domain": "management"
+    },
+    {
+      "id": "M04",
+      "description": "Explain resource tags.",
+      "domain": "management"
+    },
+    {
+      "id": "M05",
+      "description": "Explain Microsoft Purview governance and compliance capabilities.",
+      "domain": "management"
+    },
+    {
+      "id": "M06",
+      "description": "Explain Azure Policy enforcement and evaluation.",
+      "domain": "management"
+    },
+    {
+      "id": "M07",
+      "description": "Explain resource lock behavior.",
+      "domain": "management"
+    },
+    {
+      "id": "M08",
+      "description": "Explain the Azure portal.",
+      "domain": "management"
+    },
+    {
+      "id": "M09",
+      "description": "Compare Cloud Shell, Azure CLI, and Azure PowerShell.",
+      "domain": "management"
+    },
+    {
+      "id": "M10",
+      "description": "Explain Azure Arc.",
+      "domain": "management"
+    },
+    {
+      "id": "M11",
+      "description": "Explain infrastructure as code.",
+      "domain": "management"
+    },
+    {
+      "id": "M12",
+      "description": "Explain ARM and ARM templates.",
+      "domain": "management"
+    },
+    {
+      "id": "M13",
+      "description": "Explain Azure Advisor recommendations.",
+      "domain": "management"
+    },
+    {
+      "id": "M14",
+      "description": "Distinguish Azure Service Health capabilities.",
+      "domain": "management"
+    },
+    {
+      "id": "M15",
+      "description": "Explain Azure Monitor, Log Analytics, alerts, and Application Insights.",
+      "domain": "management"
+    }
+  ]
+}

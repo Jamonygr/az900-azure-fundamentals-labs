@@ -1,0 +1,21 @@
+{
+  "id": "14",
+  "slug": "cost-tags",
+  "title": "Cost management and resource tags",
+  "domain": "management",
+  "objectives": [
+    "M01",
+    "M02",
+    "M03",
+    "M04"
+  ],
+  "duration_minutes": 45,
+  "mode": "live",
+  "resource_profile": "resource-group",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

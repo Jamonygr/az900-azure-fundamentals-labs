@@ -1,0 +1,19 @@
+{
+  "id": "02",
+  "slug": "cloud-models",
+  "title": "Public, private, and hybrid cloud models",
+  "domain": "cloud",
+  "objectives": [
+    "C03",
+    "C04"
+  ],
+  "duration_minutes": 35,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

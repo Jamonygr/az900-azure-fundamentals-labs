@@ -1,0 +1,812 @@
+[
+  {
+    "id": "06-001",
+    "stem": "What is an Azure region?",
+    "choices": {
+      "A": "A geographic grouping of datacenters and networking",
+      "B": "A single universal price",
+      "C": "An employee account",
+      "D": "A resource group"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Regions provide a placement boundary for many services.",
+      "B": "Regions do not define one service-independent rate.",
+      "C": "That is an identity.",
+      "D": "That is a logical management container."
+    },
+    "objective_id": "A01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-002",
+    "stem": "Which statement about region pairs is current and accurate?",
+    "choices": {
+      "A": "Pairing backs up every resource automatically",
+      "B": "Some regions are paired and some are nonpaired",
+      "C": "Customers arbitrarily choose Microsoft region pairs",
+      "D": "Every region has exactly one pair"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Service replication requires supported design.",
+      "B": "Newer region architectures may use nonpaired designs.",
+      "C": "Microsoft defines those pairs.",
+      "D": "Not all regions are paired."
+    },
+    "objective_id": "A01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-003",
+    "stem": "What should a team consider when selecting a region?",
+    "choices": {
+      "A": "Only the cheapest region despite mandatory residency rules",
+      "B": "Only the nearest region without checking required services",
+      "C": "An assumption all services exist everywhere",
+      "D": "Latency, residency, and service availability"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Required residency must be respected.",
+      "B": "Distance alone does not establish workload suitability.",
+      "C": "Service availability varies.",
+      "D": "Placement affects user experience and requirements."
+    },
+    "objective_id": "A01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-004",
+    "stem": "What distinguishes a sovereign cloud such as Azure Government?",
+    "choices": {
+      "A": "Automatic access by every worldwide user",
+      "B": "A management group named Government",
+      "C": "Separate operational and eligibility boundaries",
+      "D": "A private endpoint on any Azure resource"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Eligibility and service differences matter.",
+      "B": "A name does not create a separate cloud.",
+      "C": "Sovereign offerings address specific requirements.",
+      "D": "Endpoint addressing does not choose sovereign cloud."
+    },
+    "objective_id": "A01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-005",
+    "stem": "Does region pairing automatically replicate every customer's VM?",
+    "choices": {
+      "A": "No, paired regions cannot support replication",
+      "B": "Yes, a resource-group name triggers replication",
+      "C": "Yes, every VM has an automatic paired clone",
+      "D": "No, resilience depends on the service and architecture"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Some services do use pairs.",
+      "B": "Names do not create replicas.",
+      "C": "That is not a general Azure behavior.",
+      "D": "Pairing alone does not replicate all resources."
+    },
+    "objective_id": "A01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-006",
+    "stem": "What separates availability zones within a region?",
+    "choices": {
+      "A": "Different logical resource groups alone",
+      "B": "Separate billing accounts automatically",
+      "C": "Different resource-group names",
+      "D": "Independent power, cooling, and network infrastructure"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Management grouping does not create physical isolation.",
+      "B": "Billing accounts are not physical zone boundaries.",
+      "C": "Names do not isolate physical faults.",
+      "D": "Zones provide isolated physical failure boundaries."
+    },
+    "objective_id": "A02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-007",
+    "stem": "A single VM is placed in one zone. Is it automatically resilient to that zone failing?",
+    "choices": {
+      "A": "Yes, naming a zone clones it everywhere",
+      "B": "Yes, all VMs are zone-redundant by default",
+      "C": "No, Azure zones contain no compute",
+      "D": "No, a zonal resource is still in one zone"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Placement does not automatically clone the VM.",
+      "B": "VM placement requires deliberate design.",
+      "C": "Zones support compute services.",
+      "D": "Resilience needs other instances or zone-redundant design."
+    },
+    "objective_id": "A02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-008",
+    "stem": "What should be checked before designing with availability zones?",
+    "choices": {
+      "A": "Only subscription display name",
+      "B": "Whether zones prevent all regional disasters",
+      "C": "Region and service-specific zone support",
+      "D": "Only the resource-group tag"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Names do not determine service support.",
+      "B": "They do not protect against every region-wide event.",
+      "C": "Not every service supports every region's zones.",
+      "D": "Tags do not establish zone capability."
+    },
+    "objective_id": "A02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-009",
+    "stem": "What does a zone-redundant service do at a high level?",
+    "choices": {
+      "A": "Distribute or replicate components across zones",
+      "B": "Move every resource to a sovereign cloud",
+      "C": "Guarantee no application errors",
+      "D": "Use only one chosen zone"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The service provides multizone behavior where supported.",
+      "B": "Zone redundancy stays within its defined region.",
+      "C": "Infrastructure resilience does not repair code.",
+      "D": "That describes zonal placement."
+    },
+    "objective_id": "A02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-010",
+    "stem": "Why should a learner avoid saying every zone equals one datacenter?",
+    "choices": {
+      "A": "A zone can group one or more datacenters",
+      "B": "Zones are always separate countries",
+      "C": "A datacenter is a subscription",
+      "D": "Zones are only software tags"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Zones are logical physical-isolation groupings.",
+      "B": "They are within one region.",
+      "C": "Facilities and subscriptions are distinct.",
+      "D": "They represent physical fault boundaries."
+    },
+    "objective_id": "A02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-011",
+    "stem": "Which component is a physical facility?",
+    "choices": {
+      "A": "Resource group",
+      "B": "Datacenter",
+      "C": "Subscription",
+      "D": "Role assignment"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is a management container.",
+      "B": "It houses infrastructure such as servers and networking.",
+      "C": "That is a billing/access boundary.",
+      "D": "That is authorization metadata."
+    },
+    "objective_id": "A03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-012",
+    "stem": "Who maintains Azure datacenter hardware?",
+    "choices": {
+      "A": "Each customer's application developer",
+      "B": "Microsoft",
+      "C": "The website audience",
+      "D": "Every subscription Reader"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Developers do not maintain Azure facilities.",
+      "B": "Physical infrastructure belongs to the provider.",
+      "C": "Visitors do not administer infrastructure.",
+      "D": "Readers do not operate hardware."
+    },
+    "objective_id": "A03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-013",
+    "stem": "Why can datacenter failure matter even for virtual resources?",
+    "choices": {
+      "A": "VMs in one facility automatically replicate to all regions",
+      "B": "Subscription names prevent physical outages",
+      "C": "Virtual resources have no hardware",
+      "D": "Virtual services still depend on physical infrastructure"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Virtualization does not inherently add geographic replicas.",
+      "B": "Naming does not create fault isolation.",
+      "C": "They run on provider hardware.",
+      "D": "Virtualization does not remove physical dependencies."
+    },
+    "objective_id": "A03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-014",
+    "stem": "What is the primary purpose of a resource group?",
+    "choices": {
+      "A": "Run an application as a VM",
+      "B": "Supply an employee identity",
+      "C": "Act as a physical region",
+      "D": "Organize resources with a related lifecycle"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A group is not compute.",
+      "B": "Identity is a separate concept.",
+      "C": "Groups do not represent facilities.",
+      "D": "Groups are logical management containers."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-015",
+    "stem": "How many resource groups does an Azure resource belong to at one time?",
+    "choices": {
+      "A": "One per availability zone",
+      "B": "Every group in its subscription",
+      "C": "One",
+      "D": "Zero for every regional resource"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Zones do not determine group membership count.",
+      "B": "Membership is not shared across all groups.",
+      "C": "A resource has one resource-group container at a time.",
+      "D": "Regional resources normally belong to a group."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-016",
+    "stem": "What does a resource group's location primarily represent?",
+    "choices": {
+      "A": "A physical building dedicated to the group",
+      "B": "Where its metadata is stored",
+      "C": "The billing currency",
+      "D": "A rule forcing every child into that region"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Groups are logical.",
+      "B": "Its resources can be in different regions.",
+      "C": "Location does not directly define currency.",
+      "D": "Child placement may differ."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-017",
+    "stem": "What is normally removed when an owned resource group is deleted?",
+    "choices": {
+      "A": "Only its display name",
+      "B": "Every management group",
+      "C": "All subscriptions in the tenant",
+      "D": "Its contained resources"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Contained resources are also affected.",
+      "B": "Those are higher in the hierarchy.",
+      "C": "Deletion is scoped to the group.",
+      "D": "Group deletion includes its contents, subject to safeguards."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-018",
+    "stem": "An empty group has been created. What should az resource list for that group show?",
+    "choices": {
+      "A": "One VM automatically",
+      "B": "Every resource in the tenant",
+      "C": "No contained resources",
+      "D": "All provider datacenters"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A group does not imply compute creation.",
+      "B": "The query is scoped to one group.",
+      "C": "Creating the container does not create a VM.",
+      "D": "Facilities are not group members."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-019",
+    "stem": "Why does the lifecycle tool verify ownership tags before cleanup?",
+    "choices": {
+      "A": "Names alone do not prove authorized lab ownership",
+      "B": "Any matching name grants legal ownership",
+      "C": "Tags make deletion impossible",
+      "D": "Tags replace subscription selection"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Tags and expected contents support scoped deletion.",
+      "B": "Naming is insufficient evidence.",
+      "C": "Tags are metadata, not locks.",
+      "D": "Explicit scope is still required."
+    },
+    "objective_id": "A04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-020",
+    "stem": "What is an Azure subscription used for?",
+    "choices": {
+      "A": "Billing and access organization for resources",
+      "B": "A blob access tier",
+      "C": "A mandatory single VM",
+      "D": "A physical datacenter door"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Subscriptions contain resource groups and scopes.",
+      "B": "Tiers classify storage economics.",
+      "C": "They can contain many resources.",
+      "D": "Subscriptions are logical."
+    },
+    "objective_id": "A05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-021",
+    "stem": "Why supply the subscription ID explicitly in lab commands?",
+    "choices": {
+      "A": "Guarantee administrator permission",
+      "B": "Create a new tenant",
+      "C": "Ensure the intended resource scope is selected",
+      "D": "Make resources free"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The identity still needs authorization.",
+      "B": "Selecting an ID does not create directories.",
+      "C": "Explicit scope reduces accidental targeting.",
+      "D": "Scope does not remove billing."
+    },
+    "objective_id": "A05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-022",
+    "stem": "Can one organization use multiple Azure subscriptions?",
+    "choices": {
+      "A": "Only if all data is public",
+      "B": "Yes, subscriptions can separate workloads and billing/access needs",
+      "C": "No, a tenant can have only one",
+      "D": "Only if every app is SaaS"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Data exposure does not determine subscription count.",
+      "B": "Organizations can structure resource scopes.",
+      "C": "That is not a general limit.",
+      "D": "Multiple subscriptions are not limited to SaaS."
+    },
+    "objective_id": "A05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-023",
+    "stem": "A user signs in successfully but cannot create a group. What is missing?",
+    "choices": {
+      "A": "An anonymous storage setting",
+      "B": "Required authorization in the target subscription",
+      "C": "A successful sign-in to an unrelated subscription only",
+      "D": "Only blob-data read access on an unrelated storage account"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is unrelated to group creation.",
+      "B": "Authentication does not guarantee creation permissions.",
+      "C": "Authentication elsewhere does not grant rights in this target.",
+      "D": "Blob read permission does not grant resource-group creation rights."
+    },
+    "objective_id": "A05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-024",
+    "stem": "What do management groups organize?",
+    "choices": {
+      "A": "Subscriptions",
+      "B": "Only VM processes",
+      "C": "Physical cooling units",
+      "D": "Only individual blobs"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "They provide governance scopes above subscriptions.",
+      "B": "Management groups are not process managers.",
+      "C": "They are logical governance constructs.",
+      "D": "Blob organization uses containers."
+    },
+    "objective_id": "A06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-025",
+    "stem": "What can flow from a management-group assignment to child subscriptions?",
+    "choices": {
+      "A": "Applicable policy and access inheritance",
+      "B": "A single enforced app runtime",
+      "C": "A guarantee of free usage",
+      "D": "A mandatory copy of every disk"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Hierarchy enables governed child scopes.",
+      "B": "That is not an inherent group behavior.",
+      "C": "Management groups do not erase billing.",
+      "D": "Governance inheritance is not data replication."
+    },
+    "objective_id": "A06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-026",
+    "stem": "Why use a management group for common organizational rules?",
+    "choices": {
+      "A": "Automatically patch customer apps",
+      "B": "Create a file-share cache",
+      "C": "Apply governance across multiple subscriptions",
+      "D": "Merge all datacenters physically"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Grouping does not maintain code.",
+      "B": "That is File Sync territory.",
+      "C": "A higher scope can govern descendants.",
+      "D": "Logical hierarchy does not move facilities."
+    },
+    "objective_id": "A06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-027",
+    "stem": "Which hierarchy order is correct from broader to narrower scope?",
+    "choices": {
+      "A": "Resource group, management group, resource, subscription",
+      "B": "Subnet, employee, datacenter, subscription",
+      "C": "Management group, subscription, resource group, resource",
+      "D": "Resource, region, subscription, tenant VM"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Those scopes are out of order.",
+      "B": "Those do not form the management hierarchy.",
+      "C": "This is the logical Azure resource hierarchy.",
+      "D": "This mixes unrelated concepts and reverses scopes."
+    },
+    "objective_id": "A07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "06-028",
+    "stem": "What does /subscriptions/.../resourceGroups/... identify?",
+    "choices": {
+      "A": "A physical datacenter rack",
+      "B": "A group within a specific subscription",
+      "C": "A password secret",
+      "D": "A storage tier price"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The path is logical metadata.",
+      "B": "The ID encodes resource-management scope.",
+      "C": "An identifier is not a password.",
+      "D": "The path does not set rates."
+    },
+    "objective_id": "A07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "06-029",
+    "stem": "A resource ID continues with /providers/Microsoft.Network/virtualNetworks/... . What is represented?",
+    "choices": {
+      "A": "An anonymous website user",
+      "B": "A VNet resource inside the preceding group scope",
+      "C": "A second subscription automatically",
+      "D": "A management group above the subscription"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "This is not an identity path.",
+      "B": "Provider/type segments identify the resource.",
+      "C": "Provider segments do not create subscriptions.",
+      "D": "The path describes a resource below it."
+    },
+    "objective_id": "A07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "06-030",
+    "stem": "Which check verifies completion of group cleanup?",
+    "choices": {
+      "A": "Confirm group existence returns false in the explicit subscription",
+      "B": "Delete the local README",
+      "C": "Assume preview performed deletion",
+      "D": "Rename the run ID only"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The query verifies removal at the intended scope.",
+      "B": "Local deletion does not remove Azure resources.",
+      "C": "Preview deliberately makes no changes.",
+      "D": "Renaming does not clean the deployed group."
+    },
+    "objective_id": "A07",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/",
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+    ],
+    "difficulty": "review"
+  }
+]

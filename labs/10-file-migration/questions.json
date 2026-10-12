@@ -1,0 +1,842 @@
+[
+  {
+    "id": "10-001",
+    "stem": "Which tool fits scripted bulk Azure Storage transfers?",
+    "choices": {
+      "A": "Azure Policy",
+      "B": "File Sync as universal one-time copying",
+      "C": "AzCopy",
+      "D": "Migrate assessment alone"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Policy governs resources.",
+      "B": "File Sync maintains supported synchronization.",
+      "C": "It is a command-line transfer tool.",
+      "D": "Assessment does not replace a copy command."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-002",
+    "stem": "Which tool provides graphical storage browsing?",
+    "choices": {
+      "A": "Storage Explorer",
+      "B": "Azure Migrate",
+      "C": "VPN Gateway",
+      "D": "AzCopy"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It supplies interactive storage management.",
+      "B": "Migrate focuses on workload migration.",
+      "C": "Gateways provide connectivity.",
+      "D": "AzCopy is a CLI transfer tool."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-003",
+    "stem": "A retained Windows file server needs Azure Files sync and cache behavior. What fits?",
+    "choices": {
+      "A": "Queue Storage",
+      "B": "Azure File Sync",
+      "C": "A one-time blob upload",
+      "D": "Azure Migrate assessment"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Queues carry messages.",
+      "B": "It synchronizes supported server endpoints and shares.",
+      "C": "That does not maintain ongoing shares.",
+      "D": "Assessment does not supply caching."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-004",
+    "stem": "How does File Sync cloud tiering help?",
+    "choices": {
+      "A": "Every application dependency migrates automatically",
+      "B": "Less-used content stays in cloud with local recall behavior",
+      "C": "Windows becomes serverless compute",
+      "D": "Every file stays complete offline forever"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "File synchronization is not whole-app migration.",
+      "B": "Tiering reduces required local capacity.",
+      "C": "Tiering is storage behavior.",
+      "D": "Online-only content can need recall."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-005",
+    "stem": "When is Storage Explorer useful over AzCopy?",
+    "choices": {
+      "A": "Interactive visual browsing and operations",
+      "B": "Physical device shipment",
+      "C": "Server compatibility assessment",
+      "D": "Only unattended CLI bulk transfers"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The graphical workflow fits exploration.",
+      "B": "That is Data Box territory.",
+      "C": "That is Migrate territory.",
+      "D": "That more directly favors a CLI tool."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-006",
+    "stem": "Why compare file hashes after upload and download?",
+    "choices": {
+      "A": "Assign data roles",
+      "B": "Calculate every billing meter",
+      "C": "Check that transferred content matches",
+      "D": "Create private endpoints"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Authorization is separate.",
+      "B": "Hashes do not estimate full cost.",
+      "C": "A successful request alone does not prove identical content.",
+      "D": "Networking is separate."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-007",
+    "stem": "Upload uses --auth-mode login. What is required?",
+    "choices": {
+      "A": "Only a public service endpoint",
+      "B": "Only subscription display-name knowledge",
+      "C": "Management Contributor alone by definition",
+      "D": "Appropriate Entra blob-data permissions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Reachability does not authorize writes.",
+      "B": "Names grant no permissions.",
+      "C": "Management access does not imply data access.",
+      "D": "Data access has its own authorization."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-008",
+    "stem": "How should missing blob-data permission be resolved?",
+    "choices": {
+      "A": "Delete every role assignment",
+      "B": "Request approved least-required access from an authorized administrator",
+      "C": "Publish account keys",
+      "D": "Enable anonymous access to bypass it"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is unrelated and destructive.",
+      "B": "Legitimate permissions should be arranged.",
+      "C": "Secrets should stay protected.",
+      "D": "That weakens the intended access boundary."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-009",
+    "stem": "A request for missing.txt returns BlobNotFound. What should be checked?",
+    "choices": {
+      "A": "The account, container, and object name",
+      "B": "Whether every user has Owner",
+      "C": "Whether the account needs a new storage tier",
+      "D": "Whether all data should become public"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The intended object may not exist there.",
+      "B": "Broad roles do not create a missing object.",
+      "C": "Tiering does not create the object.",
+      "D": "Exposure does not correct object naming."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-010",
+    "stem": "What does --overwrite false guard against?",
+    "choices": {
+      "A": "Every future deletion",
+      "B": "All duplicate events throughout an app",
+      "C": "Every network failure",
+      "D": "Replacing an existing named blob unintentionally"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It is not a resource lock.",
+      "B": "The flag governs this upload only.",
+      "C": "It does not guarantee connectivity.",
+      "D": "It refuses this target overwrite."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-011",
+    "stem": "What does a public blob URL imply by itself?",
+    "choices": {
+      "A": "Private-cloud ownership",
+      "B": "A routable endpoint name, not anonymous permission",
+      "C": "Completed transfer integrity",
+      "D": "Universal anonymous reads"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Exposure does not determine deployment model.",
+      "B": "Data authorization can remain required.",
+      "C": "A URL does not verify content.",
+      "D": "A URL does not grant access."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-012",
+    "stem": "What evidence suits the tiny fixture transfer?",
+    "choices": {
+      "A": "Keys published in a README",
+      "B": "Only a successful account-property query",
+      "C": "All personal documents uploaded",
+      "D": "Matching hashes and scoped success observations"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Secrets must not be published.",
+      "B": "Management access does not verify the blob.",
+      "C": "Only a harmless fixture is needed.",
+      "D": "This verifies content without disclosing secrets."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-013",
+    "stem": "AzCopy is absent. Can the assigned exercise be completed?",
+    "choices": {
+      "A": "Yes, by assuming the copy worked",
+      "B": "No, Storage Explorer must create a tenant",
+      "C": "Yes, Azure CLI performs the required transfer",
+      "D": "No, all blob operations require AzCopy"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Actual transfer and verification remain required.",
+      "B": "No tenant change is needed.",
+      "C": "AzCopy is optional here.",
+      "D": "Other clients also operate blobs."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-014",
+    "stem": "What separates one-time copy from ongoing sync?",
+    "choices": {
+      "A": "Copy automatically grants all users access",
+      "B": "Sync always ships a physical device",
+      "C": "Copy always assesses server readiness",
+      "D": "Sync maintains a defined relationship beyond one transfer"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Transfer does not authorize everyone.",
+      "B": "File Sync uses connectivity.",
+      "C": "That is migration assessment.",
+      "D": "A single upload is not continuing synchronization."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-015",
+    "stem": "What matters when recalling a cloud-tiered file?",
+    "choices": {
+      "A": "Appropriate connectivity to retrieve online-only content",
+      "B": "File Sync is universal VM backup",
+      "C": "Every placeholder is guaranteed complete offline",
+      "D": "Tiering removes all network dependencies"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A placeholder is not always a full local copy.",
+      "B": "It is a synchronization service.",
+      "C": "Cloud-only content may need retrieval.",
+      "D": "Recall can need network access."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-016",
+    "stem": "An account query succeeds but upload is denied. What does this show?",
+    "choices": {
+      "A": "Management and data permissions differ",
+      "B": "The whole service must be unavailable",
+      "C": "Shared keys are the only valid approach",
+      "D": "The account has become private cloud"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Property access does not imply blob writes.",
+      "B": "Authorization denial can occur on a healthy service.",
+      "C": "Entra authorization is supported.",
+      "D": "Permissions do not change deployment model."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-017",
+    "stem": "What should be avoided in transfer study artifacts?",
+    "choices": {
+      "A": "Secrets and personal data",
+      "B": "File hash evidence",
+      "C": "CLI exit-code checks",
+      "D": "Explicit subscription scope"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Use approved identity access and a harmless fixture.",
+      "B": "That is useful integrity evidence.",
+      "C": "They prevent interpreting errors as success.",
+      "D": "That makes targeting clear."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-018",
+    "stem": "What most directly ends costs from the owned account?",
+    "choices": {
+      "A": "Remove AzCopy from PATH",
+      "B": "Delete only downloaded.txt",
+      "C": "Delete the verified owned group and confirm removal",
+      "D": "Close PowerShell"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Tool removal does not delete resources.",
+      "B": "The account remains deployed.",
+      "C": "Removing local files does not remove Azure services.",
+      "D": "Azure resources persist."
+    },
+    "objective_id": "A18",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-019",
+    "stem": "Which service discovers and assesses servers for migration?",
+    "choices": {
+      "A": "File Sync",
+      "B": "A blob tier",
+      "C": "Azure Migrate",
+      "D": "AzCopy only"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "It synchronizes supported file endpoints.",
+      "B": "Tiering does not assess servers.",
+      "C": "It organizes supported discovery and assessment.",
+      "D": "Copying does not assess server suitability."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-020",
+    "stem": "A supported archive cannot transfer online in time. What option merits evaluation?",
+    "choices": {
+      "A": "Availability set",
+      "B": "Data Box",
+      "C": "Azure Policy only",
+      "D": "Budget alert"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "VM placement does not transfer archives.",
+      "B": "Physical transfer can address bandwidth constraints.",
+      "C": "Policy does not move bulk data.",
+      "D": "An alert supplies no transfer capacity."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-021",
+    "stem": "Why is a file upload not a complete app migration?",
+    "choices": {
+      "A": "Hashes discover every dependency",
+      "B": "Every upload becomes SaaS",
+      "C": "Licensing concerns disappear",
+      "D": "Dependencies, compatibility, cutover, and validation remain"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Hashes verify content, not architecture.",
+      "B": "Files do not become finished apps.",
+      "C": "Licenses still need review.",
+      "D": "Migration is broader than byte transfer."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-022",
+    "stem": "What should precede legacy-server migration?",
+    "choices": {
+      "A": "Choose a tier without compute review",
+      "B": "Copy an unrelated file and assume readiness",
+      "C": "Disable identity controls",
+      "D": "Compatibility, dependency, and target assessment"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Storage economics alone are insufficient.",
+      "B": "That does not assess the workload.",
+      "C": "Migration still requires security.",
+      "D": "Readiness guides the migration path."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-023",
+    "stem": "What differentiates Data Box from online copy tools?",
+    "choices": {
+      "A": "Universal OS patching",
+      "B": "Only graphical object browsing",
+      "C": "Physical-device data transfer",
+      "D": "Automatic code rewriting"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is not its role.",
+      "B": "That describes Storage Explorer.",
+      "C": "Shipment substitutes for constrained online transfer.",
+      "D": "Data movement does not modernize all logic."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-024",
+    "stem": "Which inputs guide online versus physical transfer?",
+    "choices": {
+      "A": "Data size, bandwidth, time, and supported requirements",
+      "B": "Only resource-tag count",
+      "C": "Only a VM image name",
+      "D": "An assumption offline transfer is free"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These determine feasible options.",
+      "B": "Tags do not measure transfer feasibility.",
+      "C": "Image choice does not measure data bandwidth.",
+      "D": "Costs and eligibility need review."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-025",
+    "stem": "A business retains Windows files with ongoing cloud sync. Which is closer?",
+    "choices": {
+      "A": "File Sync",
+      "B": "One AzCopy upload as perpetual sync",
+      "C": "Migrate assessment as a file cache",
+      "D": "Data Box for permanent real-time synchronization"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "This is continuing share synchronization.",
+      "B": "A copy does not maintain the relationship.",
+      "C": "Assessment does not cache shares.",
+      "D": "Shipment is not an ongoing sync service."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-026",
+    "stem": "A team needs readiness assessment rather than moving blobs. What fits?",
+    "choices": {
+      "A": "Only AzCopy speed",
+      "B": "Azure Migrate assessment",
+      "C": "Only a cold storage tier",
+      "D": "Only endpoint naming"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Copy speed does not assess compatibility.",
+      "B": "It supports migration planning.",
+      "C": "Economics do not assess server readiness.",
+      "D": "Names do not establish readiness."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-027",
+    "stem": "Why validate the destination before cutover?",
+    "choices": {
+      "A": "Assessment guarantees zero downtime",
+      "B": "Confirm correct data and workload behavior",
+      "C": "Names prove correctness",
+      "D": "Cutover repairs every compatibility issue"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Cutover still requires planning.",
+      "B": "Copy completion alone is insufficient.",
+      "C": "Labels do not validate behavior.",
+      "D": "Readiness requires evidence."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "10-028",
+    "stem": "What should a cutover plan include for failure?",
+    "choices": {
+      "A": "Only an unconditional success promise",
+      "B": "An appropriate rollback/recovery approach",
+      "C": "Removal of source backups first",
+      "D": "Only renamed resources"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Failures remain possible.",
+      "B": "Migration needs controlled recovery options.",
+      "C": "That weakens recovery options.",
+      "D": "Labels do not define rollback."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "10-029",
+    "stem": "Why not choose Data Box solely because the dataset is large?",
+    "choices": {
+      "A": "Every archive uses the same device",
+      "B": "Data Box transfers no data",
+      "C": "Eligibility, destinations, logistics, and alternatives still matter",
+      "D": "It migrates all app dependencies automatically"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Supported scenarios vary.",
+      "B": "Transfer is its purpose.",
+      "C": "Size is important but not sufficient.",
+      "D": "Physical data movement is not whole-app migration."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "10-030",
+    "stem": "Which recommendations fit copy, cache, servers, and constrained bulk transfer?",
+    "choices": {
+      "A": "Data Box for every real-time upload and identity check",
+      "B": "File Sync for every assessment and shipment",
+      "C": "Storage Explorer alone for complete modernization",
+      "D": "AzCopy/CLI, File Sync, Migrate, and Data Box respectively"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It is not real-time authentication.",
+      "B": "It does not serve all those roles.",
+      "C": "Browsing does not modernize all workloads.",
+      "D": "Each addresses a different requirement."
+    },
+    "objective_id": "A19",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli"
+    ],
+    "difficulty": "review"
+  }
+]

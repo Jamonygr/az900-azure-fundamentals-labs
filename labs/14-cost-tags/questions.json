@@ -1,0 +1,692 @@
+[
+  {
+    "id": "14-001",
+    "stem": "Two pay-as-you-go VMs use the same SKU, region, licensing, disk configuration, retained storage, and network-transfer volume. One runs for 10 hours and the other for 100 hours. Which factor explains the compute-cost difference?",
+    "choices": {
+      "A": "A difference in VM SKU",
+      "B": "Metered usage duration",
+      "C": "A difference in retained disk capacity",
+      "D": "A difference in outbound data-transfer volume"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The comparison holds the SKU constant, so that does not explain it.",
+      "B": "Charges can depend on how long a resource is used.",
+      "C": "The comparison holds disk configuration and retention constant.",
+      "D": "The comparison holds network transfer constant."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-002",
+    "stem": "A workload increases its outbound data-transfer volume while keeping compute, storage, tags, and resource grouping unchanged. Which cost driver should be checked?",
+    "choices": {
+      "A": "Changing the department tag",
+      "B": "Assigning Reader at the resource-group scope",
+      "C": "Data-transfer charges",
+      "D": "Creating another empty resource group"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A metadata label does not meter outbound bytes.",
+      "B": "A permission grant does not account for the described data-transfer meter.",
+      "C": "Outbound transfer can contribute to costs depending on the route and service.",
+      "D": "The scenario keeps resource grouping unchanged and concerns outbound transfer."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-003",
+    "stem": "Why compare region choices when estimating an Azure service?",
+    "choices": {
+      "A": "Prices and service availability can vary by region",
+      "B": "Region choice makes metered usage irrelevant",
+      "C": "Every region supports every service and SKU identically",
+      "D": "Resource-group tags set a universal region discount"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Location is a meaningful estimate input.",
+      "B": "Duration and other service meters still matter.",
+      "C": "Availability and offerings can differ.",
+      "D": "Tags allocate context rather than determining a region's unit price."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-004",
+    "stem": "A VM is deallocated but its managed disk remains. What should a learner expect?",
+    "choices": {
+      "A": "The subscription is automatically canceled",
+      "B": "All related charges must immediately become zero",
+      "C": "The retained disk can continue to incur storage charges",
+      "D": "The disk becomes a free resource-group tag"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Deallocation does not cancel subscriptions.",
+      "B": "Other resources can remain billable.",
+      "C": "Stopping compute does not delete persistent storage.",
+      "D": "A disk remains a storage resource."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-005",
+    "stem": "Which change is likely to affect a compute estimate?",
+    "choices": {
+      "A": "Changing only the resource-group CostCenter tag",
+      "B": "Selecting a larger VM size",
+      "C": "Changing only a budget notification threshold",
+      "D": "Changing only the user's role from Contributor to Reader"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That changes allocation metadata rather than compute capacity.",
+      "B": "The resource's capacity and SKU affect pricing.",
+      "C": "That changes alerting rather than the compute usage estimate.",
+      "D": "That changes permission rather than the running VM's size or hours."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-006",
+    "stem": "A developer enables verbose logs on a busy application. Which additional cost should be considered?",
+    "choices": {
+      "A": "A new ExpressRoute circuit automatically required by logging",
+      "B": "A fixed tag fee for each log message",
+      "C": "A VM reservation automatically created by verbose logging",
+      "D": "Monitoring ingestion and retention"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Verbose application telemetry does not inherently deploy that connection.",
+      "B": "Tags are not billed per telemetry message.",
+      "C": "Log verbosity does not purchase a compute commitment.",
+      "D": "Telemetry volume and retention can add charges."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-007",
+    "stem": "Why is deleting only a VM sometimes insufficient cleanup?",
+    "choices": {
+      "A": "Tags always cancel billing",
+      "B": "Associated resources such as disks may remain",
+      "C": "All VM disks are deleted by every stop command",
+      "D": "Resource groups automatically recreate deleted VMs"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Metadata labels do not stop usage meters.",
+      "B": "Cleanup must account for all created resources.",
+      "C": "Stopping is different from deleting resources.",
+      "D": "Groups are containers rather than automatic VM recreators."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-008",
+    "stem": "What should a beginner do before deploying a new chargeable service?",
+    "choices": {
+      "A": "Rely on a budget to stop every charge automatically",
+      "B": "Assume a small name means a free SKU",
+      "C": "Wait until the final invoice to identify the resource",
+      "D": "Estimate the relevant meters and plan cleanup"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Budgets are not universal spending cutoffs.",
+      "B": "Names do not determine pricing.",
+      "C": "That delays corrective action.",
+      "D": "Cost awareness should precede live deployment."
+    },
+    "objective_id": "M01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-009",
+    "stem": "What is the Azure pricing calculator designed to provide?",
+    "choices": {
+      "A": "A deployment of every estimated resource",
+      "B": "An exact future invoice regardless of usage",
+      "C": "A role assignment for the estimator",
+      "D": "A predeployment estimate based on selected service assumptions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "An estimate does not create resources.",
+      "B": "Actual usage and billing terms can differ.",
+      "C": "It does not authorize access.",
+      "D": "It helps model anticipated cost."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-010",
+    "stem": "A team estimates object storage without specifying capacity or transactions. What is missing?",
+    "choices": {
+      "A": "Only the resource-group naming convention",
+      "B": "Only the users' Azure role names",
+      "C": "Important workload assumptions for the storage meters",
+      "D": "Only the subscription's directory ID"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Names do not supply capacity and transaction assumptions.",
+      "B": "Permissions do not quantify storage meters.",
+      "C": "Storage estimates depend on capacity and access patterns.",
+      "D": "The tenant identifier does not describe stored capacity and access patterns."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-011",
+    "stem": "Why should an estimate include expected runtime rather than only VM size?",
+    "choices": {
+      "A": "Runtime is an authentication method",
+      "B": "VM size cannot affect price",
+      "C": "The calculator deploys a VM to discover runtime",
+      "D": "Runtime contributes to metered compute usage"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It describes usage, not identity.",
+      "B": "Size is also an important input.",
+      "C": "Estimation relies on assumptions rather than automatic deployment.",
+      "D": "Capacity and duration together influence cost."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-012",
+    "stem": "How should a saved pricing estimate be used in a design review?",
+    "choices": {
+      "A": "Publish access keys next to the estimate",
+      "B": "Use it to bypass subscription policies",
+      "C": "Treat it as an immutable legal invoice",
+      "D": "Discuss its assumptions and compare alternatives"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Credentials are unnecessary and unsafe.",
+      "B": "Estimation does not override governance.",
+      "C": "It is an estimate rather than a final bill.",
+      "D": "The assumptions define the estimate's usefulness."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-013",
+    "stem": "An architect compares two redundancy configurations for storage. What should the calculator comparison hold consistent?",
+    "choices": {
+      "A": "The other workload assumptions such as capacity and transactions",
+      "B": "Use unrelated disk-capacity estimates for each option",
+      "C": "Give both options the same VM reservation term",
+      "D": "Choose different transaction volumes for each option"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A controlled comparison isolates the chosen redundancy difference.",
+      "B": "Different capacity assumptions would obscure the redundancy comparison.",
+      "C": "A VM reservation does not control the storage workload being compared.",
+      "D": "That would change another storage cost driver and confound the comparison."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-014",
+    "stem": "The actual bill exceeds an earlier calculator estimate. Which explanation is plausible?",
+    "choices": {
+      "A": "The calculator guaranteed the maximum possible bill",
+      "B": "Azure RBAC Reader permissions always add compute hours",
+      "C": "A resource tag automatically doubled every price",
+      "D": "Actual usage or selected billing assumptions differed"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It does not guarantee a universal spending cap.",
+      "B": "Viewing permissions do not create that meter.",
+      "C": "Tags do not directly alter service prices.",
+      "D": "An estimate depends on its inputs."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-015",
+    "stem": "Which information is useful when estimating a VM workload?",
+    "choices": {
+      "A": "Only the cost-center tag value",
+      "B": "Only the user's Azure RBAC role",
+      "C": "Only the management group's policy count",
+      "D": "Region, VM size, expected hours, and relevant storage"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Allocation labels do not substitute for capacity and usage assumptions.",
+      "B": "Permissions do not describe the compute capacity and runtime estimate.",
+      "C": "Policy count does not specify the VM's usage meters.",
+      "D": "These describe key cost assumptions."
+    },
+    "objective_id": "M02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/plan-manage-costs"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-016",
+    "stem": "A finance analyst wants to see incurred costs grouped by service. Which capability fits?",
+    "choices": {
+      "A": "Cost analysis in Microsoft Cost Management",
+      "B": "An Entra sign-in method",
+      "C": "A CanNotDelete lock",
+      "D": "Azure DNS resolution"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It supports analysis of recorded spending.",
+      "B": "Authentication methods do not group service charges.",
+      "C": "A lock restricts deletion.",
+      "D": "DNS resolves names rather than analyzing bills."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-017",
+    "stem": "What is a budget's main purpose in Cost Management?",
+    "choices": {
+      "A": "Automatically stop all Azure services at the threshold",
+      "B": "Replace the subscription's billing agreement",
+      "C": "Track spending against a threshold and trigger configured notifications",
+      "D": "Guarantee no charges after a notification"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A budget alone is not a universal shutdown control.",
+      "B": "Budgets do not replace contractual billing terms.",
+      "C": "Budgets support awareness and response.",
+      "D": "Resources can continue to run."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-018",
+    "stem": "A learner receives a budget alert. Which response is appropriate?",
+    "choices": {
+      "A": "Investigate current usage and take authorized action",
+      "B": "Delete resources in unrelated subscriptions",
+      "C": "Assume every resource has already stopped",
+      "D": "Disable all cost records"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "An alert is a prompt to review and act.",
+      "B": "Actions must remain scoped and authorized.",
+      "C": "Notifications do not imply automatic shutdown.",
+      "D": "That would undermine visibility."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-019",
+    "stem": "Why might a recently created resource not immediately appear with complete cost data?",
+    "choices": {
+      "A": "Only Owner users can ever incur charges",
+      "B": "Cost data can arrive with processing delay",
+      "C": "The resource is automatically free until visible",
+      "D": "Azure guarantees instant final billing for every operation"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Resource usage can incur charges regardless of that viewing role.",
+      "B": "Billing views are not necessarily real-time.",
+      "C": "Reporting delay does not waive charges.",
+      "D": "That assumption is incorrect."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-020",
+    "stem": "Which distinction separates forecast from actual cost?",
+    "choices": {
+      "A": "Actual cost is always a deployment template",
+      "B": "Forecast estimates future spend; actual cost reports recorded charges",
+      "C": "Forecast is the same as a storage backup",
+      "D": "Forecast creates RBAC roles; actual cost deletes them"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It is billing information.",
+      "B": "They refer to different time and certainty levels.",
+      "C": "It is a spending projection.",
+      "D": "Neither is an access-management function."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-021",
+    "stem": "A team wants to compare departmental spending. What can improve the analysis?",
+    "choices": {
+      "A": "Shared credentials for department heads",
+      "B": "Consistent cost-allocation metadata and appropriate scopes",
+      "C": "Random tag values for each resource",
+      "D": "Identical resource names across every subscription"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Credentials do not provide cost categorization.",
+      "B": "Tags and billing scopes help group costs meaningfully.",
+      "C": "Inconsistent labels make grouping harder.",
+      "D": "Names alone are inadequate cost-allocation governance."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-022",
+    "stem": "A user can read resources but cannot open a particular billing-cost view. What should be checked?",
+    "choices": {
+      "A": "Only their Storage Blob Data Reader assignment",
+      "B": "Only their VM login role assignment",
+      "C": "Their permissions at the relevant billing or cost scope",
+      "D": "Only their MFA registration status"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A blob-data role does not establish access to the relevant billing-cost scope.",
+      "B": "Guest VM sign-in permissions do not grant billing-cost visibility.",
+      "C": "Cost visibility depends on the account type and applicable access.",
+      "D": "MFA registration concerns authentication rather than billing-scope authorization."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-023",
+    "stem": "Which pairing is accurate?",
+    "choices": {
+      "A": "Pricing calculator for deleting disks; Cost Management for Kerberos",
+      "B": "Cost Management for physical datacenter security; calculator for MFA",
+      "C": "Pricing calculator for estimates; Cost Management for cost monitoring and analysis",
+      "D": "Cost Management for guaranteed spending shutdown; calculator for billing contracts"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Those are unrelated functions.",
+      "B": "Neither tool provides those protections.",
+      "C": "The tools support different stages of cost control.",
+      "D": "These overstate their behavior."
+    },
+    "objective_id": "M03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-024",
+    "stem": "What is an Azure resource tag?",
+    "choices": {
+      "A": "A storage replication copy",
+      "B": "A network encryption protocol",
+      "C": "An Azure RBAC role definition",
+      "D": "A key-value metadata pair"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Replication is unrelated to metadata tagging.",
+      "B": "Tags do not encrypt traffic.",
+      "C": "Roles describe permissions.",
+      "D": "Tags attach organizational context to supported resources."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "14-025",
+    "stem": "A resource group has a CostCenter tag. What should a learner assume about child-resource tags?",
+    "choices": {
+      "A": "Every child tag always copies immediately",
+      "B": "Children become subscription Owners",
+      "C": "Child resources do not automatically receive that resource tag",
+      "D": "The group can no longer be deleted"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Automatic inheritance requires separate governance features.",
+      "B": "Tags do not grant roles.",
+      "C": "Ordinary resource-group tagging is not automatic tag inheritance.",
+      "D": "Tags do not create locks."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "14-026",
+    "stem": "Which tag value should be avoided?",
+    "choices": {
+      "A": "A non-sensitive project code",
+      "B": "A cost-center identifier approved for metadata",
+      "C": "An environment label",
+      "D": "An access token"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A project identifier can be useful metadata.",
+      "B": "Non-sensitive allocation labels are suitable.",
+      "C": "Environment labels are common organizational tags.",
+      "D": "Tags are metadata and must not contain secrets."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "14-027",
+    "stem": "Why use a consistent tag naming convention?",
+    "choices": {
+      "A": "It guarantees that every Azure service emits tags in billing",
+      "B": "It makes filtering and allocation more reliable",
+      "C": "It prevents every resource deletion",
+      "D": "It replaces resource authorization"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Service and billing behavior can differ.",
+      "B": "Consistent keys and values support useful grouping.",
+      "C": "Locks and authorization address deletion.",
+      "D": "Tags do not grant Azure permissions."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "14-028",
+    "stem": "The lab's resource group carries az900-project, az900-lab, and az900-run tags. What are these used for?",
+    "choices": {
+      "A": "Automatically enabling paid Defender plans",
+      "B": "Moving the group into a private cloud",
+      "C": "Identifying lab ownership before modifications or cleanup",
+      "D": "Granting users Entra Global Administrator"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Tags do not activate those plans.",
+      "B": "Metadata does not change the cloud model.",
+      "C": "The wrappers check their expected ownership metadata.",
+      "D": "Resource tags are not directory-role grants."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "14-029",
+    "stem": "A learner finds a group with the expected name but a different az900-run tag. What should cleanup do?",
+    "choices": {
+      "A": "Delete it because the name matches",
+      "B": "Change the tag to make deletion pass",
+      "C": "Refuse to modify it",
+      "D": "Remove all groups in the subscription"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The ownership mismatch is material.",
+      "B": "That would take over an unrelated run.",
+      "C": "Matching names alone do not establish ownership.",
+      "D": "That exceeds the lab's scope."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "14-030",
+    "stem": "Which distinction helps interpret Cost Management tag inheritance?",
+    "choices": {
+      "A": "Every cost label automatically changes resource permissions",
+      "B": "Tags replace the need to inspect actual usage",
+      "C": "A group tag always overrides all child data access",
+      "D": "Cost-reporting tag inheritance does not imply resource tags were rewritten"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Labels do not grant roles.",
+      "B": "Usage still determines charges.",
+      "C": "Tags do not perform that authorization.",
+      "D": "Billing allocation features and resource metadata are different layers."
+    },
+    "objective_id": "M04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+    ],
+    "difficulty": "review"
+  }
+]

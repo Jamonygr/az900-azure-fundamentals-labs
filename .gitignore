@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.site-docs/
+site/
+learner.config.json
+evidence/
+progress.json
+*.bicep.json
+.DS_Store
+.check-tools/

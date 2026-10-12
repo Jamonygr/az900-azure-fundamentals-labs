@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 485" width="1000" height="485" role="img" aria-labelledby="title desc">
+<title id="title">Your AZ-900 learning path</title>
+<desc id="desc">Start with Lab 00. Study five cloud concept labs, eight architecture and service labs, and seven management and governance labs. Each of Labs 01 through 20 has thirty practice questions. Finish with the integrated capstone and cleanup.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="485" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">Your AZ-900 learning path</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Read the concept → inspect or practice → verify → assess → revisit</text>
+<rect x="32" y="108" width="936" height="65" rx="12" fill="#e5f5f1" stroke="#9ccfc4" stroke-width="1.5"/>
+<text x="53" y="138" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">00 · Safe start</text>
+<text x="257" y="138" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#15324d" font-weight="400" text-anchor="start">Tools · explicit subscription and region · cost awareness</text>
+<text x="257" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Preview the lifecycle scripts before executing any changes.</text>
+<rect x="32" y="205" width="300" height="163" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="218" width="4" height="137" rx="2" fill="#0369a1"/>
+<text x="52" y="239" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Cloud concepts</text>
+<text x="52" y="269" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">01–05 · 150 questions</text>
+<text x="52" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Responsibility and cloud models</text>
+<text x="52" y="319" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Consumption, benefits, services</text>
+<text x="52" y="351" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0369a1" font-weight="700" text-anchor="start">Exam weight: 25–30%</text>
+<rect x="350" y="205" width="300" height="163" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="218" width="4" height="137" rx="2" fill="#6d28d9"/>
+<text x="370" y="239" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Architecture + services</text>
+<text x="370" y="269" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">06–13 · 240 questions</text>
+<text x="370" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Compute, networking, storage</text>
+<text x="370" y="319" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Identity, authorization, security</text>
+<text x="370" y="351" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#6d28d9" font-weight="700" text-anchor="start">Exam weight: 35–40%</text>
+<rect x="668" y="205" width="300" height="163" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="218" width="4" height="137" rx="2" fill="#0f766e"/>
+<text x="688" y="239" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Management + governance</text>
+<text x="688" y="269" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">14–20 · 210 questions</text>
+<text x="688" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Costs, policies, deployment</text>
+<text x="688" y="319" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Compliance, health, monitoring</text>
+<text x="688" y="351" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start">Exam weight: 30–35%</text>
+<line x1="190" y1="173" x2="190" y2="199" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="508" y1="173" x2="508" y2="199" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="826" y1="173" x2="826" y2="199" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="397" width="936" height="52" rx="12" fill="#edf0fd" stroke="#c7c5ef" stroke-width="1.5"/>
+<text x="53" y="430" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">21 · Integrated capstone</text>
+<text x="365" y="430" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#15324d" font-weight="400" text-anchor="start">Deploy · validate · troubleshoot · verify cleanup</text>
+</svg>

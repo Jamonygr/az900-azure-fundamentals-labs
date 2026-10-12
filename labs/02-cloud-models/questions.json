@@ -1,0 +1,692 @@
+[
+  {
+    "id": "02-001",
+    "stem": "What distinguishes public cloud from private cloud?",
+    "choices": {
+      "A": "Provider services available to multiple customers",
+      "B": "No networks are permitted",
+      "C": "All hardware is customer-owned",
+      "D": "All data is anonymous"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Public cloud serves logically separated customers.",
+      "B": "Public cloud provides networking.",
+      "C": "Public providers operate infrastructure.",
+      "D": "Data can remain restricted."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-002",
+    "stem": "A cloud environment is dedicated to one organization. Which model is this?",
+    "choices": {
+      "A": "Public cloud",
+      "B": "Private cloud",
+      "C": "Serverless",
+      "D": "SaaS"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Public offerings serve multiple customers.",
+      "B": "Dedicated use characterizes private cloud.",
+      "C": "Serverless describes an operating abstraction.",
+      "D": "SaaS describes a service boundary."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-003",
+    "stem": "What defines hybrid cloud?",
+    "choices": {
+      "A": "Two public-cloud providers only",
+      "B": "Two services in Azure",
+      "C": "A public service with a private IP but no private environment",
+      "D": "Integration of public and private cloud environments"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That describes multicloud.",
+      "B": "Multiple services alone are not hybrid.",
+      "C": "Private addressing alone does not make a deployment hybrid.",
+      "D": "Hybrid combines these environments."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-004",
+    "stem": "An Azure database uses a private endpoint. What deployment model does it retain?",
+    "choices": {
+      "A": "Public cloud",
+      "B": "SaaS solely due to the endpoint",
+      "C": "Customer-owned private cloud",
+      "D": "On-premises server"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Private connectivity does not change Azure's provider model.",
+      "B": "Networking does not select service model.",
+      "C": "Addressing does not transfer ownership.",
+      "D": "The service remains in Azure."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-005",
+    "stem": "Can a third party operate a private cloud for one organization?",
+    "choices": {
+      "A": "Only with two public providers",
+      "B": "Yes, dedicated use is the key property",
+      "C": "Only if all data is public",
+      "D": "No, an employee must operate it"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is unrelated to private-cloud operation.",
+      "B": "Private operation can be outsourced.",
+      "C": "Public data is not required.",
+      "D": "Private clouds can use external operators."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-006",
+    "stem": "A company uses Azure and another public provider. Which term directly fits?",
+    "choices": {
+      "A": "Hybrid cloud solely because there are two providers",
+      "B": "Private cloud",
+      "C": "Multicloud",
+      "D": "Single public cloud"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Two public providers indicate multicloud, not necessarily public-private integration.",
+      "B": "Two public providers do not imply private cloud.",
+      "C": "The organization uses multiple providers.",
+      "D": "The scenario contains two providers."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-007",
+    "stem": "Which conclusion does not follow from public-cloud hosting?",
+    "choices": {
+      "A": "Multiple customers may use the provider",
+      "B": "Customers can consume capacity",
+      "C": "A provider offers computing services",
+      "D": "Everyone can read customer data"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Public providers serve multiple customers.",
+      "B": "Capacity consumption is part of the offering.",
+      "C": "That fits public-cloud delivery.",
+      "D": "Public tenancy does not remove authorization."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-008",
+    "stem": "Why is a privately owned ordinary server not automatically private cloud?",
+    "choices": {
+      "A": "Private cloud cannot host applications",
+      "B": "Only storage can be private cloud",
+      "C": "Private cloud must be public-facing",
+      "D": "Cloud capabilities such as on-demand provisioning still matter"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It can host application workloads.",
+      "B": "Compute can also be offered.",
+      "C": "Internet exposure is not required.",
+      "D": "Ownership alone does not supply a cloud operating model."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-009",
+    "stem": "A private environment and Azure support one integrated workload. What model fits?",
+    "choices": {
+      "A": "SaaS only",
+      "B": "Multicloud solely because two environments exist",
+      "C": "Hybrid cloud",
+      "D": "Public cloud only"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The scenario defines deployment, not a finished app.",
+      "B": "The decisive fact is integrated private/public environments, not multiple providers.",
+      "C": "The combined solution spans private and public environments.",
+      "D": "That omits the retained private component."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-010",
+    "stem": "Which categories describe deployment environments?",
+    "choices": {
+      "A": "Public, private, and hybrid",
+      "B": "Hot, cool, and archive",
+      "C": "IaaS, PaaS, and SaaS",
+      "D": "Reader and Contributor"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These classify cloud deployment models.",
+      "B": "These classify blob access tiers.",
+      "C": "These classify service responsibility.",
+      "D": "These are authorization roles."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-011",
+    "stem": "What is needed for confidential information in public cloud?",
+    "choices": {
+      "A": "Moving provider servers into the office",
+      "B": "Appropriate authorization and governance",
+      "C": "Publishing every record",
+      "D": "Removing identity checks"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Azure use does not require this.",
+      "B": "Customer data still needs access controls.",
+      "C": "Public offerings do not require public information.",
+      "D": "Access protection remains necessary."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-012",
+    "stem": "Which fact best supports describing a workload as hybrid?",
+    "choices": {
+      "A": "Both environments use identical VM sizes",
+      "B": "Components integrate across private and public environments",
+      "C": "The public side has an invoice",
+      "D": "Both environments have separate applications with no connection"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Matching sizes do not establish integration.",
+      "B": "Hybrid concerns a combined solution.",
+      "C": "Billing does not prove integration.",
+      "D": "Separate usage alone does not demonstrate an integrated hybrid workload."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-013",
+    "stem": "Which property is compatible with private cloud?",
+    "choices": {
+      "A": "Mandatory use by unrelated organizations",
+      "B": "Prohibition on automation",
+      "C": "Mandatory provider ownership of data",
+      "D": "Organization-dedicated capacity and access"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That conflicts with dedicated use.",
+      "B": "Cloud operations can be automated.",
+      "C": "Data ownership is not defined this way.",
+      "D": "Dedicated use defines this model."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-014",
+    "stem": "Which statement separates deployment model from exposure?",
+    "choices": {
+      "A": "Internet exposure turns private cloud into SaaS",
+      "B": "An Azure app can have restricted access in public cloud",
+      "C": "A public IP proves public-cloud ownership",
+      "D": "A private IP proves private cloud"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Exposure does not define a service model.",
+      "B": "Provider deployment and network access are separate.",
+      "C": "Private environments can also expose public services.",
+      "D": "Azure VNets also use private IPs."
+    },
+    "objective_id": "C03",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-015",
+    "stem": "A startup wants launch speed without datacenter maintenance. Which model is a suitable starting point?",
+    "choices": {
+      "A": "Private cloud built from scratch",
+      "B": "Offline-only local server",
+      "C": "Hybrid without a private requirement",
+      "D": "Public cloud"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That adds infrastructure work.",
+      "B": "That does not meet the cloud launch requirement.",
+      "C": "The scenario gives no need for a private component.",
+      "D": "Provider capacity reduces hardware-procurement work."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-016",
+    "stem": "A factory retains a private system and integrates an Azure portal. Which model matches?",
+    "choices": {
+      "A": "Hybrid cloud",
+      "B": "SaaS as a deployment model",
+      "C": "An unconnected local device",
+      "D": "Public cloud only"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The solution combines retained private and public components.",
+      "B": "SaaS classifies the service boundary.",
+      "C": "That fails the integration requirement.",
+      "D": "That omits the retained system."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-017",
+    "stem": "What should guide cloud-model selection for regulated data?",
+    "choices": {
+      "A": "An assumption that public cloud forbids sensitive data",
+      "B": "Only the lowest advertised compute rate",
+      "C": "Verified residency, access, and compliance constraints",
+      "D": "A blanket belief that dedicated hosting is always mandatory"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is an unsupported blanket claim.",
+      "B": "Cost alone does not establish compliance.",
+      "C": "Actual requirements should drive placement.",
+      "D": "Mandatory placement must follow actual requirements."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-018",
+    "stem": "Which requirement supports considering private cloud?",
+    "choices": {
+      "A": "A short test needing provider capacity today",
+      "B": "Avoiding all infrastructure operation",
+      "C": "Anonymous website access",
+      "D": "Verified need for organization-dedicated infrastructure control"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That often favors public agility.",
+      "B": "Private environments retain more operating work.",
+      "C": "Exposure does not require private cloud.",
+      "D": "Dedicated control matches the private model."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-019",
+    "stem": "What needs consideration in a hybrid design?",
+    "choices": {
+      "A": "A belief that private hardware has no cost",
+      "B": "Integration, security, staffing, and costs across both sides",
+      "C": "Only the public component's VM price",
+      "D": "An assumption that connection is automatic"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Dedicated infrastructure still incurs costs.",
+      "B": "Coordinated operation covers both environments.",
+      "C": "Hybrid operation includes private-side and integration costs too.",
+      "D": "Connectivity and dependencies need design."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-020",
+    "stem": "The only private dependency is retired. What should happen to the hybrid recommendation?",
+    "choices": {
+      "A": "Reassess whether a private component remains necessary",
+      "B": "Keep it because architecture cannot change",
+      "C": "Disable access control",
+      "D": "Declare all Azure resources private cloud"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Changed requirements can change the model.",
+      "B": "Decisions should follow current requirements.",
+      "C": "Retiring a dependency does not remove security needs.",
+      "D": "Azure's ownership does not change."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-021",
+    "stem": "A manager chooses public cloud to publish confidential records. What needs clarification?",
+    "choices": {
+      "A": "Private cloud makes every user trustworthy",
+      "B": "Hosting model and data-access policy are separate",
+      "C": "Public cloud requires publication",
+      "D": "Only hybrid can authenticate"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Private hosting does not guarantee user behavior.",
+      "B": "Public-cloud use does not authorize publication.",
+      "C": "That misunderstands tenancy.",
+      "D": "All deployment models can support authentication."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-022",
+    "stem": "Which question matters for a local latency-sensitive dependency?",
+    "choices": {
+      "A": "Can the app tolerate measured cloud-network delay?",
+      "B": "Are all regions physically identical?",
+      "C": "Does a private endpoint automatically place the app next to the factory?",
+      "D": "Can a discount commitment eliminate network latency?"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Latency can determine acceptable placement.",
+      "B": "Regions occupy different locations.",
+      "C": "Private addressing does not relocate the application.",
+      "D": "Pricing discounts do not remove physical/network delay."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-023",
+    "stem": "Why consider public cloud for seasonal demand?",
+    "choices": {
+      "A": "Guarantee infinite capacity",
+      "B": "Obtain capacity without owning all peak hardware",
+      "C": "Make every service private cloud",
+      "D": "Remove all code maintenance"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Quotas and constraints still apply.",
+      "B": "Provider delivery can support variable needs.",
+      "C": "Capacity use does not change provider ownership.",
+      "D": "Customer application duties remain."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-024",
+    "stem": "Which choice preserves required local investments while adding Azure capability?",
+    "choices": {
+      "A": "Move everything immediately regardless of dependencies",
+      "B": "Assume local apps are already SaaS",
+      "C": "Reject all private-side automation",
+      "D": "Integrate retained private components with suitable Azure services"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That ignores constraints.",
+      "B": "Local placement does not define finished software.",
+      "C": "Automation can help either environment.",
+      "D": "Hybrid can retain necessary systems."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-025",
+    "stem": "What tradeoff should accompany organization-dedicated private-cloud control?",
+    "choices": {
+      "A": "No identity management",
+      "B": "No future cost",
+      "C": "Dedicated operational responsibility and cost",
+      "D": "Automatic access to every Azure region"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Users and permissions still require management.",
+      "B": "Dedicated capacity still costs money.",
+      "C": "Control comes with infrastructure and staffing needs.",
+      "D": "Private scope depends on actual implementation."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-026",
+    "stem": "What evidence should precede moving a private app to Azure?",
+    "choices": {
+      "A": "Compatibility, dependencies, security, and costs",
+      "B": "A promise that no changes are ever needed",
+      "C": "An assumption that all licensing transfers",
+      "D": "Only proof that both environments can store files"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Migration suitability needs assessment.",
+      "B": "Apps may require changes.",
+      "C": "License terms must be checked.",
+      "D": "Basic storage capability does not prove application compatibility."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-027",
+    "stem": "What should override an otherwise convenient cloud choice?",
+    "choices": {
+      "A": "A mandatory verified workload constraint",
+      "B": "The region with the lowest rate despite failing residency rules",
+      "C": "The deployment model already used by an unrelated workload",
+      "D": "The provider with the most product categories regardless of fit"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Mandatory requirements outweigh convenience.",
+      "B": "A mandatory residency requirement outweighs a cheaper incompatible choice.",
+      "C": "Another workload's choice does not override this workload's constraints.",
+      "D": "Product count does not satisfy mandatory workload requirements."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "02-028",
+    "stem": "A small team evaluates private cloud. What cost assumption should it avoid?",
+    "choices": {
+      "A": "Access must be configured",
+      "B": "Workload constraints matter",
+      "C": "Private cloud is necessarily cheaper overall",
+      "D": "Public providers supply services"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Configuration is a valid requirement.",
+      "B": "Constraints should drive the decision.",
+      "C": "Dedicated infrastructure and operation need costing.",
+      "D": "That is a defining characteristic."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "02-029",
+    "stem": "Which choice makes a deployment decision reviewable?",
+    "choices": {
+      "A": "Choose one model for every workload blindly",
+      "B": "Choose solely by private IP usage",
+      "C": "Document the decisive constraint and tradeoff",
+      "D": "Treat deployment models as access roles"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Workloads can differ.",
+      "B": "Addressing does not define cloud model.",
+      "C": "The rationale can be checked against requirements.",
+      "D": "Models are not RBAC roles."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "02-030",
+    "stem": "An organization considers hybrid only because two teams use Azure. What is missing?",
+    "choices": {
+      "A": "A mandatory public data policy",
+      "B": "A public resource with restricted internet access only",
+      "C": "A private component integrated with the public environment",
+      "D": "A second subscription in the same public cloud alone"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Hybrid does not require public data.",
+      "B": "Restricted public-cloud access does not supply an integrated private component.",
+      "C": "Two Azure teams alone do not establish hybrid.",
+      "D": "Multiple subscriptions do not establish public-private integration."
+    },
+    "objective_id": "C04",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/"
+    ],
+    "difficulty": "review"
+  }
+]

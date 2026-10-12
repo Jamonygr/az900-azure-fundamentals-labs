@@ -1,0 +1,9 @@
+.quiz-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.quiz-controls select { max-width: 100%; padding: .5rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); border: 1px solid var(--md-default-fg-color--light); }
+.quiz-question { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--md-default-fg-color--light); border-radius: .3rem; }
+.quiz-question legend { font-weight: 600; padding: 0 .4rem; }
+.quiz-question label { display: block; padding: .35rem; cursor: pointer; }
+#az900-quiz button { padding: .6rem 1rem; color: var(--md-primary-bg-color); background: var(--md-primary-fg-color); border-radius: .2rem; cursor: pointer; }
+#az900-quiz details { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding: .7rem 0; }
+#az900-quiz summary { cursor: pointer; font-weight: 600; }
+.az900-progress { margin-top: 2rem; padding: 1rem; border: 1px solid var(--md-default-fg-color--light); border-radius: .3rem; }

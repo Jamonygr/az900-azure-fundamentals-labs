@@ -1,0 +1,19 @@
+{
+  "id": "11",
+  "slug": "identity-directory",
+  "title": "Directories and external identities",
+  "domain": "architecture",
+  "objectives": [
+    "A20",
+    "A22"
+  ],
+  "duration_minutes": 35,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

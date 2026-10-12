@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 769" width="1000" height="769" role="img" aria-labelledby="title desc">
+<title id="title">Collect the right signal, then act</title>
+<desc id="desc">Platform metrics provide measurements over time. The Activity log provides management-event history, not every application request. Application Insights supports application performance monitoring when an app is instrumented. Azure Monitor Logs stores collected records in workspaces and Log Analytics queries them with KQL. Alert rules evaluate scope, signals, and conditions; action groups route actions or notifications; responders investigate the evidence.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="769" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">Collect the right signal, then act</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Azure Monitor connects measurements and records with investigation and alerting.</text>
+<rect x="32" y="120" width="300" height="105" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="133" width="4" height="79" rx="2" fill="#0369a1"/>
+<text x="52" y="154" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Platform metrics</text>
+<text x="52" y="184" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Numerical measurements</text>
+<text x="52" y="209" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">over time</text>
+<rect x="350" y="120" width="300" height="105" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="133" width="4" height="79" rx="2" fill="#6d28d9"/>
+<text x="370" y="154" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Activity log</text>
+<text x="370" y="184" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Control-plane operations</text>
+<text x="370" y="209" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">and management events</text>
+<rect x="668" y="120" width="300" height="105" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="133" width="4" height="79" rx="2" fill="#0f766e"/>
+<text x="688" y="154" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Application telemetry</text>
+<text x="688" y="184" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Requests, exceptions, dependencies</text>
+<text x="688" y="209" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">via Application Insights</text>
+<line x1="182" y1="225" x2="182" y2="275" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="182" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#435c72" font-weight="400" text-anchor="middle">metric collection</text>
+<line x1="500" y1="225" x2="500" y2="275" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="500" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#435c72" font-weight="400" text-anchor="middle">built-in event history</text>
+<line x1="818" y1="225" x2="818" y2="275" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="818" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#435c72" font-weight="400" text-anchor="middle">instrumentation required</text>
+<rect x="32" y="277" width="300" height="110" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="290" width="4" height="84" rx="2" fill="#0369a1"/>
+<text x="52" y="311" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Metrics</text>
+<text x="52" y="341" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Inspect trends, dimensions,</text>
+<text x="52" y="366" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">aggregations, and time windows.</text>
+<rect x="350" y="277" width="300" height="110" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="290" width="4" height="84" rx="2" fill="#6d28d9"/>
+<text x="370" y="311" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Activity history</text>
+<text x="370" y="341" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Identify resource-management</text>
+<text x="370" y="366" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">changes; optionally route records.</text>
+<rect x="668" y="277" width="300" height="110" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="290" width="4" height="84" rx="2" fill="#0f766e"/>
+<text x="688" y="311" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Azure Monitor Logs</text>
+<text x="688" y="341" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Workspace stores collected logs.</text>
+<text x="688" y="366" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Log Analytics uses KQL to query.</text>
+<path d="M 500 387 V 412 H 818 V 392" fill="none" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="597" y="434" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#435c72" font-weight="400" text-anchor="middle">Configured routing / collection for relevant logs</text>
+<line x1="182" y1="387" x2="182" y2="466" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 818 441 V 450 H 312 V 466" fill="none" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="468" width="300" height="146" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="481" width="4" height="120" rx="2" fill="#0369a1"/>
+<text x="52" y="502" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Alert rule</text>
+<text x="52" y="532" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Scope + signal + condition</text>
+<text x="52" y="557" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Choose a meaningful time window,</text>
+<text x="52" y="582" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">threshold, and evaluation behavior.</text>
+<line x1="336" y1="538" x2="345" y2="538" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="350" y="468" width="300" height="146" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="481" width="4" height="120" rx="2" fill="#6d28d9"/>
+<text x="370" y="502" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Action group</text>
+<text x="370" y="532" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Notification / action destinations</text>
+<text x="370" y="557" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Routing and receiver configuration</text>
+<text x="370" y="582" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">must match the response plan.</text>
+<line x1="654" y1="538" x2="663" y2="538" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="668" y="468" width="300" height="146" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="481" width="4" height="120" rx="2" fill="#0f766e"/>
+<text x="688" y="502" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Responder</text>
+<text x="688" y="532" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Investigate and verify recovery</text>
+<text x="688" y="557" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Correlate time, scope, requests,</text>
+<text x="688" y="582" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">dependencies, and exceptions.</text>
+<rect x="32" y="645" width="936" height="77" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="51" y="674" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">No useful records? Check instrumentation, collection, permissions, scope, time range, and delay.</text>
+<text x="51" y="699" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A fired alert is not proof that a notification arrived or that remediation succeeded.</text>
+<text x="32" y="745" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Conceptual pipeline. This lab creates no telemetry collection, alert rules, or notification actions.</text>
+</svg>

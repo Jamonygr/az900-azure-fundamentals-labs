@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 856" width="1000" height="856" role="img" aria-labelledby="title desc">
+<title id="title">Three separate storage decisions</title>
+<desc id="desc">Storage services meet different needs: Blob for objects, Files for shares, Queue for messages, Table for NoSQL entities, and managed disks for VM block storage. Hot, cool, and cold are online blob tiers; archive requires rehydration. LRS copies within one datacenter; ZRS spans primary-region zones. GRS and GZRS add asynchronous secondary-region replication with LRS in the secondary region. Redundancy does not replace backup.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="856" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">Three separate storage decisions</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Select the service, then access tier where supported, then failure protection.</text>
+<text x="32" y="120" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0369a1" font-weight="700" text-anchor="start">1 · SERVICE</text>
+<rect x="32" y="137" width="180" height="111" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="150" width="4" height="85" rx="2" fill="#0369a1"/>
+<text x="52" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Blob</text>
+<text x="52" y="201" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Objects</text>
+<text x="52" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Images / video</text>
+<rect x="221" y="137" width="180" height="111" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="221" y="150" width="4" height="85" rx="2" fill="#0369a1"/>
+<text x="241" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Files</text>
+<text x="241" y="201" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">File shares</text>
+<text x="241" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Shared folders</text>
+<rect x="410" y="137" width="180" height="111" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="410" y="150" width="4" height="85" rx="2" fill="#0369a1"/>
+<text x="430" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Queue</text>
+<text x="430" y="201" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Messages</text>
+<text x="430" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Async work</text>
+<rect x="599" y="137" width="180" height="111" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="599" y="150" width="4" height="85" rx="2" fill="#0369a1"/>
+<text x="619" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Table</text>
+<text x="619" y="201" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">NoSQL entities</text>
+<text x="619" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Keyed records</text>
+<rect x="788" y="137" width="180" height="111" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="788" y="150" width="4" height="85" rx="2" fill="#0369a1"/>
+<text x="808" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Managed disks</text>
+<text x="808" y="201" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Block storage</text>
+<text x="808" y="226" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">VM OS / data</text>
+<text x="32" y="285" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#6d28d9" font-weight="700" text-anchor="start">2 · BLOB ACCESS TIER</text>
+<rect x="32" y="301" width="936" height="85" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="55" y="317" width="100" height="34" rx="17" fill="#ede9fe" stroke="#ede9fe" stroke-width="1.5"/>
+<text x="105.0" y="340" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#6d28d9" font-weight="700" text-anchor="middle">Hot</text>
+<rect x="170" y="317" width="100" height="34" rx="17" fill="#ede9fe" stroke="#ede9fe" stroke-width="1.5"/>
+<text x="220.0" y="340" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#6d28d9" font-weight="700" text-anchor="middle">Cool</text>
+<rect x="285" y="317" width="100" height="34" rx="17" fill="#ede9fe" stroke="#ede9fe" stroke-width="1.5"/>
+<text x="335.0" y="340" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#6d28d9" font-weight="700" text-anchor="middle">Cold</text>
+<text x="55" y="372" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Online access · compare storage, access, and retention costs</text>
+<rect x="700" y="317" width="241" height="34" rx="17" fill="#e5f5f1" stroke="#e5f5f1" stroke-width="1.5"/>
+<text x="820.5" y="340" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#0f766e" font-weight="700" text-anchor="middle">Archive: offline</text>
+<text x="700" y="372" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Rehydrate before reading</text>
+<text x="32" y="424" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start">3 · REDUNDANCY</text>
+<rect x="32" y="442" width="450" height="131" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="48" y="470" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#0f766e" font-weight="700" text-anchor="start">LRS</text>
+<text x="126" y="471" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Primary region</text>
+<circle cx="130" cy="504" r="9" fill="#0f766e"/>
+<circle cx="170" cy="504" r="9" fill="#0f766e"/>
+<circle cx="210" cy="504" r="9" fill="#0f766e"/>
+<text x="126" y="558" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Same datacenter</text>
+<text x="301" y="504" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">No secondary</text>
+<text x="301" y="529" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">region copy</text>
+<rect x="518" y="442" width="450" height="131" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="534" y="470" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#0f766e" font-weight="700" text-anchor="start">ZRS</text>
+<text x="612" y="471" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Primary region</text>
+<rect x="601" y="485" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="616" cy="504" r="9" fill="#0f766e"/>
+<rect x="641" y="485" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="656" cy="504" r="9" fill="#0f766e"/>
+<rect x="681" y="485" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="696" cy="504" r="9" fill="#0f766e"/>
+<text x="612" y="558" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Across zones</text>
+<text x="787" y="504" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">No secondary</text>
+<text x="787" y="529" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">region copy</text>
+<rect x="32" y="592" width="450" height="131" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="48" y="620" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#0f766e" font-weight="700" text-anchor="start">GRS</text>
+<text x="126" y="621" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Primary region</text>
+<circle cx="130" cy="654" r="9" fill="#0f766e"/>
+<circle cx="170" cy="654" r="9" fill="#0f766e"/>
+<circle cx="210" cy="654" r="9" fill="#0f766e"/>
+<text x="126" y="708" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Same datacenter</text>
+<line x1="270" y1="654" x2="317" y2="654" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="293" y="636" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#435c72" font-weight="400" text-anchor="middle">async</text>
+<rect x="326" y="635" width="136" height="53" rx="6" fill="#e6f3fc" stroke="#92bedb" stroke-width="1.5"/>
+<circle cx="347" cy="655" r="9" fill="#0369a1"/>
+<circle cx="382" cy="655" r="9" fill="#0369a1"/>
+<circle cx="417" cy="655" r="9" fill="#0369a1"/>
+<text x="326" y="708" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Secondary · LRS</text>
+<rect x="518" y="592" width="450" height="131" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="534" y="620" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#0f766e" font-weight="700" text-anchor="start">GZRS</text>
+<text x="612" y="621" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Primary region</text>
+<rect x="601" y="635" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="616" cy="654" r="9" fill="#0f766e"/>
+<rect x="641" y="635" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="656" cy="654" r="9" fill="#0f766e"/>
+<rect x="681" y="635" width="30" height="53" rx="5" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<circle cx="696" cy="654" r="9" fill="#0f766e"/>
+<text x="612" y="708" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Across zones</text>
+<line x1="756" y1="654" x2="803" y2="654" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="779" y="636" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#435c72" font-weight="400" text-anchor="middle">async</text>
+<rect x="812" y="635" width="136" height="53" rx="6" fill="#e6f3fc" stroke="#92bedb" stroke-width="1.5"/>
+<circle cx="833" cy="655" r="9" fill="#0369a1"/>
+<circle cx="868" cy="655" r="9" fill="#0369a1"/>
+<circle cx="903" cy="655" r="9" fill="#0369a1"/>
+<text x="812" y="708" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#435c72" font-weight="400" text-anchor="start">Secondary · LRS</text>
+<text x="32" y="770" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">RA variants permit secondary reads where supported; asynchronous replication can lose recent writes.</text>
+<text x="32" y="795" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Redundancy protects against infrastructure failures. Accidental deletion needs a recovery design.</text>
+<text x="32" y="832" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Simplified copy layout. Service, tier, regional availability, and redundancy compatibility vary.</text>
+</svg>

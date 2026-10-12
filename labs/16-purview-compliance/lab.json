@@ -1,0 +1,18 @@
+{
+  "id": "16",
+  "slug": "purview-compliance",
+  "title": "Purview, governance, and compliance",
+  "domain": "management",
+  "objectives": [
+    "M05"
+  ],
+  "duration_minutes": 35,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

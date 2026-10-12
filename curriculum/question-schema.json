@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 30,
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[0-9]{2}-[0-9]{3}$"
+      },
+      "stem": {
+        "type": "string",
+        "minLength": 15
+      },
+      "choices": {
+        "type": "object",
+        "properties": {
+          "A": {
+            "type": "string",
+            "minLength": 1
+          },
+          "B": {
+            "type": "string",
+            "minLength": 1
+          },
+          "C": {
+            "type": "string",
+            "minLength": 1
+          },
+          "D": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "additionalProperties": false
+      },
+      "answer": {
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanations": {
+        "type": "object",
+        "properties": {
+          "A": {
+            "type": "string",
+            "minLength": 1
+          },
+          "B": {
+            "type": "string",
+            "minLength": 1
+          },
+          "C": {
+            "type": "string",
+            "minLength": 1
+          },
+          "D": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "additionalProperties": false
+      },
+      "objective_id": {
+        "type": "string",
+        "pattern": "^[CAM][0-9]{2}$"
+      },
+      "remediation": {
+        "type": "string",
+        "pattern": "^README\\.md#[a-z0-9-]+$"
+      },
+      "source_urls": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        }
+      },
+      "difficulty": {
+        "enum": [
+          "foundational",
+          "applied",
+          "review"
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "stem",
+      "choices",
+      "answer",
+      "explanations",
+      "objective_id",
+      "remediation",
+      "source_urls",
+      "difficulty"
+    ],
+    "additionalProperties": false
+  }
+}

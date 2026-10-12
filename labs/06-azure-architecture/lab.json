@@ -1,0 +1,24 @@
+{
+  "id": "06",
+  "slug": "azure-architecture",
+  "title": "Azure architecture and resource hierarchy",
+  "domain": "architecture",
+  "objectives": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07"
+  ],
+  "duration_minutes": 45,
+  "mode": "live",
+  "resource_profile": "resource-group",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

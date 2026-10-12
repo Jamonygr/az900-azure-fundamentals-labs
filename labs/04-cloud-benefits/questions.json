@@ -1,0 +1,752 @@
+[
+  {
+    "id": "04-001",
+    "stem": "Adding more application instances is which kind of scaling?",
+    "choices": {
+      "A": "Horizontal scaling",
+      "B": "Vertical scaling",
+      "C": "Scale in",
+      "D": "Scale down"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Scale out adds instances.",
+      "B": "Scale up changes an instance's size.",
+      "C": "Scale in removes rather than adds instances.",
+      "D": "Scale down reduces an instance's capacity."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-002",
+    "stem": "Increasing a VM's memory and CPU size is what?",
+    "choices": {
+      "A": "Vertical scaling",
+      "B": "Scale in",
+      "C": "Failover testing",
+      "D": "Horizontal scaling"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Scale up increases instance capacity.",
+      "B": "Scale in reduces the number of instances.",
+      "C": "Testing recovery does not resize a VM.",
+      "D": "Scale out adds instances instead."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-003",
+    "stem": "Capacity adjusts up and down with demand. Which benefit is demonstrated?",
+    "choices": {
+      "A": "Unlimited resources",
+      "B": "Elasticity",
+      "C": "Mandatory constant capacity",
+      "D": "High availability alone"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Elasticity still has limits.",
+      "B": "Capacity tracks changing demand.",
+      "C": "That does not adjust with demand.",
+      "D": "Availability concerns interruptions rather than matching capacity to demand."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-004",
+    "stem": "What is the purpose of high availability?",
+    "choices": {
+      "A": "Ensure every bill is identical",
+      "B": "Reduce interruption through resilient design",
+      "C": "Guarantee no failure can occur",
+      "D": "Replace all security controls"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Cost predictability is separate.",
+      "B": "Availability concerns continued access to service.",
+      "C": "Failures remain possible.",
+      "D": "Availability is not authorization."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-005",
+    "stem": "A local model calculates one, two, then one instance for demand. What behavior is represented?",
+    "choices": {
+      "A": "Only failover to a backup region",
+      "B": "Only vertical scaling",
+      "C": "Scale up twice",
+      "D": "Scale out then scale in"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "The model changes instance count rather than region.",
+      "B": "The per-instance size did not change.",
+      "C": "Per-instance size did not change.",
+      "D": "Instance counts increase and decrease."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-006",
+    "stem": "An autoscale limit stays at one despite demand for two instances. What is the likely issue?",
+    "choices": {
+      "A": "Autoscale guarantees unlimited capacity",
+      "B": "The one-instance minimum guarantees peak performance",
+      "C": "The configured maximum constrains capacity",
+      "D": "Monitoring must be removed"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Configuration and quotas constrain it.",
+      "B": "A minimum does not overcome an insufficient maximum.",
+      "C": "A limit can block required scale out.",
+      "D": "Metrics help diagnose the limit."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-007",
+    "stem": "Why does adding frontend instances not always improve availability?",
+    "choices": {
+      "A": "A shared dependency can remain a single failure point",
+      "B": "High availability prohibits monitoring",
+      "C": "Extra instances remove all dependencies",
+      "D": "Autoscaling automatically replicates every backend dependency"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "End-to-end availability includes dependencies.",
+      "B": "Monitoring supports diagnosis.",
+      "C": "Dependencies remain.",
+      "D": "Scale out does not automatically remove backend failure points."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-008",
+    "stem": "What must be checked before assuming a service can autoscale?",
+    "choices": {
+      "A": "Only the provider's total global capacity",
+      "B": "Only the presence of a budget alert",
+      "C": "Supported scaling behavior and configuration",
+      "D": "Whether the resource group has an owner tag"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "This service's configured limits and capabilities still matter.",
+      "B": "Budgeting does not prove scaling support.",
+      "C": "Capabilities, metrics, and limits matter.",
+      "D": "Ownership metadata does not establish autoscale capability."
+    },
+    "objective_id": "C08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-009",
+    "stem": "Which action tests reliability most directly?",
+    "choices": {
+      "A": "Compare VM prices without executing recovery",
+      "B": "Exercise recovery and verify the workload functions",
+      "C": "Remove backups",
+      "D": "Create a backup without ever testing restore"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Pricing does not demonstrate restoration.",
+      "B": "Reliability includes recovery from failures.",
+      "C": "That weakens recovery options.",
+      "D": "Capture alone does not verify recovery usability."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-010",
+    "stem": "What improves performance predictability?",
+    "choices": {
+      "A": "Grant universal Owner access",
+      "B": "Measure and test under representative load",
+      "C": "Ignore service quotas",
+      "D": "Assume every cloud app is equally fast"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Broad roles do not make performance predictable.",
+      "B": "Observed behavior supports capacity planning.",
+      "C": "Quotas can constrain results.",
+      "D": "Workload design and configuration differ."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-011",
+    "stem": "What improves cost predictability?",
+    "choices": {
+      "A": "Disable billing visibility",
+      "B": "Assume every month is free",
+      "C": "Rely solely on resource count",
+      "D": "Track usage and compare it with documented estimates"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Visibility supports planning.",
+      "B": "Consumption can cost money.",
+      "C": "Different resources have different meters.",
+      "D": "Measurement and assumptions reveal cost variation."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-012",
+    "stem": "What is an SLA best understood as?",
+    "choices": {
+      "A": "A backup of all customer data",
+      "B": "A service commitment with conditions",
+      "C": "Proof the whole application never fails",
+      "D": "An identity role"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "An SLA stores no backup.",
+      "B": "It describes applicable service obligations.",
+      "C": "App dependencies and conditions still matter.",
+      "D": "It is not authorization."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-013",
+    "stem": "A system must resume after a database failure. Which plan addresses this?",
+    "choices": {
+      "A": "Recovery procedures tested against recovery objectives",
+      "B": "Only disabling logs",
+      "C": "Only more frontend instances sharing the failed database",
+      "D": "Only a lower compute rate"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Testing demonstrates practical restoration.",
+      "B": "That reduces diagnostic visibility.",
+      "C": "Frontend capacity does not restore the shared database.",
+      "D": "Pricing does not provide database recovery."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-014",
+    "stem": "Why should restore testing accompany backup creation?",
+    "choices": {
+      "A": "Backups eliminate every outage automatically",
+      "B": "A successful backup job guarantees every future restore",
+      "C": "Only public data needs testing",
+      "D": "A backup must be usable for recovery"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Recovery still needs procedures.",
+      "B": "A restore must still be verified.",
+      "C": "Important restricted data also needs recovery.",
+      "D": "Successful capture alone does not prove restoration."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-015",
+    "stem": "A steady load produces variable latency. What should be investigated?",
+    "choices": {
+      "A": "Whether a discount commitment alone fixes variable latency",
+      "B": "Bottlenecks and dependencies using telemetry",
+      "C": "Whether adding frontend instances hides an unchanged database bottleneck",
+      "D": "Whether cloud reliability means zero latency"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Pricing does not repair workload performance.",
+      "B": "Measurements can reveal the source of variation.",
+      "C": "The bottleneck needs measured diagnosis rather than assumed scaling.",
+      "D": "Reliable service can still have nonzero latency."
+    },
+    "objective_id": "C09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-016",
+    "stem": "What is governance primarily concerned with?",
+    "choices": {
+      "A": "Only adding processors",
+      "B": "Only packet encryption",
+      "C": "Organizational rules and their evaluation",
+      "D": "Only recovering data after failure"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Capacity is a performance concern.",
+      "B": "Encryption is a specific security control.",
+      "C": "Governance guides compliant resource use.",
+      "D": "Recovery is a reliability operation rather than the full governance purpose."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-017",
+    "stem": "A company restricts deployments to approved regions. Which benefit is this using?",
+    "choices": {
+      "A": "Serverless triggering",
+      "B": "Archive access",
+      "C": "Horizontal scaling",
+      "D": "Governance"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "No event function is described.",
+      "B": "The rule does not set blob tiers.",
+      "C": "Instance counts are not the rule's purpose.",
+      "D": "The rule implements organizational requirements."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-018",
+    "stem": "Why do cloud security tools still need customer configuration?",
+    "choices": {
+      "A": "All security is provider-only",
+      "B": "Only hardware matters",
+      "C": "The customer must choose controls appropriate to its workload",
+      "D": "Cloud workloads cannot be attacked"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Data and access remain customer duties.",
+      "B": "Applications and identities also need protection.",
+      "C": "Tools do not decide every business requirement.",
+      "D": "Threats still exist."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-019",
+    "stem": "Which action aligns a security benefit with a practical check?",
+    "choices": {
+      "A": "Review permissions and verify least required access",
+      "B": "Give everyone all permissions",
+      "C": "Stop access reviews after migration",
+      "D": "Assume provider infrastructure controls satisfy every customer requirement"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Evidence confirms the intended access boundary.",
+      "B": "That expands risk.",
+      "C": "Permissions can drift.",
+      "D": "Customer workload and access controls still need verification."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-020",
+    "stem": "A security tool reports a recommendation. What is the customer's next responsibility?",
+    "choices": {
+      "A": "Assume the app is now immune",
+      "B": "Delete unrelated resources automatically",
+      "C": "Assess and apply an appropriate authorized response",
+      "D": "Publish secrets for troubleshooting"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A finding does not guarantee safety.",
+      "B": "Response should be scoped and justified.",
+      "C": "Recommendations need workload-aware decisions.",
+      "D": "Secrets should remain protected."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-021",
+    "stem": "How do security and governance relate?",
+    "choices": {
+      "A": "Governance removes all security duties",
+      "B": "They are the same as VM sizing",
+      "C": "Controls protect workloads while rules guide compliant operation",
+      "D": "Security makes policies unnecessary"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Rules still need implementation.",
+      "B": "Capacity choice is a separate concern.",
+      "C": "They complement each other.",
+      "D": "Organizational standards still matter."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-022",
+    "stem": "Which statement avoids overclaiming a cloud benefit?",
+    "choices": {
+      "A": "Provider capabilities support security when used appropriately",
+      "B": "All sensitive data must be anonymous",
+      "C": "Every cloud workload is automatically compliant",
+      "D": "No customer access decision matters"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Configuration and responsibilities remain relevant.",
+      "B": "Confidential data needs protection.",
+      "C": "Compliance depends on requirements and implementation.",
+      "D": "Customers control authorization."
+    },
+    "objective_id": "C10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-023",
+    "stem": "Which activity is manageability of cloud services?",
+    "choices": {
+      "A": "Choosing a command-line interface as the management entry point",
+      "B": "Monitoring and scaling a workload",
+      "C": "Disabling all operational visibility",
+      "D": "Selecting a portal instead of an API"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is a way to manage in the cloud rather than this operational activity.",
+      "B": "It concerns operating the deployed services.",
+      "C": "Visibility is part of management.",
+      "D": "That concerns management interface choice."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-024",
+    "stem": "Which example is manageability in the cloud?",
+    "choices": {
+      "A": "Replicating storage across zones",
+      "B": "Adding frontend instances as a capacity outcome",
+      "C": "Using a portal or script to operate resources",
+      "D": "Restoring a failed database as an operational outcome"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is a resilience configuration.",
+      "B": "That is a service-management activity rather than the interface.",
+      "C": "These are management interfaces.",
+      "D": "That describes managing the service rather than the interface used."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-025",
+    "stem": "What is an advantage of repeatable management scripts?",
+    "choices": {
+      "A": "Mandatory anonymous access",
+      "B": "Guaranteed absence of every error",
+      "C": "Automatic unlimited permissions",
+      "D": "Consistent documented operations"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Management scripts do not require public data.",
+      "B": "Scripts can contain mistakes.",
+      "C": "Scripts still need authorization.",
+      "D": "Automation reduces manual variation when maintained."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-026",
+    "stem": "A team wants to manage many resources consistently. Which capability helps?",
+    "choices": {
+      "A": "Only manual screenshots",
+      "B": "Sharing personal passwords",
+      "C": "Removing resource metadata",
+      "D": "APIs and automation"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Screenshots do not execute operations.",
+      "B": "Shared secrets are not a sound management approach.",
+      "C": "Metadata supports management.",
+      "D": "Programmatic interfaces support repeatable operations."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-027",
+    "stem": "Why combine deployment automation with monitoring?",
+    "choices": {
+      "A": "Monitoring makes ownership irrelevant",
+      "B": "Metrics automatically choose every business requirement",
+      "C": "Automation guarantees perpetual health",
+      "D": "Creation and ongoing operation need evidence"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Ownership still determines authority.",
+      "B": "Customers define requirements.",
+      "C": "Failures and changes remain possible.",
+      "D": "Deployment alone does not show continuing health."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "04-028",
+    "stem": "A portal and CLI both operate the same resource. What does this demonstrate?",
+    "choices": {
+      "A": "Multiple management interfaces",
+      "B": "Automatic scale out",
+      "C": "Two mandatory datacenters",
+      "D": "Two different resource owners"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Cloud resources can be managed through several tools.",
+      "B": "Tool availability alone does not scale.",
+      "C": "Interfaces do not define placement.",
+      "D": "Tool choice does not change ownership."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "04-029",
+    "stem": "Which check makes an operational script more trustworthy?",
+    "choices": {
+      "A": "Review preview and verify the intended outcome",
+      "B": "Assume exit text always proves health",
+      "C": "Remove all error handling",
+      "D": "Hide target subscription"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Evidence checks scope and result.",
+      "B": "Output must be interpreted and validated.",
+      "C": "Failures need handling.",
+      "D": "Explicit scope prevents mistakes."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "04-030",
+    "stem": "A deployment succeeded but no one checks service health. What is missing?",
+    "choices": {
+      "A": "Unlimited scale by default",
+      "B": "Ongoing operational management",
+      "C": "Only a new pricing commitment",
+      "D": "Only another successful deployment preview"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Capacity still requires planning.",
+      "B": "Success at creation is not continuing health.",
+      "C": "Pricing does not establish service health.",
+      "D": "A preview does not provide ongoing health monitoring."
+    },
+    "objective_id": "C11",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles"
+    ],
+    "difficulty": "review"
+  }
+]

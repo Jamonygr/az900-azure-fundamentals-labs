@@ -1,0 +1,16 @@
+{
+  "id": "00",
+  "slug": "safe-start",
+  "title": "Safe start and subscription readiness",
+  "domain": "foundation",
+  "objectives": [],
+  "duration_minutes": 45,
+  "mode": "read-only",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 0,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

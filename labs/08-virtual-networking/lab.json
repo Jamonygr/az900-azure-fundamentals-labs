@@ -1,0 +1,19 @@
+{
+  "id": "08",
+  "slug": "virtual-networking",
+  "title": "Virtual networks and connectivity",
+  "domain": "architecture",
+  "objectives": [
+    "A12",
+    "A13"
+  ],
+  "duration_minutes": 50,
+  "mode": "live",
+  "resource_profile": "network",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

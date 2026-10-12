@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680" role="img" aria-labelledby="title desc">
+<title id="title">From identity to permitted actions</title>
+<desc id="desc">Authentication asks who you are. Conditional Access applies signals and controls such as MFA or a compliant device. Azure RBAC asks which resource actions you may perform. An Azure role assignment combines a principal, a role definition, and a scope. Reader on a project resource group grants viewing there; broad inherited grants are not cancelled by a narrower Reader assignment.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="680" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">From identity to permitted actions</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Use different questions to separate sign-in, access conditions, and resource authorization.</text>
+<rect x="32" y="126" width="300" height="190" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="139" width="4" height="164" rx="2" fill="#0369a1"/>
+<text x="52" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Authentication</text>
+<text x="52" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Who are you?</text>
+<text x="52" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Verify identity with an</text>
+<text x="52" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">appropriate sign-in method.</text>
+<rect x="52" y="271" width="42" height="34" rx="17" fill="#edf4f9" stroke="#edf4f9" stroke-width="1.5"/>
+<text x="73.0" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#0369a1" font-weight="700" text-anchor="middle">1</text>
+<rect x="350" y="126" width="300" height="190" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="139" width="4" height="164" rx="2" fill="#6d28d9"/>
+<text x="370" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Conditional Access</text>
+<text x="370" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Under which conditions?</text>
+<text x="370" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Signals can lead to MFA,</text>
+<text x="370" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">device requirements, or block.</text>
+<rect x="370" y="271" width="42" height="34" rx="17" fill="#edf4f9" stroke="#edf4f9" stroke-width="1.5"/>
+<text x="391.0" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#6d28d9" font-weight="700" text-anchor="middle">2</text>
+<rect x="668" y="126" width="300" height="190" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="139" width="4" height="164" rx="2" fill="#0f766e"/>
+<text x="688" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Azure RBAC</text>
+<text x="688" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">What may you do?</text>
+<text x="688" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Check permitted actions</text>
+<text x="688" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">at the target resource scope.</text>
+<rect x="688" y="271" width="42" height="34" rx="17" fill="#edf4f9" stroke="#edf4f9" stroke-width="1.5"/>
+<text x="709.0" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#0f766e" font-weight="700" text-anchor="middle">3</text>
+<line x1="334" y1="215" x2="345" y2="215" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="652" y1="215" x2="663" y2="215" stroke="#64839a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="32" y="358" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0f766e" font-weight="700" text-anchor="start">A ROLE ASSIGNMENT HAS THREE PARTS</text>
+<rect x="32" y="376" width="300" height="151" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="389" width="4" height="125" rx="2" fill="#0f766e"/>
+<text x="52" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Principal</text>
+<text x="52" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">User, group, service principal,</text>
+<text x="52" y="465" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">or managed identity</text>
+<text x="52" y="490" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Example: support team</text>
+<rect x="350" y="376" width="300" height="151" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="389" width="4" height="125" rx="2" fill="#0f766e"/>
+<text x="370" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Role definition</text>
+<text x="370" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Allowed resource actions</text>
+<text x="370" y="465" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">and relevant data actions</text>
+<text x="370" y="490" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Example: Reader</text>
+<rect x="668" y="376" width="300" height="151" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="389" width="4" height="125" rx="2" fill="#0f766e"/>
+<text x="688" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Scope</text>
+<text x="688" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Where the grant applies</text>
+<text x="688" y="465" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">and can inherit downward</text>
+<text x="688" y="490" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Example: project resource group</text>
+<text x="341" y="461" font-family="Segoe UI,Arial,sans-serif" font-size="27" fill="#435c72" font-weight="700" text-anchor="middle">+</text>
+<text x="659" y="461" font-family="Segoe UI,Arial,sans-serif" font-size="27" fill="#435c72" font-weight="700" text-anchor="middle">+</text>
+<rect x="32" y="557" width="936" height="65" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<text x="52" y="582" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A successful sign-in does not guarantee permission to perform a resource action.</text>
+<text x="52" y="607" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A child Reader grant does not remove broader permissions inherited from an ancestor scope.</text>
+<text x="32" y="656" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Conceptual control layers, not a detailed sign-in protocol or a policy deployed by this lab.</text>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "id": "05",
+  "slug": "service-models",
+  "title": "Service models and serverless decisions",
+  "domain": "cloud",
+  "objectives": [
+    "C07",
+    "C12",
+    "C13",
+    "C14",
+    "C15"
+  ],
+  "duration_minutes": 45,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

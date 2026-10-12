@@ -1,0 +1,21 @@
+{
+  "id": "09",
+  "slug": "storage-services",
+  "title": "Storage services, tiers, and redundancy",
+  "domain": "architecture",
+  "objectives": [
+    "A14",
+    "A15",
+    "A16",
+    "A17"
+  ],
+  "duration_minutes": 50,
+  "mode": "live",
+  "resource_profile": "storage",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

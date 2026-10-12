@@ -1,0 +1,812 @@
+[
+  {
+    "id": "08-001",
+    "stem": "What is an Azure virtual network?",
+    "choices": {
+      "A": "A billing agreement",
+      "B": "An isolated logical network with defined address space",
+      "C": "An application permission role",
+      "D": "A managed file share"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is not a network construct.",
+      "B": "A VNet organizes network connectivity in Azure.",
+      "C": "That is authorization.",
+      "D": "That is storage."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-002",
+    "stem": "What does a subnet do?",
+    "choices": {
+      "A": "Replicates blobs to another region",
+      "B": "Authenticates every application user",
+      "C": "Partitions a VNet address space",
+      "D": "Creates a separate Azure subscription"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is storage redundancy.",
+      "B": "Network subdivision does not verify identity.",
+      "C": "Subnets create address ranges within the network.",
+      "D": "Subnetting does not create billing scopes."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-003",
+    "stem": "Why must subnet address ranges be planned?",
+    "choices": {
+      "A": "Subnets automatically fix all DNS names",
+      "B": "They must fit the VNet and avoid overlaps",
+      "C": "Each subnet must use the same complete prefix",
+      "D": "Private addresses guarantee all traffic is authorized"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Address planning does not solve name resolution.",
+      "B": "Valid ranges support predictable routing and allocation.",
+      "C": "Overlapping ranges are invalid.",
+      "D": "Addressing does not replace access control."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-004",
+    "stem": "What does VNet peering provide?",
+    "choices": {
+      "A": "A physical customer-owned circuit in every case",
+      "B": "Automatic replication of all application data",
+      "C": "A replacement for user authentication",
+      "D": "Connectivity between virtual networks over Azure infrastructure"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That describes a different connectivity approach.",
+      "B": "Connectivity is not data replication.",
+      "C": "Access policy remains necessary.",
+      "D": "Peering links supported VNets."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-005",
+    "stem": "A peers with B and B peers with C. Is A automatically connected to C through peering?",
+    "choices": {
+      "A": "Yes, resource tags enable transit",
+      "B": "No, peering is nontransitive",
+      "C": "No, peering only connects storage accounts",
+      "D": "Yes, every peering chain is transitive"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Tags do not establish routing.",
+      "B": "Explicit routing/connectivity design is needed.",
+      "C": "Peering connects VNets.",
+      "D": "That overstates peering behavior."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-006",
+    "stem": "What does DNS primarily do?",
+    "choices": {
+      "A": "Grant business permissions",
+      "B": "Allocate VM CPU capacity",
+      "C": "Resolve names to addresses",
+      "D": "Encrypt every packet"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Authorization is separate.",
+      "B": "Compute sizing is separate.",
+      "C": "DNS supplies name resolution.",
+      "D": "Name resolution is not universal encryption."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-007",
+    "stem": "An office needs encrypted tunnel connectivity to Azure over the internet. Which service fits?",
+    "choices": {
+      "A": "ExpressRoute as guaranteed encryption",
+      "B": "Azure Files",
+      "C": "A resource-group tag",
+      "D": "VPN Gateway"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Private circuits do not inherently mean all traffic is encrypted.",
+      "B": "File shares do not supply a VPN gateway.",
+      "C": "Metadata does not create a tunnel.",
+      "D": "It supports encrypted VPN connectivity."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-008",
+    "stem": "An organization needs private provider connectivity to Azure. Which offering fits?",
+    "choices": {
+      "A": "VPN Gateway over public internet only",
+      "B": "ExpressRoute",
+      "C": "An availability set",
+      "D": "Azure Table Storage"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is a tunnel across public connectivity.",
+      "B": "It supplies private connectivity through providers.",
+      "C": "That organizes VM placement.",
+      "D": "That stores NoSQL entities."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-009",
+    "stem": "Which ExpressRoute statement is accurate?",
+    "choices": {
+      "A": "Every circuit is simply an internet VPN",
+      "B": "Private connectivity does not automatically mean universal encryption",
+      "C": "It eliminates all authorization needs",
+      "D": "It creates a private-cloud model for Azure"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "ExpressRoute uses private provider connectivity.",
+      "B": "Encryption must be assessed separately.",
+      "C": "Private paths still need access controls.",
+      "D": "Connectivity does not change Azure ownership."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-010",
+    "stem": "An empty VNet and subnet have been deployed. What is available?",
+    "choices": {
+      "A": "A storage account's private endpoint automatically",
+      "B": "Addressing space and logical networking infrastructure",
+      "C": "A functioning office VPN automatically",
+      "D": "A running web application automatically"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That needs separate service configuration.",
+      "B": "The network contains no application instance yet.",
+      "C": "No gateway/tunnel was created.",
+      "D": "No compute was deployed."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-011",
+    "stem": "What does a subnet resource ID nested under a VNet show?",
+    "choices": {
+      "A": "The subnet is a child network resource",
+      "B": "The subnet grants subscription Owner",
+      "C": "The subnet is a management group",
+      "D": "The subnet is a separate physical region"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The ID represents containment within the VNet.",
+      "B": "IDs do not assign roles.",
+      "C": "Management groups organize subscriptions.",
+      "D": "Subnets are logical ranges."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-012",
+    "stem": "Which scenario is a natural peering use case?",
+    "choices": {
+      "A": "Encrypt a user's password",
+      "B": "Move archives by shipping a device",
+      "C": "Classify confidential documents",
+      "D": "Connect two Azure VNets with appropriate nonoverlapping design"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Authentication handling is separate.",
+      "B": "That is Data Box territory.",
+      "C": "That is information governance.",
+      "D": "Peering links virtual networks."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-013",
+    "stem": "What must be considered when joining networks?",
+    "choices": {
+      "A": "An assumption private addresses authorize every request",
+      "B": "Only whether the names match",
+      "C": "Address overlap, routing, and security requirements",
+      "D": "An assumption DNS alone creates routes"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Authentication remains separate.",
+      "B": "Names do not make ranges routable.",
+      "C": "Connectivity needs compatible network design.",
+      "D": "Name resolution does not supply a network path."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-014",
+    "stem": "Two networks use overlapping address ranges. What is the fundamental design concern?",
+    "choices": {
+      "A": "Ambiguous or unsupported routing/connectivity",
+      "B": "Automatic guest OS patching",
+      "C": "All data becoming archived",
+      "D": "Budget notifications disappearing"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Overlaps complicate network integration.",
+      "B": "Address ranges do not patch operating systems.",
+      "C": "Network design does not set storage tiers.",
+      "D": "Costs are unrelated to prefix overlap."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-015",
+    "stem": "A name resolves correctly but traffic still fails. What should be checked next?",
+    "choices": {
+      "A": "Only the resource's billing tag",
+      "B": "Only the DNS spelling again indefinitely",
+      "C": "Only the blob access tier",
+      "D": "Routing, reachability, and traffic rules"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Tags do not prove packet reachability.",
+      "B": "The address has already resolved.",
+      "C": "Tiering does not establish network reachability.",
+      "D": "Resolution alone does not prove connectivity."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-016",
+    "stem": "Which distinction separates peering from VPN Gateway?",
+    "choices": {
+      "A": "VPN Gateway is always a file-share cache",
+      "B": "Both are blob replication settings",
+      "C": "Peering links VNets; VPN Gateway supports VPN tunnels",
+      "D": "Peering is user authentication; VPN is budgeting"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That describes File Sync, not VPN.",
+      "B": "Neither is storage redundancy.",
+      "C": "They address different connectivity mechanisms.",
+      "D": "Those are unrelated roles."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-017",
+    "stem": "Why does a private network still need security controls?",
+    "choices": {
+      "A": "Private IPs guarantee every user is trusted",
+      "B": "VNets automatically delete malicious code",
+      "C": "Private connectivity does not authorize every workload/user",
+      "D": "All network rules belong only to visitors"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Addressing alone does not establish trust.",
+      "B": "Logical networks do not repair applications.",
+      "C": "Traffic and identity controls remain necessary.",
+      "D": "Customers configure workload controls."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-018",
+    "stem": "Which live deployment is included in this lab?",
+    "choices": {
+      "A": "A VNet and subnet in the owned group",
+      "B": "An ExpressRoute circuit",
+      "C": "A paid VPN Gateway",
+      "D": "A VM with a public IP"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The lifecycle profile deploys these small network resources.",
+      "B": "Provider circuits are conceptual here.",
+      "C": "Gateways are discussed but not deployed.",
+      "D": "Compute and public IPs are not required."
+    },
+    "objective_id": "A12",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-019",
+    "stem": "What makes a public endpoint public?",
+    "choices": {
+      "A": "It exists only in private clouds",
+      "B": "The customer loses all ownership",
+      "C": "Every request is automatically anonymous",
+      "D": "Its address is publicly routable"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Public endpoints can occur across models.",
+      "B": "Endpoint exposure does not transfer data ownership.",
+      "C": "Authentication can still be required.",
+      "D": "Reachability is distinct from authorization."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-020",
+    "stem": "What does a private endpoint provide?",
+    "choices": {
+      "A": "A private IP in a VNet for access to a supported service",
+      "B": "A finished email application",
+      "C": "A guaranteed regional backup",
+      "D": "A new cloud subscription"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Private Link integrates service access with private networking.",
+      "B": "That is SaaS.",
+      "C": "An endpoint is not data replication.",
+      "D": "An endpoint does not create billing boundaries."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-021",
+    "stem": "A storage account has a private endpoint. Is its public endpoint automatically disabled in every case?",
+    "choices": {
+      "A": "No, public access configuration is a separate decision",
+      "B": "No, private endpoints are always public IPs",
+      "C": "Yes, DNS deletes the account",
+      "D": "Yes, all public configuration is deleted"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Creating private connectivity does not inherently remove public exposure.",
+      "B": "They use private addresses.",
+      "C": "DNS does not delete resources.",
+      "D": "That is not general behavior."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-022",
+    "stem": "Why does private-endpoint DNS matter?",
+    "choices": {
+      "A": "DNS eliminates every firewall rule",
+      "B": "DNS replicates all blobs",
+      "C": "Clients must resolve the service name to the intended private address",
+      "D": "DNS grants blob data roles"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Traffic controls remain relevant.",
+      "B": "Resolution does not copy data.",
+      "C": "Correct resolution directs the connection.",
+      "D": "Authorization is separate."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-023",
+    "stem": "A private endpoint resolves to its private IP but a blob request is denied. What could still be missing?",
+    "choices": {
+      "A": "A larger VM size",
+      "B": "A second public IP",
+      "C": "Authorized data permissions",
+      "D": "A different resource-group name"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Compute size does not fix blob access.",
+      "B": "Public exposure is not required for data authorization.",
+      "C": "Network access does not grant data access.",
+      "D": "Names do not grant roles."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-024",
+    "stem": "A public storage endpoint requires Entra authorization. What is true?",
+    "choices": {
+      "A": "The account is private cloud",
+      "B": "Public routing and restricted data access can coexist",
+      "C": "It must use archive tier",
+      "D": "Public means any visitor can read data"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Access settings do not change deployment model.",
+      "B": "Endpoint reachability is separate from permission.",
+      "C": "Network access does not determine tier.",
+      "D": "Authorization can restrict requests."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-025",
+    "stem": "Which combination supports private service access?",
+    "choices": {
+      "A": "Only an availability set",
+      "B": "Only a private-looking resource name",
+      "C": "Only an account key stored in a public README",
+      "D": "Private endpoint, appropriate DNS, reachable network, and authorization"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "VM placement does not create private service access.",
+      "B": "Names do not create connectivity.",
+      "C": "Secret exposure does not provide safe network design.",
+      "D": "Each addresses a distinct requirement."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-026",
+    "stem": "What does creating this lab's VNet alone do to a storage public endpoint?",
+    "choices": {
+      "A": "Disable it globally",
+      "B": "Nothing automatically",
+      "C": "Grant anonymous reads",
+      "D": "Convert it to SaaS"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A separate empty network does not change the account.",
+      "B": "Service endpoints/private endpoints need separate configuration.",
+      "C": "Network creation does not change blob permissions.",
+      "D": "Networking does not select service model."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-027",
+    "stem": "A client outside the VNet cannot reach a private endpoint. What should be reviewed?",
+    "choices": {
+      "A": "An approved path into the network and DNS configuration",
+      "B": "Whether a tag can replace a VPN",
+      "C": "Whether archive rehydration fixes DNS",
+      "D": "Whether anonymous access can bypass routing"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Private reachability depends on the client's network path.",
+      "B": "Metadata cannot provide connectivity.",
+      "C": "Storage tier changes do not resolve routing.",
+      "D": "Permissions do not create routes."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "08-028",
+    "stem": "Which statement separates endpoint type from cloud model?",
+    "choices": {
+      "A": "A public-cloud service can have private connectivity",
+      "B": "A private IP always proves private-cloud ownership",
+      "C": "Endpoint type determines guest OS patching duty",
+      "D": "Public cloud requires anonymous endpoints"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Private endpoint access does not make Azure private cloud.",
+      "B": "Public cloud also uses private addresses.",
+      "C": "Service model determines that boundary.",
+      "D": "Access may remain restricted."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "08-029",
+    "stem": "A service name resolves to a public IP when private access was intended. What is a sensible first investigation?",
+    "choices": {
+      "A": "Changing cost tags",
+      "B": "Removing all authentication",
+      "C": "Increasing VM memory",
+      "D": "Private DNS configuration and resolution path"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Metadata does not direct DNS.",
+      "B": "That does not correct DNS.",
+      "C": "Compute capacity does not fix name resolution.",
+      "D": "The name may be using public resolution."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "08-030",
+    "stem": "Why are endpoint and authorization decisions both necessary?",
+    "choices": {
+      "A": "Connectivity determines the path; authorization controls permitted use",
+      "B": "RBAC automatically creates all network routes",
+      "C": "A private path replaces all permissions",
+      "D": "Public routing guarantees data access"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "They solve different parts of access.",
+      "B": "Permissions do not supply connectivity.",
+      "C": "Network isolation is not full authorization.",
+      "D": "Requests can still be denied."
+    },
+    "objective_id": "A13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+    ],
+    "difficulty": "review"
+  }
+]

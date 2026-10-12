@@ -1,0 +1,722 @@
+[
+  {
+    "id": "01-001",
+    "stem": "A team requests compute through a provider API. Which cloud characteristic is demonstrated?",
+    "choices": {
+      "A": "Unlimited guaranteed capacity",
+      "B": "On-demand resource access",
+      "C": "Physical server ownership",
+      "D": "Mandatory anonymous access"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Quotas and capacity limits still apply.",
+      "B": "The provider exposes computing capacity when requested.",
+      "C": "Using a service does not transfer hardware ownership.",
+      "D": "Cloud data can remain private."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-002",
+    "stem": "What can cloud computing supply alongside compute?",
+    "choices": {
+      "A": "Storage and networking",
+      "B": "Only virtual machines",
+      "C": "Only virtual networking",
+      "D": "Only identity services"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Cloud includes multiple infrastructure capabilities.",
+      "B": "Cloud also supplies storage, networking, and managed services.",
+      "C": "Cloud supplies compute and storage as well as networking.",
+      "D": "Identity is one cloud capability, not the entire offering."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-003",
+    "stem": "A one-week test needs infrastructure. What cloud capability is useful?",
+    "choices": {
+      "A": "Provision resources and release them afterward",
+      "B": "Eliminate all application defects",
+      "C": "Buy peak-sized hardware permanently",
+      "D": "Remove every service quota"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "On-demand provisioning fits temporary work.",
+      "B": "Cloud does not repair all custom code.",
+      "C": "That retains hardware beyond the test.",
+      "D": "Cloud offerings still impose limits."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-004",
+    "stem": "Can a fixed-size Azure VM still be a cloud resource?",
+    "choices": {
+      "A": "No, every cloud app must scale each minute",
+      "B": "No, cloud only stores files",
+      "C": "Yes, autoscaling is a separate configuration",
+      "D": "Yes, so its capacity is infinite"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Automatic scaling is not mandatory.",
+      "B": "Cloud also offers compute.",
+      "C": "Cloud delivery does not require each workload to autoscale.",
+      "D": "A fixed instance has finite capacity."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-005",
+    "stem": "What changes when server capacity is obtained as a provider service?",
+    "choices": {
+      "A": "The team requests capacity instead of procuring that physical server",
+      "B": "Application configuration disappears",
+      "C": "The team owns the datacenter",
+      "D": "All business data becomes public"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The provider operates underlying hardware.",
+      "B": "Customers still configure workloads.",
+      "C": "Service consumption does not transfer facilities.",
+      "D": "Cloud delivery does not require public records."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-006",
+    "stem": "Why does a cloud app still need capacity planning?",
+    "choices": {
+      "A": "Quotas and dependencies can limit performance",
+      "B": "Provider capacity automatically removes every workload bottleneck",
+      "C": "Every service has identical scaling behavior",
+      "D": "All cloud capacity is fixed permanently"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Provider capacity is not an unlimited workload guarantee.",
+      "B": "Dependencies and application design can still constrain performance.",
+      "C": "Scaling support and configuration differ among services.",
+      "D": "Many services can scale, though limits still matter."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-007",
+    "stem": "Which action is self-service provisioning?",
+    "choices": {
+      "A": "Ordering a rack for next quarter",
+      "B": "Requesting an allowed resource through an API",
+      "C": "Waiting for a hardware purchase before every VM request",
+      "D": "Adding a tag to an existing resource only"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is upfront procurement.",
+      "B": "The interface exposes on-demand resource creation.",
+      "C": "On-demand cloud APIs avoid this procurement cycle.",
+      "D": "Metadata updates do not create new capacity."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-008",
+    "stem": "What does a managed cloud database provide?",
+    "choices": {
+      "A": "Mandatory anonymous record access",
+      "B": "Data capability through a managed platform",
+      "C": "Guaranteed efficient custom queries",
+      "D": "Unrestricted control over the service's underlying operating system"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Database access can be restricted.",
+      "B": "The customer consumes a defined computing service.",
+      "C": "Customers must still design queries.",
+      "D": "A managed database abstracts the underlying platform."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-009",
+    "stem": "Why release temporary resources after testing?",
+    "choices": {
+      "A": "Deletion automatically cancels every unrelated subscription",
+      "B": "Deletion retroactively eliminates all incurred charges",
+      "C": "Retained services can keep consuming billed capacity",
+      "D": "Deletion keeps deployed storage permanently free"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Deleting lab resources does not cancel unrelated billing scopes.",
+      "B": "Already consumed usage may still be billed.",
+      "C": "Cleanup prevents unnecessary continued consumption.",
+      "D": "Deleting resources ends retention rather than making them free."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-010",
+    "stem": "Which requirement remains relevant after cloud migration?",
+    "choices": {
+      "A": "Direct administration of the provider's physical hosts",
+      "B": "Availability and recovery expectations",
+      "C": "Requiring every cloud resource to have a public IP",
+      "D": "Removing all monitoring"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Physical host maintenance belongs to the provider.",
+      "B": "Cloud workloads still need reliability design.",
+      "C": "Public exposure is not mandatory.",
+      "D": "Monitoring remains useful."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-011",
+    "stem": "A manager says cloud removes every operational duty. What corrects this?",
+    "choices": {
+      "A": "All work stays identical to owning hardware",
+      "B": "The boundary depends on the service",
+      "C": "Cloud transfers all customer data governance to Microsoft",
+      "D": "All duties disappear in SaaS"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "PaaS and SaaS transfer significant platform duties.",
+      "B": "Customers retain work even with managed services.",
+      "C": "Customers retain data-governance duties.",
+      "D": "Data and identity duties remain."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-012",
+    "stem": "Which description captures cloud computing?",
+    "choices": {
+      "A": "Any remotely accessed server regardless of service capabilities",
+      "B": "Provider-delivered computing capabilities",
+      "C": "A lifetime hardware purchase",
+      "D": "Only event-driven code with no managed databases"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Remote access alone does not establish a cloud operating model.",
+      "B": "Customers consume services rather than only local hardware.",
+      "C": "Buying hardware is not provider usage.",
+      "D": "Cloud provides broader services than functions alone."
+    },
+    "objective_id": "C01",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-013",
+    "stem": "Who maintains Azure's physical facilities?",
+    "choices": {
+      "A": "Every subscription Reader",
+      "B": "The application developer",
+      "C": "Website visitors",
+      "D": "Microsoft"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Reader access does not operate facilities.",
+      "B": "Code ownership does not include provider buildings.",
+      "C": "Visitors do not manage infrastructure.",
+      "D": "Physical infrastructure is provider responsibility."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-014",
+    "stem": "Who decides which employees may read customer records?",
+    "choices": {
+      "A": "Every authenticated user",
+      "B": "A facility technician",
+      "C": "The disk manufacturer",
+      "D": "The customer organization"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Authentication alone does not authorize all records.",
+      "B": "Physical maintenance does not set permissions.",
+      "C": "Hardware manufacture does not decide business access.",
+      "D": "Business authorization remains customer-owned."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-015",
+    "stem": "Who normally patches a typical IaaS VM guest OS?",
+    "choices": {
+      "A": "Microsoft automatically for every guest",
+      "B": "No one",
+      "C": "The customer",
+      "D": "The internet provider"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Provider host maintenance is distinct from guest patching.",
+      "B": "Virtual operating systems need updates.",
+      "C": "IaaS leaves guest maintenance with the customer.",
+      "D": "Connectivity does not maintain guest software."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-016",
+    "stem": "Which task remains with a PaaS customer deploying custom code?",
+    "choices": {
+      "A": "Patching the underlying managed platform OS",
+      "B": "Replacing host disks",
+      "C": "Maintaining application code",
+      "D": "Maintaining facility cooling"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "PaaS normally handles this layer.",
+      "B": "Hardware maintenance is provider work.",
+      "C": "PaaS manages the platform, not all customer logic.",
+      "D": "Facility operation is provider work."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-017",
+    "stem": "What remains a SaaS email customer's duty?",
+    "choices": {
+      "A": "Patching SaaS source code",
+      "B": "Replacing provider servers",
+      "C": "Selecting provider rack layout",
+      "D": "Managing user access and information"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "The provider maintains the finished application.",
+      "B": "Physical hardware is provider-maintained.",
+      "C": "That is facility operation.",
+      "D": "SaaS retains customer data and identity responsibilities."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-018",
+    "stem": "An employee leaves. Who should ensure their cloud app access is removed?",
+    "choices": {
+      "A": "The hardware vendor",
+      "B": "An unrelated tenant",
+      "C": "The customer organization",
+      "D": "The electricity supplier"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Hardware vendors do not manage customer accounts.",
+      "B": "Other tenants do not control these identities.",
+      "C": "Access lifecycle follows customer personnel decisions.",
+      "D": "Power supply does not control business access."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-019",
+    "stem": "What usually transfers when a VM application moves to suitable PaaS?",
+    "choices": {
+      "A": "Correction of every code error",
+      "B": "Customer data classification",
+      "C": "Employee permission approval",
+      "D": "Underlying platform OS maintenance"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Custom logic remains customer-owned.",
+      "B": "Customers still classify information.",
+      "C": "Customers still decide access.",
+      "D": "PaaS increases provider-managed platform responsibility."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-020",
+    "stem": "Why inspect responsibility guidance for the actual service?",
+    "choices": {
+      "A": "All services have identical boundaries",
+      "B": "Services allocate operational duties differently",
+      "C": "Only hardware needs protection",
+      "D": "The deployment region alone determines every duty"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "IaaS, PaaS, and SaaS differ.",
+      "B": "Service details refine the general model.",
+      "C": "Data, code, and identities also need protection.",
+      "D": "Responsibility depends on the service and operating boundary."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-021",
+    "stem": "Who determines the sensitivity of customer files?",
+    "choices": {
+      "A": "Anyone guessing the URL",
+      "B": "Only the cooling operator",
+      "C": "Only the disk manufacturer",
+      "D": "The customer"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A URL does not confer governance authority.",
+      "B": "Cooling staff do not set data policy.",
+      "C": "Manufacturing does not classify business data.",
+      "D": "The organization governs its own information."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-022",
+    "stem": "Who secures a customer-owned laptop used with SaaS?",
+    "choices": {
+      "A": "The customer organization",
+      "B": "The SaaS provider automatically",
+      "C": "Another tenant",
+      "D": "No one"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "SaaS hosting does not transfer endpoint ownership.",
+      "B": "It does not maintain every customer device.",
+      "C": "Other tenants do not manage this laptop.",
+      "D": "Managed hosting does not eliminate endpoint security."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-023",
+    "stem": "Which IaaS responsibility split is correct?",
+    "choices": {
+      "A": "Visitors hosts; customer Azure cooling",
+      "B": "Provider business permissions; customer power",
+      "C": "Provider physical hosts; customer guest OS",
+      "D": "Customer hosts; provider every guest"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Visitors do not operate provider infrastructure.",
+      "B": "Access and facility duties are reversed.",
+      "C": "Infrastructure and guest layers have different owners.",
+      "D": "This reverses the normal split."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-024",
+    "stem": "A managed database engine still requires the customer to do what?",
+    "choices": {
+      "A": "Control access and application data use",
+      "B": "Replace Azure racks",
+      "C": "Purchase its physical server",
+      "D": "Choose facility fire suppression"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Engine management does not decide business authorization.",
+      "B": "Racks are provider infrastructure.",
+      "C": "Managed services supply infrastructure.",
+      "D": "Facility systems are provider-managed."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-025",
+    "stem": "Which risk persists with provider-maintained hardware?",
+    "choices": {
+      "A": "Overly broad customer permissions",
+      "B": "Customer failure to repair Azure cooling",
+      "C": "Customer failure to patrol Azure buildings",
+      "D": "Customer failure to replace host CPUs"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Hardware maintenance does not fix authorization decisions.",
+      "B": "Cooling is a provider duty.",
+      "C": "Facility access is provider-managed.",
+      "D": "Physical hosts are provider-maintained."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-026",
+    "stem": "How should a SaaS customer protect its information?",
+    "choices": {
+      "A": "Configure appropriate access and data handling",
+      "B": "Allow all users all records",
+      "C": "Patch the provider hypervisor directly",
+      "D": "Stop reviewing access after purchase"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Customer governance remains necessary.",
+      "B": "SaaS does not justify unrestricted access.",
+      "C": "That layer belongs to the provider.",
+      "D": "Access should still be reviewed."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-027",
+    "stem": "A container runs on a customer-managed VM. Who patches the VM OS?",
+    "choices": {
+      "A": "No one because hosts disappear",
+      "B": "Application visitors",
+      "C": "Microsoft because containers are SaaS",
+      "D": "The customer"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Containers still run on infrastructure.",
+      "B": "Visitors do not administer the host.",
+      "C": "Containers are not inherently SaaS.",
+      "D": "Packaging does not transfer VM host duties."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "01-028",
+    "stem": "Who protects Azure physical networking while the customer configures workload rules?",
+    "choices": {
+      "A": "Customer cabling; provider all business rules",
+      "B": "Visitors both through sign-in",
+      "C": "Neither party",
+      "D": "Provider physical network; customer logical controls"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "This reverses the usual split.",
+      "B": "Authentication does not maintain either layer.",
+      "C": "Both have security responsibilities.",
+      "D": "The physical and workload layers have different owners."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "01-029",
+    "stem": "A PaaS app leaks records through a code error. What requires correction?",
+    "choices": {
+      "A": "Nothing because leaks are impossible",
+      "B": "Only Microsoft must rewrite all customer code",
+      "C": "Customer application and authorization behavior",
+      "D": "Only switching to a different billing subscription"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "PaaS can host flawed customer code.",
+      "B": "The customer maintains its custom application logic.",
+      "C": "Managed hosting does not guarantee correct custom logic.",
+      "D": "Billing scope does not repair a code authorization flaw."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "01-030",
+    "stem": "Which review confirms SaaS responsibilities were understood?",
+    "choices": {
+      "A": "Confirm the customer must patch the SaaS underlying OS",
+      "B": "Identify remaining data, identity, and configuration duties",
+      "C": "Confirm the provider decides every user's business permissions",
+      "D": "Confirm every security duty vanished"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The provider operates the finished application's platform.",
+      "B": "These duties survive the hosting change.",
+      "C": "Customers retain business access decisions.",
+      "D": "That misunderstands shared responsibility."
+    },
+    "objective_id": "C02",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
+    ],
+    "difficulty": "review"
+  }
+]

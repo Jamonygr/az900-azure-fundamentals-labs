@@ -1,0 +1,812 @@
+[
+  {
+    "id": "03-001",
+    "stem": "What does consumption-based billing measure?",
+    "choices": {
+      "A": "Usage of defined service meters",
+      "B": "Only employee count",
+      "C": "One lifetime hardware purchase",
+      "D": "Only reserved capacity regardless of the service meter"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Meters include runtime, capacity, operations, and transfer.",
+      "B": "Many services bill by resource use.",
+      "C": "That is upfront procurement.",
+      "D": "Consumption meters differ; a reservation is a pricing commitment."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-002",
+    "stem": "A fictional rate is 0.20 per hour for 120 hours. What is the runtime cost?",
+    "choices": {
+      "A": "0.20",
+      "B": "120.00",
+      "C": "600.00",
+      "D": "24.00"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That accounts for one hour only.",
+      "B": "Hours were mistaken for currency.",
+      "C": "Dividing by the rate is incorrect.",
+      "D": "Multiply hours by the unit rate."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-003",
+    "stem": "Compute hours double while storage stays constant. Which charge doubles under unchanged linear rates?",
+    "choices": {
+      "A": "The unchanged storage-capacity component",
+      "B": "Every charge",
+      "C": "Compute runtime",
+      "D": "No charge"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The storage meter did not change in this scenario.",
+      "B": "Unchanged usage does not automatically double.",
+      "C": "The changed meter doubles.",
+      "D": "Paid cloud services can bill usage."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-004",
+    "stem": "Buying a physical server upfront is commonly what?",
+    "choices": {
+      "A": "Operating expenditure for ongoing service use",
+      "B": "A pay-as-you-go compute invoice",
+      "C": "Consumption-based billing",
+      "D": "Capital expenditure"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Upfront hardware ownership is different from ongoing service bills.",
+      "B": "The scenario purchases hardware rather than consuming provider compute.",
+      "C": "This is not a provider usage meter.",
+      "D": "The organization purchases an asset."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-005",
+    "stem": "Ongoing provider service bills are commonly what?",
+    "choices": {
+      "A": "Mandatory purchase of provider hardware",
+      "B": "Operating expenditure",
+      "C": "An upfront asset purchase in every case",
+      "D": "A reservation term by definition"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Customers ordinarily consume rather than buy those hosts.",
+      "B": "They pay for ongoing service consumption.",
+      "C": "Ongoing service spending is not necessarily an owned asset purchase.",
+      "D": "Ongoing bills need not involve a commitment discount."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-006",
+    "stem": "Why can retained storage cost money without compute activity?",
+    "choices": {
+      "A": "Unused accounts always become free",
+      "B": "Resource names stop billing",
+      "C": "All accounts have unlimited free storage",
+      "D": "Capacity and operations have separate meters"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Retained services may continue billing.",
+      "B": "Names do not end consumption.",
+      "C": "Allowances are bounded and offer-specific.",
+      "D": "Storage can incur charges independently."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-007",
+    "stem": "What should accompany a cloud-cost estimate?",
+    "choices": {
+      "A": "Only a total with no meter or usage assumptions",
+      "B": "Usage, region, and configuration assumptions",
+      "C": "A claim that transfer never costs",
+      "D": "A guarantee actual usage cannot differ"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "An unexplained total cannot be reviewed meaningfully.",
+      "B": "Inputs explain the estimate's limits.",
+      "C": "Transfer may be relevant.",
+      "D": "Real consumption may change."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-008",
+    "stem": "A VM is shut down in its guest OS but remains allocated. What can happen?",
+    "choices": {
+      "A": "Its OS disk is automatically deleted",
+      "B": "Compute allocation charges continue",
+      "C": "The subscription is cancelled",
+      "D": "All related costs stop"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Guest shutdown does not delete disks.",
+      "B": "Stopped allocated VMs retain allocation charges.",
+      "C": "VM shutdown does not cancel subscriptions.",
+      "D": "Allocation and retained resources can bill."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-009",
+    "stem": "A deallocated VM retains managed disks. Which cost can remain?",
+    "choices": {
+      "A": "Disk storage",
+      "B": "Identical allocated compute charges always",
+      "C": "Guest OS maintenance charges automatically replacing all disk meters",
+      "D": "No cost of any kind"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Disks are separately billed resources.",
+      "B": "Deallocation changes compute billing status.",
+      "C": "Deallocation does not change disks into maintenance fees.",
+      "D": "Retained resources may cost money."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-010",
+    "stem": "A normal budget threshold is reached. What does the alert do?",
+    "choices": {
+      "A": "Notify according to configured rules",
+      "B": "Archive all blobs",
+      "C": "Guarantee a maximum invoice",
+      "D": "Delete every resource"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A budget is not universal shutdown automation.",
+      "B": "Budgets do not automatically change tiers.",
+      "C": "Consumption can continue beyond the threshold.",
+      "D": "Budgets do not automatically delete resources."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-011",
+    "stem": "Which practice makes a multi-service cost estimate incomplete?",
+    "choices": {
+      "A": "Ignoring relevant transfer and storage meters",
+      "B": "Stating usage assumptions",
+      "C": "Recording the currency",
+      "D": "Recording the chosen region"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "All relevant components need consideration.",
+      "B": "Usage supports the calculation.",
+      "C": "Currency is needed for interpretation.",
+      "D": "Region is useful estimate context."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-012",
+    "stem": "How can a team validate its original estimate?",
+    "choices": {
+      "A": "Compare only the calculator's total with the resource count",
+      "B": "Compare observed consumption with assumptions",
+      "C": "Check only resource existence",
+      "D": "Treat calculator output as the invoice"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Resource counts do not validate per-service consumption.",
+      "B": "Actual usage reveals mismatches.",
+      "C": "Existence does not measure spend.",
+      "D": "A calculator produces estimates."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-013",
+    "stem": "Runtime doubles at the same hourly rate. What happens to that linear runtime charge?",
+    "choices": {
+      "A": "It becomes zero",
+      "B": "It doubles",
+      "C": "It halves",
+      "D": "It stays fixed regardless of consumed hours"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "No free allowance was specified.",
+      "B": "Cost follows hours multiplied by rate.",
+      "C": "Longer runtime does not halve cost.",
+      "D": "This example specifies unchanged linear runtime pricing."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-014",
+    "stem": "Why is there no single universal price per subscription?",
+    "choices": {
+      "A": "Every resource group has one flat all-service rate",
+      "B": "All services share a fixed minute rate",
+      "C": "A subscription commitment covers every storage and compute meter equally",
+      "D": "Services use different meters and configurations"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Groups organize resources rather than defining a universal price.",
+      "B": "Pricing is service-specific.",
+      "C": "Discount coverage depends on eligibility and terms.",
+      "D": "A subscription can contain many charge types."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-015",
+    "stem": "Which action limits costs after a temporary exercise?",
+    "choices": {
+      "A": "Delete owned resources and verify removal",
+      "B": "Leave resources because the test was temporary",
+      "C": "Rely on a budget to stop everything",
+      "D": "Delete only local scripts"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Cleanup avoids unnecessary retained usage.",
+      "B": "Intent does not stop billing.",
+      "C": "Alerts are not universal shutdown.",
+      "D": "Local deletion does not remove Azure resources."
+    },
+    "objective_id": "C05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-016",
+    "stem": "Which pricing approach generally avoids a long-term usage commitment?",
+    "choices": {
+      "A": "A reservation for a stable long-term workload",
+      "B": "Multi-year capacity commitment",
+      "C": "Pay-as-you-go",
+      "D": "Buying a datacenter"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A reservation involves a commitment rather than avoiding it.",
+      "B": "That explicitly commits usage.",
+      "C": "It prioritizes consumption flexibility.",
+      "D": "That creates major upfront commitment."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-017",
+    "stem": "What tradeoff commonly accompanies a reservation discount?",
+    "choices": {
+      "A": "All users gain access",
+      "B": "Unused disks are deleted automatically",
+      "C": "A term commitment for eligible usage",
+      "D": "Every Azure service becomes free"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Pricing does not grant permissions.",
+      "B": "Reservations do not clean resources.",
+      "C": "Coverage depends on reservation terms.",
+      "D": "Reservations cover eligible charges only."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-018",
+    "stem": "Which workload is stronger for evaluating a commitment discount?",
+    "choices": {
+      "A": "An app retiring tomorrow",
+      "B": "Stable eligible usage through the term",
+      "C": "A workload whose eligible demand is highly unpredictable",
+      "D": "An uncertain ten-minute experiment"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It may not use the commitment.",
+      "B": "Consistent use can consume the commitment.",
+      "C": "Uncertain demand may leave commitment unused.",
+      "D": "A long term may not fit temporary use."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-019",
+    "stem": "What defines a compute savings plan at a high level?",
+    "choices": {
+      "A": "Unlimited free future storage",
+      "B": "Guaranteed CPU capacity in every region",
+      "C": "Commitment to eligible hourly compute spend",
+      "D": "A single fixed discount covering every Azure product"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "It is not free storage.",
+      "B": "It is not a universal capacity guarantee.",
+      "C": "Its terms exchange spend commitment for discounted rates.",
+      "D": "Savings plans cover eligible compute under their terms."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-020",
+    "stem": "Why is Spot risky as the sole uninterrupted critical host?",
+    "choices": {
+      "A": "Its discount automatically creates a redundant replica",
+      "B": "It guarantees uninterrupted reserved capacity",
+      "C": "It prevents every guest OS restart",
+      "D": "Instances can be evicted"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Pricing does not add a failover design.",
+      "B": "Spot has no such uninterrupted guarantee.",
+      "C": "Compute can still restart or be evicted.",
+      "D": "Spare capacity can be reclaimed."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-021",
+    "stem": "Which workload can reasonably evaluate Spot?",
+    "choices": {
+      "A": "A sole server that cannot stop",
+      "B": "Work unable to restart or retain progress",
+      "C": "Restartable interruption-tolerant batch work",
+      "D": "Guaranteed permanent capacity"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That conflicts with eviction risk.",
+      "B": "Eviction could destroy required progress.",
+      "C": "The job can recover after eviction.",
+      "D": "Spot capacity is not guaranteed."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-022",
+    "stem": "Regional estimates differ. What should be compared?",
+    "choices": {
+      "A": "Equivalent SKU, license, usage, and rates",
+      "B": "An assumed identical global price",
+      "C": "Only advertised compute rate while ignoring license differences",
+      "D": "Only runtime while ignoring SKU and region"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Like-for-like inputs support a meaningful comparison.",
+      "B": "Prices can vary.",
+      "C": "Licensing must be aligned for a fair comparison.",
+      "D": "The rate depends on configuration and placement too."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-023",
+    "stem": "What must be checked before a reservation is assumed to cover a charge?",
+    "choices": {
+      "A": "Any reservation anywhere",
+      "B": "Any Microsoft product name",
+      "C": "Whether the resource name contains the word reserved",
+      "D": "Eligibility, scope, term, and matching usage"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "An unrelated commitment may not apply.",
+      "B": "Not all products or meters qualify.",
+      "C": "Names do not determine reservation coverage.",
+      "D": "Discount coverage is bounded."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-024",
+    "stem": "Why assess unpredictable use before committing?",
+    "choices": {
+      "A": "Commitments guarantee future demand",
+      "B": "Unused commitment can reduce savings",
+      "C": "Pay-as-you-go never bills",
+      "D": "Commitments repair code"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Demand still changes.",
+      "B": "Committed spend may exceed actual eligible use.",
+      "C": "It bills consumption.",
+      "D": "They change pricing rather than logic."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-025",
+    "stem": "What does a current pricing-calculator result represent?",
+    "choices": {
+      "A": "An estimate based on chosen inputs",
+      "B": "Proof of deployment",
+      "C": "A guaranteed invoice",
+      "D": "A reservation purchase confirmation"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Actual bills use actual consumption and terms.",
+      "B": "Estimating does not deploy.",
+      "C": "Usage and agreements can differ.",
+      "D": "Calculating does not purchase."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-026",
+    "stem": "Temporary festival capacity has uncertain future demand. What preserves flexibility?",
+    "choices": {
+      "A": "Evaluate pay-as-you-go",
+      "B": "Assume temporary capacity is unmetered",
+      "C": "Commit all peak demand for years blindly",
+      "D": "Use Spot for an uninterrupted sole frontend"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It avoids an unsupported term commitment.",
+      "B": "Temporary use can be billed.",
+      "C": "That risks unused commitments.",
+      "D": "Eviction conflicts with that requirement."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-027",
+    "stem": "Which factor can change a price comparison legitimately?",
+    "choices": {
+      "A": "Only whether both resources are in one group",
+      "B": "Tier and licensing assumptions",
+      "C": "Only whether both estimates use the same subscription name",
+      "D": "Only whether both workloads run for the same hours"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A common group does not force identical rates.",
+      "B": "Configuration and license terms affect rates.",
+      "C": "Names do not align pricing inputs.",
+      "D": "Equal hours do not ensure equal SKU or license pricing."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "03-028",
+    "stem": "A discounted service still wastes capacity. What should the team do?",
+    "choices": {
+      "A": "Ignore idle resources",
+      "B": "Increase all unused capacity",
+      "C": "Right-size usage and assess discounts",
+      "D": "Stop monitoring"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Discounts do not eliminate waste.",
+      "B": "That may increase wasted spend.",
+      "C": "Efficient consumption and discounts complement each other.",
+      "D": "Monitoring helps reveal inefficiency."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "03-029",
+    "stem": "What should accompany a Spot worker recommendation?",
+    "choices": {
+      "A": "A promise eviction cannot occur",
+      "B": "A promise that the pricing discount creates automatic failover",
+      "C": "A tested retry and interruption strategy",
+      "D": "Guaranteed temporary-disk durability"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Capacity can be reclaimed.",
+      "B": "A discount does not create recovery architecture.",
+      "C": "Eviction handling is essential.",
+      "D": "Temporary state may be lost."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "03-030",
+    "stem": "Why avoid using fictional exercise rates as Azure quotes?",
+    "choices": {
+      "A": "Azure has no monetary rates",
+      "B": "Fictional arithmetic reserves capacity",
+      "C": "The script sets Azure rates",
+      "D": "Real prices depend on current inputs and terms"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Services have monetary pricing.",
+      "B": "It creates no commercial commitment.",
+      "C": "Local calculations do not control provider prices.",
+      "D": "Teaching values are not provider quotes."
+    },
+    "objective_id": "C06",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing"
+    ],
+    "difficulty": "review"
+  }
+]

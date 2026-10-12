@@ -1,0 +1,692 @@
+[
+  {
+    "id": "11-001",
+    "stem": "A team wants employees to sign in to several cloud business applications with one organizational identity. Which service is the foundation?",
+    "choices": {
+      "A": "Azure Policy",
+      "B": "Microsoft Entra ID",
+      "C": "Microsoft Entra Domain Services",
+      "D": "Azure RBAC"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Policy applies resource governance rules rather than providing a directory.",
+      "B": "Entra ID supplies cloud identity and application sign-in.",
+      "C": "A managed legacy domain is not the foundation for modern cloud-app sign-in.",
+      "D": "RBAC authorizes Azure resource actions rather than supplying cloud sign-in identities."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-002",
+    "stem": "A legacy application requires LDAP and Kerberos in Azure, but the team does not want to maintain domain controllers. Which choice fits?",
+    "choices": {
+      "A": "Microsoft Entra Domain Services",
+      "B": "Microsoft Entra ID alone",
+      "C": "Self-managed AD DS on Azure VMs",
+      "D": "Microsoft Entra External ID customer tenant"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The managed domain supports these legacy protocols.",
+      "B": "Entra ID alone does not provide the application's traditional LDAP domain requirement.",
+      "C": "That preserves legacy protocols but leaves the customer maintaining the domain controllers.",
+      "D": "A customer sign-in design does not provide the required managed legacy domain."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-003",
+    "stem": "What does a Microsoft Entra tenant represent?",
+    "choices": {
+      "A": "An Azure subscription",
+      "B": "A management group",
+      "C": "A resource group",
+      "D": "A dedicated directory instance for identities and applications"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A subscription is a resource and billing boundary, not the directory instance.",
+      "B": "A management group organizes subscriptions rather than acting as the identity directory.",
+      "C": "A resource group organizes Azure resources rather than the directory's identities.",
+      "D": "The tenant is an identity boundary with its own directory objects."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-004",
+    "stem": "Who maintains the domain controllers provided by Microsoft Entra Domain Services?",
+    "choices": {
+      "A": "The customer's application development team",
+      "B": "The customer's VM guest-OS administrator",
+      "C": "The customer's directory infrastructure team",
+      "D": "Microsoft"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "The developers maintain their application, not the provider-managed domain controllers.",
+      "B": "Domain Services provides its own managed controllers rather than customer-managed VM controllers.",
+      "C": "That would describe self-managed domain controllers rather than this managed service.",
+      "D": "The service manages its domain controllers."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-005",
+    "stem": "An architect needs Group Policy support for a migrated domain-dependent application. Which service should be evaluated?",
+    "choices": {
+      "A": "Microsoft Entra External ID",
+      "B": "Microsoft Entra Domain Services",
+      "C": "Microsoft Entra ID alone",
+      "D": "Azure Policy"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "External-app identity scenarios do not provide the required Group Policy domain service.",
+      "B": "Managed domains provide Group Policy capabilities.",
+      "C": "Modern cloud identity alone does not supply traditional Group Policy for this legacy-domain requirement.",
+      "D": "Azure resource governance and traditional domain Group Policy are different mechanisms."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-006",
+    "stem": "Which requirement favors modern Microsoft Entra ID integration over a managed legacy domain?",
+    "choices": {
+      "A": "A migrated application requiring LDAP",
+      "B": "Signing in to a cloud application using modern identity protocols",
+      "C": "An application requiring NTLM",
+      "D": "A workload depending on domain Group Policy"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A legacy LDAP requirement favors a compatible domain service rather than modern integration alone.",
+      "B": "Modern cloud sign-in fits Entra ID without introducing a legacy domain.",
+      "C": "NTLM compatibility is a traditional-domain use case.",
+      "D": "Traditional Group Policy is a managed-domain capability."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-007",
+    "stem": "A learner sees the same tenant ID on two Azure subscriptions. What is a reasonable interpretation?",
+    "choices": {
+      "A": "The subscriptions must be the same billing container",
+      "B": "Both subscriptions must use the same Azure region",
+      "C": "Every user has identical access to both subscriptions",
+      "D": "Both subscriptions trust the same Entra directory"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A shared tenant does not merge subscription boundaries.",
+      "B": "Tenant association does not determine deployment regions.",
+      "C": "Azure role assignments still determine access.",
+      "D": "Multiple subscriptions can be associated with one tenant."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-008",
+    "stem": "Where should a team manage the source identity for a user synchronized into an Entra managed domain?",
+    "choices": {
+      "A": "Change the resource group's ownership tags",
+      "B": "Edit Azure RBAC assignments to change the user's directory profile",
+      "C": "Edit only the synchronized user inside the managed domain",
+      "D": "In the upstream identity source"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Resource metadata does not maintain directory user objects.",
+      "B": "Resource role assignments do not maintain directory profile attributes.",
+      "C": "That does not update the upstream source of the synchronized identity.",
+      "D": "Synchronized identities flow from Entra ID and any configured upstream directory."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-009",
+    "stem": "Which pairing correctly separates an identity directory from an Azure resource container?",
+    "choices": {
+      "A": "Entra tenant for identities; resource group for related Azure resources",
+      "B": "Management group for passwords; resource group for guest invitations",
+      "C": "VNet for application users; tenant for subnet prefixes",
+      "D": "Subscription for identities; tenant for virtual networks"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The two containers solve different management problems.",
+      "B": "Neither container replaces the directory's identity management.",
+      "C": "VNets organize network addresses rather than directory users.",
+      "D": "A subscription and tenant have resource and identity purposes respectively."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-010",
+    "stem": "What is the usual synchronization direction from Entra ID into Microsoft Entra Domain Services?",
+    "choices": {
+      "A": "From Azure Advisor into Entra ID",
+      "B": "From the managed domain to every Azure subscription",
+      "C": "Bidirectionally for every object without restrictions",
+      "D": "From Entra ID to the managed domain"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Advisor is not an identity synchronization source.",
+      "B": "Subscriptions are not synchronized directories.",
+      "C": "The managed domain is not unrestricted bidirectional synchronization.",
+      "D": "The managed domain receives synchronized identity information."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-011",
+    "stem": "A learner can authenticate to Azure but cannot list resources in a subscription. What should they distinguish?",
+    "choices": {
+      "A": "Authentication and DNS replication",
+      "B": "Subscription location and storage tier",
+      "C": "Tenant creation and disk sizing",
+      "D": "Directory authentication and resource authorization"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "DNS replication does not grant resource access.",
+      "B": "These are unrelated to authorization.",
+      "C": "Neither explains the permission decision.",
+      "D": "A recognized identity still needs permission at an appropriate resource scope."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-012",
+    "stem": "Which capability is associated with a traditional managed domain?",
+    "choices": {
+      "A": "Domain join for compatible virtual machines",
+      "B": "Providing object-storage lifecycle rules",
+      "C": "Replacing all application authorization logic",
+      "D": "Automatically deploying every Azure resource"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Domain Services supports domain-dependent workloads.",
+      "B": "Lifecycle rules are a storage capability.",
+      "C": "Applications and resource permissions still require access design.",
+      "D": "Resource deployment is a separate management function."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-013",
+    "stem": "Which statement about Entra ID and self-managed Active Directory Domain Services is accurate?",
+    "choices": {
+      "A": "Entra ID is a managed implementation of every AD DS protocol",
+      "B": "Entra ID requires a customer-deployed controller for each tenant",
+      "C": "They serve different identity scenarios and can be integrated",
+      "D": "AD DS and Entra ID cannot participate in a hybrid identity design"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Cloud identity and traditional AD DS have different protocol capabilities.",
+      "B": "The cloud identity directory is a managed service.",
+      "C": "Cloud identity and traditional domain services have distinct capabilities.",
+      "D": "Organizations can integrate directory identity with appropriate synchronization and authentication design."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-014",
+    "stem": "An organization plans to use Entra Domain Services. What should be included in its design?",
+    "choices": {
+      "A": "A suitable Azure network and managed-domain requirements",
+      "B": "Assume it is equivalent to adding a free directory tag",
+      "C": "Use it instead of modern sign-in for every new cloud app",
+      "D": "Grant every workload subscription Owner for domain sign-in"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The managed domain is a deployed service with network and cost considerations.",
+      "B": "A managed domain is a deployed service with network and cost implications.",
+      "C": "A legacy-domain requirement should guide selection rather than blanket replacement.",
+      "D": "Azure resource ownership is not a universal domain authentication requirement."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-015",
+    "stem": "Which observation from az account show helps identify the subscription's directory association?",
+    "choices": {
+      "A": "id",
+      "B": "tenantId",
+      "C": "name",
+      "D": "state"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The id field identifies the subscription, not its tenant association.",
+      "B": "This field identifies the associated Entra tenant.",
+      "C": "The subscription display name is not its directory identifier.",
+      "D": "The state indicates whether the subscription is enabled rather than its tenant identity."
+    },
+    "objective_id": "A20",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-016",
+    "stem": "A supplier needs access to one enterprise application using their existing work identity. Which capability fits?",
+    "choices": {
+      "A": "Microsoft Entra Domain Services",
+      "B": "B2B collaboration in Microsoft Entra External ID",
+      "C": "Azure RBAC alone",
+      "D": "Customer identity in an external tenant"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A legacy managed domain is not the required partner collaboration design.",
+      "B": "B2B supports collaboration with business guests.",
+      "C": "Resource roles do not establish the supplier's external sign-in identity relationship.",
+      "D": "That targets customer-app sign-up rather than workforce partner collaboration."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-017",
+    "stem": "A company is building sign-up and sign-in for retail customers. Which identity scenario should it evaluate?",
+    "choices": {
+      "A": "B2B invitations for workforce collaboration",
+      "B": "Azure RBAC accounts for every shopper",
+      "C": "Microsoft Entra Domain Services",
+      "D": "Customer identity and access management in an external tenant"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "This is a consumer-app identity scenario rather than inviting business partners to workforce apps.",
+      "B": "Resource-management authorization is not consumer-app identity management.",
+      "C": "A managed legacy domain is not the normal retail-customer sign-up design.",
+      "D": "External tenants support consumer-facing application identities."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-018",
+    "stem": "What should an invited business guest receive?",
+    "choices": {
+      "A": "Access to every employee application after invitation",
+      "B": "Permanent directory administration rights",
+      "C": "Permissions appropriate to the collaboration task",
+      "D": "Automatic Reader access to every subscription in the tenant"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The approved collaboration task should determine application access.",
+      "B": "A business guest invitation does not justify directory administration.",
+      "C": "Guest access should follow least privilege.",
+      "D": "Even a read-only grant should be scoped to the collaboration task."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-019",
+    "stem": "What distinguishes a workforce tenant from an external tenant configuration?",
+    "choices": {
+      "A": "An external tenant is a virtual network with public IP addresses",
+      "B": "A workforce tenant stores only virtual disks",
+      "C": "An external tenant cannot authenticate people",
+      "D": "A workforce tenant primarily serves employees; an external tenant serves customer apps"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It is an identity directory configuration.",
+      "B": "Tenant directories manage identities and applications.",
+      "C": "Authentication is a core external-tenant purpose.",
+      "D": "The tenant configurations target different populations."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-020",
+    "stem": "A guest invitation is accepted successfully. What must still be considered before the guest uses a resource?",
+    "choices": {
+      "A": "Only the subscription's enabled state",
+      "B": "Only the guest object's presence in the directory",
+      "C": "Only the partner's successful home-directory sign-in",
+      "D": "The required application or resource permissions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "An enabled subscription does not prove that this guest has access.",
+      "B": "An identity object does not establish all application or resource authorization.",
+      "C": "Home identity authentication does not grant the intended resource access.",
+      "D": "Authentication and invitation do not automatically grant every permission."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-021",
+    "stem": "Which advantage can B2B collaboration offer compared with sharing one local account?",
+    "choices": {
+      "A": "Each collaborator can use an individually identifiable identity",
+      "B": "It eliminates the need to review guest access",
+      "C": "It turns guests into billing administrators",
+      "D": "It automatically removes every Conditional Access requirement"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Individual identities improve access accountability.",
+      "B": "External access still needs lifecycle governance.",
+      "C": "Collaboration access is unrelated to automatic billing authority.",
+      "D": "Guest sign-in can remain subject to access policies."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-022",
+    "stem": "A project with a partner has ended. Which identity-governance action is appropriate?",
+    "choices": {
+      "A": "Review and remove access that is no longer required",
+      "B": "Remove only the project's resource tags",
+      "C": "Change the guest's home-directory password policy",
+      "D": "Keep application access active because the guest can still authenticate"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "External access should end when its business purpose ends.",
+      "B": "Tags do not revoke the guest's application access.",
+      "C": "The organization should review its resource access rather than presume control of the partner's home identity.",
+      "D": "Authentication does not justify access after the business purpose ends."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-023",
+    "stem": "A designer assumes a guest must abandon their home identity to collaborate. Which correction is appropriate?",
+    "choices": {
+      "A": "External ID can support guests using existing identities",
+      "B": "B2B requires every collaborator to use the same local employee account",
+      "C": "Resource-group Contributor automatically creates the guest's identity",
+      "D": "A managed legacy domain is required for every guest application"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "B2B allows supported external identity providers.",
+      "B": "External collaboration can preserve individually identifiable identities.",
+      "C": "Azure resource permissions do not create an external identity relationship.",
+      "D": "Ordinary B2B collaboration does not require that legacy domain."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "11-024",
+    "stem": "What is the principal distinction between a business guest and a retail customer sign-in scenario?",
+    "choices": {
+      "A": "Guests must use employee credentials; customers can only use anonymous access",
+      "B": "Guests require legacy-domain join; customers require VNet peering",
+      "C": "Guests are directory administrators; customers are subscription Owners",
+      "D": "Guests collaborate with the workforce; customers use customer-facing applications"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Supported external identities and customer authentication offer other designs.",
+      "B": "These infrastructure requirements do not define the identity scenarios.",
+      "C": "Neither identity population automatically receives those privileged roles.",
+      "D": "The audience and tenant configuration differ."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-025",
+    "stem": "A guest has a valid sign-in but gets an application access denial. What is the most useful first check?",
+    "choices": {
+      "A": "Whether the guest has the intended application access",
+      "B": "Whether the app's resource group has a delete lock",
+      "C": "Whether the subscription has an allowed-regions policy",
+      "D": "Whether the guest has a larger VM quota"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "A successful identity check does not prove application authorization.",
+      "B": "A resource deletion lock does not authorize guest app use.",
+      "C": "Deployment-location governance does not supply application access.",
+      "D": "Compute capacity does not grant access to the enterprise application."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "11-026",
+    "stem": "Which practice gives external collaboration a clear access boundary?",
+    "choices": {
+      "A": "Granting every guest every employee application",
+      "B": "Using one shared partner administrator account",
+      "C": "Treating invitation emails as permanent blanket authorization",
+      "D": "Assigning only the resources needed for the agreed task"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That grants unnecessary access.",
+      "B": "Shared accounts weaken accountability and scoping.",
+      "C": "An invitation is not blanket authorization.",
+      "D": "Scoped permissions limit exposure."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "11-027",
+    "stem": "How should a learner demonstrate external identity design in this lab?",
+    "choices": {
+      "A": "Enable paid customer-identity features during assessment",
+      "B": "Publish a list of real guests in the repository",
+      "C": "Invite arbitrary addresses to the production tenant",
+      "D": "Classify synthetic collaboration cases without inviting real users"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "The assessment does not require paid onboarding.",
+      "B": "Real identity data should not become public learning evidence.",
+      "C": "That creates unapproved external access.",
+      "D": "The exercise teaches selection without changing the tenant."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "11-028",
+    "stem": "Which data belongs in an external-access decision record?",
+    "choices": {
+      "A": "Only the storage redundancy choice",
+      "B": "Only the Azure billing scope",
+      "C": "Only the home tenant's display name",
+      "D": "The collaborator's task and required access scope"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Durability selection does not define the external access task.",
+      "B": "Billing scope alone does not describe the collaborator's required application permissions.",
+      "C": "A tenant label does not specify the authorized task and scope.",
+      "D": "Business purpose and scope guide authorization."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "11-029",
+    "stem": "A company offers an app to many unaffiliated consumers. What makes an external tenant more suitable than workforce guest invitations for that design?",
+    "choices": {
+      "A": "It deploys application servers automatically",
+      "B": "It is configured for customer-app identity experiences",
+      "C": "It guarantees all app data is publicly accessible",
+      "D": "It removes all responsibility for protecting user data"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Identity configuration does not automatically host the app.",
+      "B": "Customer identity and workforce collaboration are distinct scenarios.",
+      "C": "Authentication does not make application data public.",
+      "D": "The organization still has data-protection duties."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "11-030",
+    "stem": "Which statement correctly describes Microsoft Entra External ID at a fundamentals level?",
+    "choices": {
+      "A": "It is a DNS resolver for external websites",
+      "B": "It supports secure access for people outside an organization",
+      "C": "It is a replacement for Azure Storage redundancy",
+      "D": "It is a billing discount for every Azure resource"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "DNS resolution is unrelated to identity collaboration.",
+      "B": "External identities include partner and customer scenarios.",
+      "C": "Storage redundancy addresses durability.",
+      "D": "Identity services do not define universal resource discounts."
+    },
+    "objective_id": "A22",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview"
+    ],
+    "difficulty": "review"
+  }
+]

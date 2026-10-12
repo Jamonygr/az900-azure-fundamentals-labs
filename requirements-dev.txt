@@ -1,0 +1,2 @@
+-r requirements-docs.txt
+jsonschema==4.26.0

@@ -1,0 +1,19 @@
+{
+  "id": "19",
+  "slug": "advisor-health",
+  "title": "Advisor and Service Health",
+  "domain": "management",
+  "objectives": [
+    "M13",
+    "M14"
+  ],
+  "duration_minutes": 40,
+  "mode": "read-only",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

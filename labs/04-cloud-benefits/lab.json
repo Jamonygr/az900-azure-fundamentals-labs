@@ -1,0 +1,21 @@
+{
+  "id": "04",
+  "slug": "cloud-benefits",
+  "title": "Cloud benefits and tradeoffs",
+  "domain": "cloud",
+  "objectives": [
+    "C08",
+    "C09",
+    "C10",
+    "C11"
+  ],
+  "duration_minutes": 40,
+  "mode": "concept",
+  "resource_profile": "none",
+  "status": "offline-validated",
+  "assessment_count": 30,
+  "source_urls": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ],
+  "reviewed_on": "2026-10-12"
+}

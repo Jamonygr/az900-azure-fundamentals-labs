@@ -1,0 +1,782 @@
+[
+  {
+    "id": "09-001",
+    "stem": "Which service fits a museum's image-object repository?",
+    "choices": {
+      "A": "VM OS disks",
+      "B": "Table Storage",
+      "C": "Blob Storage",
+      "D": "Queue Storage"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Boot volumes do not match shared object delivery.",
+      "B": "Tables store structured entities.",
+      "C": "Blob stores unstructured objects.",
+      "D": "Queues carry messages rather than image repositories."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-002",
+    "stem": "Which service fits a managed shared file system?",
+    "choices": {
+      "A": "Archive blobs",
+      "B": "Queue Storage",
+      "C": "Azure Files",
+      "D": "Table Storage"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Offline objects are not normal mounted shares.",
+      "B": "Queues provide messages.",
+      "C": "Files supplies managed network shares.",
+      "D": "Tables are not file-system shares."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-003",
+    "stem": "A thumbnail worker needs asynchronous work messages. What fits?",
+    "choices": {
+      "A": "Queue Storage",
+      "B": "Blob archive",
+      "C": "Azure Files",
+      "D": "An OS disk"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Queues decouple application components.",
+      "B": "Offline objects do not supply the queue abstraction.",
+      "C": "A share is not primarily a messaging service.",
+      "D": "A boot disk is not a managed queue."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-004",
+    "stem": "A dataset needs flexible structured NoSQL entities. What fits?",
+    "choices": {
+      "A": "Availability sets",
+      "B": "Table Storage",
+      "C": "Managed disks",
+      "D": "Azure Files"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Sets organize VM placement.",
+      "B": "Tables store schemaless entities.",
+      "C": "Disks supply block volumes.",
+      "D": "Shares expose a different access model."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-005",
+    "stem": "Which service provides persistent block storage for a VM OS?",
+    "choices": {
+      "A": "Resource groups",
+      "B": "Managed disks",
+      "C": "Queue Storage",
+      "D": "Table Storage"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Groups are management containers.",
+      "B": "They provide VM block volumes.",
+      "C": "Queues store messages.",
+      "D": "Tables store entities."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-006",
+    "stem": "Why select separate services for images, messages, and shares?",
+    "choices": {
+      "A": "Every service is identical SMB storage",
+      "B": "Their access models and semantics differ",
+      "C": "One service converts all formats automatically",
+      "D": "All choices have identical performance and pricing"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Protocols and access models differ.",
+      "B": "Object, queue, and file services serve different needs.",
+      "C": "Applications must use supported models.",
+      "D": "Capabilities and meters differ."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-007",
+    "stem": "An authorized browser retrieves an image by object URL. What model fits?",
+    "choices": {
+      "A": "Resource-group inheritance",
+      "B": "Blob access",
+      "C": "VM boot-volume access",
+      "D": "Queue message processing"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That concerns management scope.",
+      "B": "Blob objects use HTTP APIs.",
+      "C": "A browser object is not a boot volume.",
+      "D": "The described object is not a work message."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-008",
+    "stem": "Before replacing an existing file share with blobs, what matters?",
+    "choices": {
+      "A": "Required file-system semantics",
+      "B": "An assumption all storage uses SMB",
+      "C": "An assumption blob names grant access",
+      "D": "Only byte-storage capability"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Object APIs are not identical to mounted shares.",
+      "B": "Blob uses object APIs.",
+      "C": "Names do not authorize requests.",
+      "D": "Storing bytes does not make models equivalent."
+    },
+    "objective_id": "A14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-009",
+    "stem": "Which tier normally merits evaluation for frequent blob reads?",
+    "choices": {
+      "A": "Archive",
+      "B": "Cool with no access-cost comparison",
+      "C": "Cold with no retrieval analysis",
+      "D": "Hot"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Archive requires rehydration before reads.",
+      "B": "Infrequent-access economics need comparison.",
+      "C": "Retrieval economics still matter.",
+      "D": "Hot targets frequent access."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-010",
+    "stem": "Which blob tier is offline?",
+    "choices": {
+      "A": "Hot",
+      "B": "Cool",
+      "C": "Archive",
+      "D": "Cold"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Hot is online.",
+      "B": "Cool remains online.",
+      "C": "It requires rehydration for normal reads.",
+      "D": "Cold remains online."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-011",
+    "stem": "What principally changes between hot, cool, and cold?",
+    "choices": {
+      "A": "Capacity and access economics",
+      "B": "User-role assignments",
+      "C": "Data ownership",
+      "D": "Cloud deployment model"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Tiers target different access frequencies.",
+      "B": "Tiering does not grant accounts.",
+      "C": "The customer still governs the data.",
+      "D": "Tiers do not alter provider ownership."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-012",
+    "stem": "Why avoid archive for immediately requested thumbnails?",
+    "choices": {
+      "A": "Archive automatically grants anonymous reads",
+      "B": "Rehydration delays ordinary online access",
+      "C": "Archive converts images to queue messages",
+      "D": "Archive disables all encryption"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Authorization is separate.",
+      "B": "Archive is offline until rehydrated.",
+      "C": "Tiering preserves object semantics.",
+      "D": "Encryption is a separate capability."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-013",
+    "stem": "What should a tier comparison include?",
+    "choices": {
+      "A": "Capacity, access, retrieval, and retention-related charges",
+      "B": "Only stored byte count",
+      "C": "Only resource count",
+      "D": "Identical economics across all tiers"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Capacity cost alone is incomplete.",
+      "B": "Access frequency also matters.",
+      "C": "Different meters affect total costs.",
+      "D": "Tiers trade capacity and access costs."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-014",
+    "stem": "Do blob tiers apply universally to every storage service?",
+    "choices": {
+      "A": "No, Azure has no online tiers",
+      "B": "No, supported blob/account configurations matter",
+      "C": "Yes, queue messages must use hot",
+      "D": "Yes, every disk can become archive identically"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Hot, cool, and cold are online.",
+      "B": "Files, disks, and queues use their own models.",
+      "C": "Queues do not use this blob classification.",
+      "D": "Blob tiering is not universal storage tiering."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-015",
+    "stem": "A hot blob becomes archived. What must the app reconsider?",
+    "choices": {
+      "A": "Read availability and rehydration timing",
+      "B": "Whether the container becomes a subscription",
+      "C": "Whether the blob is now compute",
+      "D": "Whether every role is revoked"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Immediate access changes.",
+      "B": "The hierarchy is unchanged.",
+      "C": "Tiering does not create a VM.",
+      "D": "Tiering does not automatically revoke permissions."
+    },
+    "objective_id": "A15",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-016",
+    "stem": "What does LRS primarily address?",
+    "choices": {
+      "A": "Every code defect",
+      "B": "Every region-wide disaster",
+      "C": "Every accidental deletion",
+      "D": "Local hardware failures"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Replication does not repair application logic.",
+      "B": "LRS does not add a secondary region.",
+      "C": "Replication is not deletion recovery.",
+      "D": "Copies remain in the primary location."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-017",
+    "stem": "What distinguishes ZRS from LRS?",
+    "choices": {
+      "A": "Only secondary-region replication",
+      "B": "Anonymous secondary writes",
+      "C": "Replication across primary-region zones",
+      "D": "Offline storage access"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is geographic behavior.",
+      "B": "Redundancy does not grant permissions.",
+      "C": "ZRS adds zonal separation.",
+      "D": "Redundancy is separate from tier."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-018",
+    "stem": "What does GRS add beyond local primary replication?",
+    "choices": {
+      "A": "A backup of every guest OS",
+      "B": "Normal independent writes to both endpoints",
+      "C": "Asynchronous secondary-region replication",
+      "D": "Automatic correction of corrupted data"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Storage redundancy is not universal VM backup.",
+      "B": "GRS is not ordinary active-active writing.",
+      "C": "It adds geographic separation.",
+      "D": "Unwanted changes may replicate."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-019",
+    "stem": "What does GZRS combine?",
+    "choices": {
+      "A": "Only one local copy",
+      "B": "VM scale sets and file shares",
+      "C": "Hot and archive tiers",
+      "D": "Zonal primary and geographic secondary replication"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That omits its redundancy.",
+      "B": "Those do not define GZRS.",
+      "C": "Tiers are separate.",
+      "D": "It protects across zones and regions."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-020",
+    "stem": "What does an RA prefix add?",
+    "choices": {
+      "A": "Read access to the secondary endpoint",
+      "B": "Normal independent secondary writes",
+      "C": "Removal of replication delay",
+      "D": "Automatic whole-app failover"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "RA variants expose secondary reads.",
+      "B": "Read access is not write access.",
+      "C": "Geographic replication remains asynchronous.",
+      "D": "Apps still need a resilience design."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-021",
+    "stem": "Why can a geographic failover lose recent writes?",
+    "choices": {
+      "A": "All copies are synchronous worldwide",
+      "B": "Storage groups have no metadata",
+      "C": "Replication to the secondary is asynchronous",
+      "D": "The access tier grants too many roles"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "GRS/GZRS do not guarantee that.",
+      "B": "Metadata exists but does not prevent lag.",
+      "C": "Some writes may not have arrived.",
+      "D": "Permissions do not explain replication timing."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-022",
+    "stem": "Why is redundancy not a complete backup strategy?",
+    "choices": {
+      "A": "Replication stores no copies",
+      "B": "Redundancy disables authentication",
+      "C": "Every backup is identical to LRS",
+      "D": "Unwanted changes can affect replicas"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Extra copies are its purpose.",
+      "B": "Permissions remain separate.",
+      "C": "They address different recovery concerns.",
+      "D": "Logical recovery requires additional protection."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-023",
+    "stem": "Data must stay in one region but survive zone failure. What merits evaluation?",
+    "choices": {
+      "A": "ZRS",
+      "B": "RA-GRS",
+      "C": "GRS",
+      "D": "GZRS"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "It replicates across zones in the primary region.",
+      "B": "It exposes a geographic secondary.",
+      "C": "It adds a secondary region.",
+      "D": "It includes geographic replication."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-024",
+    "stem": "Which option combines geographic replication with secondary read access from a zonal primary?",
+    "choices": {
+      "A": "GRS without RA",
+      "B": "ZRS",
+      "C": "RA-GZRS",
+      "D": "LRS"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "It does not provide the RA read-access variant.",
+      "B": "It remains in one region.",
+      "C": "It combines GZRS topology with read access.",
+      "D": "It lacks geographic replication."
+    },
+    "objective_id": "A16",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-025",
+    "stem": "What is a standard general-purpose v2 account kind called?",
+    "choices": {
+      "A": "BlobStorage",
+      "B": "FileStorage",
+      "C": "BlockBlobStorage",
+      "D": "StorageV2"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That is an older blob-focused kind.",
+      "B": "That targets premium file shares.",
+      "C": "That is a specialized premium kind.",
+      "D": "It supports several standard storage capabilities."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-026",
+    "stem": "Why inspect the account type before choosing features?",
+    "choices": {
+      "A": "Every kind supports every feature",
+      "B": "The account name guarantees capabilities",
+      "C": "Premium always includes all services",
+      "D": "Types differ in supported services and performance"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Support varies.",
+      "B": "Names do not define features.",
+      "C": "Premium kinds target specific workloads.",
+      "D": "Capabilities are not identical."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-027",
+    "stem": "What does Standard_LRS identify?",
+    "choices": {
+      "A": "A guest OS patch plan",
+      "B": "A standard SKU with local redundancy",
+      "C": "A data-access role",
+      "D": "An archive-only tier"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "This is storage configuration.",
+      "B": "It combines performance class and replication choice.",
+      "C": "A SKU is not authorization.",
+      "D": "Tier is a separate property."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "09-028",
+    "stem": "How do account kind and access tier differ?",
+    "choices": {
+      "A": "Kind approves employee access",
+      "B": "Kind defines capabilities; tier defines supported blob economics",
+      "C": "They are interchangeable settings",
+      "D": "Tier decides subscription membership"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Roles govern that.",
+      "B": "These are separate dimensions.",
+      "C": "They govern different behavior.",
+      "D": "Hierarchy is separate."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "09-029",
+    "stem": "What should drive a premium account choice?",
+    "choices": {
+      "A": "A belief premium removes all charges",
+      "B": "A belief premium supports all services",
+      "C": "A belief any standard account is unsuitable",
+      "D": "Workload performance needs and supported features"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Premium resources can cost money.",
+      "B": "Capabilities differ.",
+      "C": "Standard may meet many workloads.",
+      "D": "Specialized types must fit requirements."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "09-030",
+    "stem": "Why validate minimum TLS and public-blob-access settings?",
+    "choices": {
+      "A": "Confirm expected transport and exposure controls",
+      "B": "Convert LRS into GRS",
+      "C": "Retrieve the account key",
+      "D": "Grant Data Contributor automatically"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Security properties need verification.",
+      "B": "Transport settings do not change replication.",
+      "C": "These settings do not disclose keys.",
+      "D": "Properties do not assign roles."
+    },
+    "objective_id": "A17",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+    ],
+    "difficulty": "review"
+  }
+]

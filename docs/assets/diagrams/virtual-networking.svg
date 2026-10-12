@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 737" width="1000" height="737" role="img" aria-labelledby="title desc">
+<title id="title">Network space is only the starting point</title>
+<desc id="desc">The lab creates a virtual network with address range 10.90.0.0/16 and an empty subnet with range 10.90.1.0/24. Additional conceptual connectivity choices include nontransitive virtual network peering, encrypted VPN connectivity over public networks, provider-based private ExpressRoute connectivity, and a private endpoint plus DNS for private service access.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="737" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">Network space is only the starting point</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Lab 08 creates one empty VNet and subnet. The connectivity choices below are conceptual.</text>
+<rect x="32" y="109" width="530" height="251" rx="12" fill="#e6f3fc" stroke="#92bedb" stroke-width="1.5"/>
+<text x="53" y="143" font-family="Segoe UI,Arial,sans-serif" font-size="23" fill="#0369a1" font-weight="700" text-anchor="start">vnet-az900 · 10.90.0.0/16</text>
+<text x="53" y="171" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Virtual network address space</text>
+<rect x="56" y="191" width="480" height="139" rx="12" fill="#ffffff" stroke="#92bedb" stroke-width="1.5"/>
+<text x="77" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">subnet-default · 10.90.1.0/24</text>
+<text x="77" y="255" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Empty subnet</text>
+<text x="77" y="280" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">No VM, private endpoint, or gateway is deployed.</text>
+<rect x="590" y="109" width="378" height="251" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="590" y="122" width="4" height="225" rx="2" fill="#0f766e"/>
+<text x="610" y="143" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Three independent checks</text>
+<text x="610" y="173" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">1. DNS: which address is returned?</text>
+<text x="610" y="198" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">2. Network: can the client reach it?</text>
+<text x="610" y="223" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">3. Access: is this action authorized?</text>
+<text x="610" y="248" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="610" y="273" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A private IP alone does not</text>
+<text x="610" y="298" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">grant permission to read data.</text>
+<text x="32" y="404" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#0369a1" font-weight="700" text-anchor="start">CHOOSE CONNECTIVITY FOR THE REQUIREMENT</text>
+<rect x="32" y="425" width="450" height="112" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="438" width="4" height="86" rx="2" fill="#0369a1"/>
+<text x="52" y="459" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">VNet ↔ VNet: peering</text>
+<text x="52" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Connects networks over the Azure backbone.</text>
+<text x="52" y="514" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A↔B and B↔C do not automatically give A↔C.</text>
+<rect x="518" y="425" width="450" height="112" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="518" y="438" width="4" height="86" rx="2" fill="#6d28d9"/>
+<text x="538" y="459" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Office ↔ Azure: VPN Gateway</text>
+<text x="538" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Encrypted VPN connectivity</text>
+<text x="538" y="514" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">over public networks.</text>
+<rect x="32" y="555" width="450" height="112" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="568" width="4" height="86" rx="2" fill="#0f766e"/>
+<text x="52" y="589" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Office ↔ Azure: ExpressRoute</text>
+<text x="52" y="619" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Private connectivity through a provider.</text>
+<text x="52" y="644" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Private connectivity does not imply encryption.</text>
+<rect x="518" y="555" width="450" height="112" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="518" y="568" width="4" height="86" rx="2" fill="#0369a1"/>
+<text x="538" y="589" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Client ↔ service: private endpoint</text>
+<text x="538" y="619" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A private service IP in a VNet, plus DNS design.</text>
+<text x="538" y="644" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Public service access needs its own controls.</text>
+<text x="32" y="713" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Conceptual connectivity options; they are not part of the live lab deployment.</text>
+</svg>

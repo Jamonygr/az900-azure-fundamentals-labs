@@ -1,0 +1,453 @@
+[
+  {
+    "id": "00",
+    "slug": "safe-start",
+    "title": "Safe start and subscription readiness",
+    "domain": "foundation",
+    "objectives": [],
+    "duration_minutes": 45,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 0,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/00-safe-start"
+  },
+  {
+    "id": "01",
+    "slug": "cloud-responsibility",
+    "title": "Cloud computing and shared responsibility",
+    "domain": "cloud",
+    "objectives": [
+      "C01",
+      "C02"
+    ],
+    "duration_minutes": 35,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/01-cloud-responsibility"
+  },
+  {
+    "id": "02",
+    "slug": "cloud-models",
+    "title": "Public, private, and hybrid cloud models",
+    "domain": "cloud",
+    "objectives": [
+      "C03",
+      "C04"
+    ],
+    "duration_minutes": 35,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/02-cloud-models"
+  },
+  {
+    "id": "03",
+    "slug": "consumption-pricing",
+    "title": "Consumption and cloud pricing",
+    "domain": "cloud",
+    "objectives": [
+      "C05",
+      "C06"
+    ],
+    "duration_minutes": 40,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/03-consumption-pricing"
+  },
+  {
+    "id": "04",
+    "slug": "cloud-benefits",
+    "title": "Cloud benefits and tradeoffs",
+    "domain": "cloud",
+    "objectives": [
+      "C08",
+      "C09",
+      "C10",
+      "C11"
+    ],
+    "duration_minutes": 40,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/04-cloud-benefits"
+  },
+  {
+    "id": "05",
+    "slug": "service-models",
+    "title": "Service models and serverless decisions",
+    "domain": "cloud",
+    "objectives": [
+      "C07",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "duration_minutes": 45,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/05-service-models"
+  },
+  {
+    "id": "06",
+    "slug": "azure-architecture",
+    "title": "Azure architecture and resource hierarchy",
+    "domain": "architecture",
+    "objectives": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07"
+    ],
+    "duration_minutes": 45,
+    "mode": "live",
+    "resource_profile": "resource-group",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/06-azure-architecture"
+  },
+  {
+    "id": "07",
+    "slug": "compute-hosting",
+    "title": "Compute and application hosting choices",
+    "domain": "architecture",
+    "objectives": [
+      "A08",
+      "A09",
+      "A10",
+      "A11"
+    ],
+    "duration_minutes": 45,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/07-compute-hosting"
+  },
+  {
+    "id": "08",
+    "slug": "virtual-networking",
+    "title": "Virtual networks and connectivity",
+    "domain": "architecture",
+    "objectives": [
+      "A12",
+      "A13"
+    ],
+    "duration_minutes": 50,
+    "mode": "live",
+    "resource_profile": "network",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/08-virtual-networking"
+  },
+  {
+    "id": "09",
+    "slug": "storage-services",
+    "title": "Storage services, tiers, and redundancy",
+    "domain": "architecture",
+    "objectives": [
+      "A14",
+      "A15",
+      "A16",
+      "A17"
+    ],
+    "duration_minutes": 50,
+    "mode": "live",
+    "resource_profile": "storage",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/09-storage-services"
+  },
+  {
+    "id": "10",
+    "slug": "file-migration",
+    "title": "File transfer and migration decisions",
+    "domain": "architecture",
+    "objectives": [
+      "A18",
+      "A19"
+    ],
+    "duration_minutes": 50,
+    "mode": "live",
+    "resource_profile": "storage",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/10-file-migration"
+  },
+  {
+    "id": "11",
+    "slug": "identity-directory",
+    "title": "Directories and external identities",
+    "domain": "architecture",
+    "objectives": [
+      "A20",
+      "A22"
+    ],
+    "duration_minutes": 35,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/11-identity-directory"
+  },
+  {
+    "id": "12",
+    "slug": "authentication-rbac",
+    "title": "Authentication, Conditional Access, and RBAC",
+    "domain": "architecture",
+    "objectives": [
+      "A21",
+      "A23",
+      "A24"
+    ],
+    "duration_minutes": 45,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/12-authentication-rbac"
+  },
+  {
+    "id": "13",
+    "slug": "security-models",
+    "title": "Zero Trust, defense in depth, and Defender",
+    "domain": "architecture",
+    "objectives": [
+      "A25",
+      "A26",
+      "A27"
+    ],
+    "duration_minutes": 40,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/13-security-models"
+  },
+  {
+    "id": "14",
+    "slug": "cost-tags",
+    "title": "Cost management and resource tags",
+    "domain": "management",
+    "objectives": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "duration_minutes": 45,
+    "mode": "live",
+    "resource_profile": "resource-group",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/14-cost-tags"
+  },
+  {
+    "id": "15",
+    "slug": "policy-locks",
+    "title": "Azure Policy and resource locks",
+    "domain": "management",
+    "objectives": [
+      "M06",
+      "M07"
+    ],
+    "duration_minutes": 50,
+    "mode": "live",
+    "resource_profile": "governance",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/15-policy-locks"
+  },
+  {
+    "id": "16",
+    "slug": "purview-compliance",
+    "title": "Purview, governance, and compliance",
+    "domain": "management",
+    "objectives": [
+      "M05"
+    ],
+    "duration_minutes": 35,
+    "mode": "concept",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/16-purview-compliance"
+  },
+  {
+    "id": "17",
+    "slug": "management-tools",
+    "title": "Management tools and Azure Arc",
+    "domain": "management",
+    "objectives": [
+      "M08",
+      "M09",
+      "M10"
+    ],
+    "duration_minutes": 40,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/17-management-tools"
+  },
+  {
+    "id": "18",
+    "slug": "arm-infrastructure",
+    "title": "ARM and infrastructure as code",
+    "domain": "management",
+    "objectives": [
+      "M11",
+      "M12"
+    ],
+    "duration_minutes": 50,
+    "mode": "live",
+    "resource_profile": "bicep",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/18-arm-infrastructure"
+  },
+  {
+    "id": "19",
+    "slug": "advisor-health",
+    "title": "Advisor and Service Health",
+    "domain": "management",
+    "objectives": [
+      "M13",
+      "M14"
+    ],
+    "duration_minutes": 40,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/19-advisor-health"
+  },
+  {
+    "id": "20",
+    "slug": "azure-monitor",
+    "title": "Monitor, logs, alerts, and Application Insights",
+    "domain": "management",
+    "objectives": [
+      "M15"
+    ],
+    "duration_minutes": 45,
+    "mode": "read-only",
+    "resource_profile": "none",
+    "status": "offline-validated",
+    "assessment_count": 30,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/20-azure-monitor"
+  },
+  {
+    "id": "21",
+    "slug": "integrated-capstone",
+    "title": "Integrated Azure fundamentals capstone",
+    "domain": "capstone",
+    "objectives": [],
+    "duration_minutes": 90,
+    "mode": "live",
+    "resource_profile": "capstone",
+    "status": "offline-validated",
+    "assessment_count": 0,
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+    ],
+    "reviewed_on": "2026-10-12",
+    "path": "labs/21-integrated-capstone"
+  }
+]

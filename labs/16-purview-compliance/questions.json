@@ -1,0 +1,722 @@
+[
+  {
+    "id": "16-001",
+    "stem": "A company needs to discover and govern datasets spread across several systems. Which solution family should it evaluate?",
+    "choices": {
+      "A": "Azure Service Health",
+      "B": "Azure Advisor",
+      "C": "Microsoft Purview",
+      "D": "Azure VM Scale Sets"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Service Health reports provider service events.",
+      "B": "Advisor focuses on Azure workload recommendations.",
+      "C": "Purview includes data governance, security, and compliance capabilities.",
+      "D": "Scale sets manage compute instances."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-002",
+    "stem": "What does a data catalog primarily help a data analyst do?",
+    "choices": {
+      "A": "Scale the number of VM instances",
+      "B": "Create network peering links",
+      "C": "Assign Azure subscription Owner",
+      "D": "Find and understand available data assets"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "That is a compute-scaling task.",
+      "B": "Peering is a networking function.",
+      "C": "That is resource access management.",
+      "D": "A catalog improves discovery and business understanding."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-003",
+    "stem": "What is the role of Microsoft Purview Data Map at a fundamentals level?",
+    "choices": {
+      "A": "Provide a VPN tunnel between offices",
+      "B": "Capture metadata about data assets",
+      "C": "Replace all Azure subscriptions",
+      "D": "Store every source system's complete business records as a backup"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is network connectivity.",
+      "B": "The Data Map supports discovery through metadata.",
+      "C": "It is a data governance capability.",
+      "D": "The map is not a universal source-data backup."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-004",
+    "stem": "An analyst wants to know which source feeds a report and which transformations were used. Which governance concept fits?",
+    "choices": {
+      "A": "Storage access tiers",
+      "B": "Resource-group locks",
+      "C": "Data lineage",
+      "D": "VM availability sets"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Tiers describe access and pricing characteristics.",
+      "B": "Locks protect management operations.",
+      "C": "Lineage describes relationships and movement between data assets.",
+      "D": "Those support compute availability."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-005",
+    "stem": "A dataset needs an agreed business definition of revenue. Which catalog feature is useful?",
+    "choices": {
+      "A": "A virtual network address prefix",
+      "B": "Business glossary or business concepts",
+      "C": "A CanNotDelete lock",
+      "D": "A VM reservation"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Address ranges do not define business meaning.",
+      "B": "Common definitions help people interpret data consistently.",
+      "C": "A lock does not describe data semantics.",
+      "D": "A reservation addresses cost commitments."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-006",
+    "stem": "What is a data classification used to describe?",
+    "choices": {
+      "A": "The CPU count in a compute SKU",
+      "B": "The type or sensitivity of information in a dataset",
+      "C": "The authentication strength of a security key",
+      "D": "The geographic distance between Azure regions"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That is a compute capacity property.",
+      "B": "Classifications help identify data characteristics.",
+      "C": "That is an identity property.",
+      "D": "That is infrastructure geography."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-007",
+    "stem": "A document contains confidential project information. Which Purview capability can identify its sensitivity and apply configured protections?",
+    "choices": {
+      "A": "Sensitivity labels",
+      "B": "Management-group membership",
+      "C": "Azure Advisor cost recommendations",
+      "D": "Azure DNS records"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Labels can classify information and carry appropriate protection settings.",
+      "B": "That organizes subscriptions.",
+      "C": "Cost recommendations do not apply document protections.",
+      "D": "Name resolution does not label documents."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-008",
+    "stem": "A team wants to reduce accidental sharing of sensitive information. Which capability should be evaluated?",
+    "choices": {
+      "A": "Storage redundancy alone",
+      "B": "Azure Pricing Calculator",
+      "C": "Data loss prevention",
+      "D": "VM deallocation"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Replicating data does not govern sharing.",
+      "B": "Estimates do not prevent information leakage.",
+      "C": "DLP can detect and govern sensitive-data sharing under configured policies.",
+      "D": "Stopping a VM is not a general sharing policy."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-009",
+    "stem": "An auditor needs to organize assessments and track improvement actions against selected requirements. Which Purview capability fits?",
+    "choices": {
+      "A": "Azure Functions",
+      "B": "Compliance Manager",
+      "C": "Azure ExpressRoute",
+      "D": "Azure Storage Explorer"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Functions executes code.",
+      "B": "It helps assess and manage compliance improvement work.",
+      "C": "ExpressRoute provides private connectivity.",
+      "D": "Storage Explorer browses storage data."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-010",
+    "stem": "What does a favorable compliance-assessment score establish?",
+    "choices": {
+      "A": "Universal legal certification for all jurisdictions",
+      "B": "Progress against the assessed controls",
+      "C": "Automatic encryption of every dataset in every system",
+      "D": "Permission to skip customer responsibilities"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A score is not a blanket legal guarantee.",
+      "B": "A score helps prioritize work within the assessment's coverage.",
+      "C": "An assessment score does not perform that action.",
+      "D": "Customers still need governance and evidence."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-011",
+    "stem": "A legal team needs to identify and preserve relevant electronic information for a case. Which solution area fits?",
+    "choices": {
+      "A": "Azure Cost Management budgets",
+      "B": "Azure Arc server inventory",
+      "C": "eDiscovery",
+      "D": "Azure Load Balancer"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Budgets monitor spending.",
+      "B": "Arc inventory manages connected infrastructure.",
+      "C": "eDiscovery supports case-oriented electronic evidence work.",
+      "D": "A load balancer distributes traffic."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-012",
+    "stem": "What does a retention policy help an organization manage?",
+    "choices": {
+      "A": "The size of a VM's memory",
+      "B": "The route used by a VPN",
+      "C": "How long specified information is kept or removed",
+      "D": "The Azure CLI version"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is a compute configuration.",
+      "B": "That is a network configuration.",
+      "C": "Retention supports information lifecycle requirements.",
+      "D": "That is a tooling concern."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-013",
+    "stem": "Why name a data owner in a governance exercise?",
+    "choices": {
+      "A": "To disable classification scans",
+      "B": "To make all data publicly downloadable",
+      "C": "To establish accountability for the asset's use and quality",
+      "D": "To grant that person automatic Azure Owner on all subscriptions"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Accountability does not require disabling discovery.",
+      "B": "Ownership does not imply public access.",
+      "C": "Ownership is a business governance responsibility.",
+      "D": "A data-owner designation is not that role grant."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-014",
+    "stem": "What should be checked before a real Purview scan is configured?",
+    "choices": {
+      "A": "Whether all users have subscription Owner",
+      "B": "Only whether the dataset name contains the word public",
+      "C": "Whether the VM was purchased with a reservation",
+      "D": "Authorization, connector requirements, sensitivity, and current costs"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Broad ownership is not a universal scan prerequisite.",
+      "B": "Names do not establish scan authority.",
+      "C": "That does not establish data scan permission.",
+      "D": "Scanning has scope, access, and operational consequences."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-015",
+    "stem": "A catalog reader can see dataset metadata. What should they assume about reading the underlying records?",
+    "choices": {
+      "A": "Separate source-data authorization may still be required",
+      "B": "Catalog access grants every source database permission",
+      "C": "All source data is copied into every search result",
+      "D": "The Reader becomes an Entra tenant administrator"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Catalog metadata access is not automatic data access.",
+      "B": "These are different permission boundaries.",
+      "C": "Catalog results primarily describe assets.",
+      "D": "Catalog roles do not make that grant."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-016",
+    "stem": "Which need is better matched to Azure Policy than Purview data cataloging?",
+    "choices": {
+      "A": "Requiring an approved region for Azure resource deployment",
+      "B": "Understanding report lineage",
+      "C": "Finding the owner of a customer dataset",
+      "D": "Classifying confidential document content"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Resource configuration governance is a Policy use case.",
+      "B": "That is a catalog and lineage need.",
+      "C": "That is data governance.",
+      "D": "That is an information governance need."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-017",
+    "stem": "Which need is better matched to Azure RBAC than a sensitivity label?",
+    "choices": {
+      "A": "Granting a user permission to manage one Azure resource group",
+      "B": "Explaining a dataset's business meaning",
+      "C": "Classifying a document as confidential",
+      "D": "Applying document protection associated with a label"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "RBAC authorizes resource actions.",
+      "B": "That belongs to catalog governance.",
+      "C": "A sensitivity label addresses that information classification.",
+      "D": "That belongs to information protection."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-018",
+    "stem": "A team lists customer data assets but records no owner or purpose. What is a useful improvement?",
+    "choices": {
+      "A": "Assign identical unrestricted access to all employees",
+      "B": "Disable audit records",
+      "C": "Add accountable ownership and intended use",
+      "D": "Move every dataset into archive storage immediately"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That broadens exposure without clarifying governance.",
+      "B": "That reduces evidence.",
+      "C": "Technical inventory alone is not complete governance.",
+      "D": "Tiering does not resolve ownership and purpose."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-019",
+    "stem": "Why can governance include on-premises and multicloud data?",
+    "choices": {
+      "A": "An organization's data estate can span those environments",
+      "B": "Azure resource groups are themselves consumer identities",
+      "C": "All data is physically stored in one Azure datacenter",
+      "D": "Only Azure VMs can contain governed information"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Purview supports governance across supported connected sources.",
+      "B": "Containers and identities are different concepts.",
+      "C": "Hybrid estates are not confined to one site.",
+      "D": "Governance covers more than VM-hosted datasets."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-020",
+    "stem": "A synthetic catalog record says classification=personal and owner=finance. What does this record provide?",
+    "choices": {
+      "A": "Authorization to read every customer record",
+      "B": "Metadata useful for governance decisions",
+      "C": "A full recovery copy of the finance database",
+      "D": "A verified retention policy for the finance database"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Classification and ownership metadata do not automatically grant source-data access.",
+      "B": "It describes the asset and its accountability.",
+      "C": "A metadata record is not a data backup.",
+      "D": "A local description does not prove lifecycle enforcement."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-021",
+    "stem": "What is the difference between data governance and data backup?",
+    "choices": {
+      "A": "Backup determines who may view every document",
+      "B": "Governance always stores a second full copy",
+      "C": "They are identical names for storage redundancy",
+      "D": "Governance addresses understanding and responsible use; backup supports recovery"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Access controls still need separate configuration.",
+      "B": "A catalog is not a backup guarantee.",
+      "C": "Both are broader than redundancy settings.",
+      "D": "They are complementary but distinct activities."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-022",
+    "stem": "An organization discovers multiple copies of a sensitive spreadsheet. What should it investigate next?",
+    "choices": {
+      "A": "Ownership, access, purpose, and applicable lifecycle requirements",
+      "B": "Only whether the subscription is pay-as-you-go",
+      "C": "Only the number of availability zones",
+      "D": "Only whether every file has the same name"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Discovery should inform protection and governance actions.",
+      "B": "Billing type does not determine data sensitivity.",
+      "C": "Zone count does not explain inappropriate sharing.",
+      "D": "Identical names do not prove suitable handling."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-023",
+    "stem": "A data steward curates asset descriptions and standard terms. Which outcome does this support?",
+    "choices": {
+      "A": "A guaranteed absence of application failures",
+      "B": "Automatic creation of private endpoints",
+      "C": "More understandable and trusted data discovery",
+      "D": "Automatic reduction of all VM charges"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Governance does not guarantee runtime reliability.",
+      "B": "Descriptions do not configure networks.",
+      "C": "Curation improves catalog usefulness.",
+      "D": "Metadata curation is not a compute discount."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-024",
+    "stem": "Why should a beginner use invented records in this Purview lesson?",
+    "choices": {
+      "A": "The concepts can be practiced without exposing real sensitive information",
+      "B": "Invented records automatically establish legal compliance",
+      "C": "Synthetic records require a paid scan account",
+      "D": "Purview cannot govern real data"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Synthetic data supports safe local classification.",
+      "B": "They demonstrate learning rather than certification.",
+      "C": "The local exercise does not deploy a scanner.",
+      "D": "The service is designed for real governed estates."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "16-025",
+    "stem": "Which statement correctly separates classification from protection?",
+    "choices": {
+      "A": "Protection makes ownership metadata unnecessary",
+      "B": "Both are the same as VM sizing",
+      "C": "A classification describes data; protection depends on configured controls",
+      "D": "A classification always encrypts every source record by itself"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Accountability remains useful.",
+      "B": "Neither is a compute-capacity choice.",
+      "C": "Knowing sensitivity should guide suitable enforcement.",
+      "D": "Metadata classification does not automatically apply every protection."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "16-026",
+    "stem": "What can Purview audit capabilities contribute to compliance work?",
+    "choices": {
+      "A": "Records of supported activities for review and investigation",
+      "B": "A universal free archive of all business data",
+      "C": "A replacement for all data access controls",
+      "D": "A guarantee that every action in every system is recorded without setup"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Audit evidence can support accountability.",
+      "B": "Audit is not that storage service.",
+      "C": "Logging does not authorize access.",
+      "D": "Coverage and configuration have limits."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "16-027",
+    "stem": "A team wants to impose a consistent meaning for the term active customer across reports. Which artifact fits?",
+    "choices": {
+      "A": "An Azure role definition for VM management",
+      "B": "A storage redundancy configuration",
+      "C": "A subnet route table",
+      "D": "A governed business glossary entry"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Permissions do not supply the term's meaning.",
+      "B": "Replication does not define a business term.",
+      "C": "Routes handle network paths.",
+      "D": "A common term reduces inconsistent interpretation."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "16-028",
+    "stem": "What should a compliance team retain alongside an assessment result?",
+    "choices": {
+      "A": "Only the team's current cost forecast",
+      "B": "Only the chosen Azure region",
+      "C": "Only a top-level score without the assessed requirements",
+      "D": "Evidence, scope, and the status of improvement actions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Financial estimates are not the required compliance evidence.",
+      "B": "Region alone does not explain assessment coverage or control evidence.",
+      "C": "The score needs supporting scope and action context.",
+      "D": "A useful assessment needs context and supporting work."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "16-029",
+    "stem": "Which factor matters when selecting a Purview capability for a use case?",
+    "choices": {
+      "A": "Whether the need concerns discovery, protection, or compliance work",
+      "B": "Whether a resource-group lock is present",
+      "C": "Whether the task concerns Azure region restrictions alone",
+      "D": "Whether the dataset's host VM has a reservation"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Different solution areas address different governance needs.",
+      "B": "Deletion protection does not choose discovery, protection, or compliance capabilities.",
+      "C": "That need is normally addressed through resource Policy rather than selecting a data capability.",
+      "D": "Compute commitments do not determine data-governance function."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "16-030",
+    "stem": "What does this lab's local classification exercise validate?",
+    "choices": {
+      "A": "All organizational data has been scanned",
+      "B": "A real Purview deployment has been production-tested",
+      "C": "All regulatory requirements have been legally satisfied",
+      "D": "The learner can choose governance capabilities and explain boundaries"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Synthetic local records do not represent an enterprise scan.",
+      "B": "No service is deployed by the exercise.",
+      "C": "A training exercise is not a compliance determination.",
+      "D": "It checks fundamentals reasoning without service onboarding."
+    },
+    "objective_id": "M05",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/purview/purview",
+      "https://learn.microsoft.com/en-us/purview/data-governance-overview"
+    ],
+    "difficulty": "review"
+  }
+]

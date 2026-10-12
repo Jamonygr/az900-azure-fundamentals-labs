@@ -1,0 +1,78 @@
+name: Quality and Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install validation and documentation dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Validate content, coverage, and links
+        run: python tools/validate_repository.py
+      - name: Validate PowerShell syntax
+        shell: pwsh
+        run: ./tests/Test-PowerShellSyntax.ps1
+      - name: Test lifecycle safety with mocked Azure
+        shell: pwsh
+        run: ./tests/Test-LabRuntime.ps1
+      - name: Validate assessment JavaScript syntax
+        run: node --check docs/assets/learning.js
+      - name: Compile Bicep offline
+        run: |
+          az bicep install
+          az bicep build --file labs/18-arm-infrastructure/main.bicep --outfile /tmp/lab18.json
+          az bicep build --file labs/21-integrated-capstone/main.bicep --outfile /tmp/lab21.json
+      - name: Install checksum-verified quality tools
+        run: python tools/install_check_tools.py
+      - name: Validate workflow syntax
+        run: .check-tools/actionlint
+      - name: Scan repository for secrets
+        run: .check-tools/gitleaks dir . --redact --no-banner
+      - name: Stage and strictly build documentation
+        run: |
+          python tools/build_docs.py
+          python -m mkdocs build --strict
+      - name: Configure Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: site
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: quality
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

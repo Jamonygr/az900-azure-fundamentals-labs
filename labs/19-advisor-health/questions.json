@@ -1,0 +1,692 @@
+[
+  {
+    "id": "19-001",
+    "stem": "A platform team wants personalized improvement suggestions based on its existing Azure resources. Which service best fits?",
+    "choices": {
+      "A": "Azure Service Health",
+      "B": "Azure Advisor",
+      "C": "Azure Resource Health",
+      "D": "Azure Activity log"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Service Health communicates relevant Azure service incidents and maintenance.",
+      "B": "Advisor evaluates supported deployment configurations and usage to recommend improvements.",
+      "C": "Resource Health reports the availability of an individual supported resource.",
+      "D": "The Activity log records management events rather than recommending deployment optimizations."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-002",
+    "stem": "An Advisor suggestion identifies a potential way to reduce spending on underused capacity. Which category applies?",
+    "choices": {
+      "A": "Security",
+      "B": "Reliability",
+      "C": "Operational excellence",
+      "D": "Cost"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Security recommendations concern threats and protection rather than the stated spending goal.",
+      "B": "Reliability recommendations focus on service continuity.",
+      "C": "Operational excellence focuses on operational practices and manageability.",
+      "D": "The purpose of the suggestion is to optimize expenditure."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-003",
+    "stem": "A recommendation proposes reducing a single point of failure for a business-critical workload. Which Advisor category best matches?",
+    "choices": {
+      "A": "Reliability",
+      "B": "Cost",
+      "C": "Performance",
+      "D": "Operational excellence"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The recommendation aims to improve continuity when a component fails.",
+      "B": "A change may affect cost, but reducing a single point of failure addresses continuity.",
+      "C": "Performance concerns speed and efficiency rather than this failure-survival requirement.",
+      "D": "Operational practices can help, but the stated outcome is reliability."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-004",
+    "stem": "Which Advisor category most directly concerns recommendations about protection against threats and vulnerabilities?",
+    "choices": {
+      "A": "Cost",
+      "B": "Performance",
+      "C": "Security",
+      "D": "Reliability"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Cost recommendations target expenditure rather than threat exposure.",
+      "B": "Performance recommendations target speed and workload efficiency.",
+      "C": "Security recommendations address protection weaknesses.",
+      "D": "Reliability targets continuity and recovery rather than the stated protection objective."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-005",
+    "stem": "A recommendation targets a supported resource configuration that could improve application speed. Which Advisor category is the closest match?",
+    "choices": {
+      "A": "Cost",
+      "B": "Security",
+      "C": "Performance",
+      "D": "Reliability"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A lower bill is a different outcome from the specified performance improvement.",
+      "B": "The scenario gives no threat or access-control objective.",
+      "C": "The improvement concerns application or resource speed.",
+      "D": "Keeping a service operating during failure is distinct from making it faster."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-006",
+    "stem": "An Advisor recommendation concerns deployment practices and resource manageability. Which category is intended for that operational goal?",
+    "choices": {
+      "A": "Operational excellence",
+      "B": "Reliability",
+      "C": "Cost",
+      "D": "Security"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "This category addresses process efficiency, manageability, and deployment practices.",
+      "B": "Reliability focuses on continuity of business-critical workloads.",
+      "C": "Cost focuses on optimizing expenditure.",
+      "D": "Security focuses on protection against threats and weaknesses."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-007",
+    "stem": "Advisor proposes a configuration change for a production workload. What should the owner do before implementing it?",
+    "choices": {
+      "A": "Treat the recommendation as proof the workload has already changed",
+      "B": "Assume every recommendation overrides organizational policy",
+      "C": "Skip application testing because Advisor evaluates Azure resources",
+      "D": "Evaluate workload constraints and test the proposed change"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "A suggestion is not evidence that its action has been executed.",
+      "B": "A recommendation does not grant an exemption from policy.",
+      "C": "Resource analysis does not prove a custom application's behavior after a change.",
+      "D": "Recommendations need assessment against business needs, dependencies, and change controls."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-008",
+    "stem": "A suggested resize could save money, but the application has a scheduled monthly traffic peak. What evidence matters before approving the change?",
+    "choices": {
+      "A": "Only whether the recommendation has a Cost category",
+      "B": "Capacity and performance during representative peak demand",
+      "C": "Only the application's current resource-group name",
+      "D": "Only the latest public Azure Status report"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The category identifies its goal but does not establish workload capacity.",
+      "B": "Peak requirements can invalidate a resize that appears suitable during quieter usage.",
+      "C": "Naming does not demonstrate performance under load.",
+      "D": "Platform incident status does not establish the application's required instance size."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-009",
+    "stem": "An empty training subscription returns no Advisor recommendations. What is the most justified conclusion?",
+    "choices": {
+      "A": "Every Azure service is currently available worldwide",
+      "B": "The subscription's future workloads will have zero cost",
+      "C": "The application has passed a load test",
+      "D": "There are no returned findings in the inspected context"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Advisor results are not a global service-status report.",
+      "B": "Absence of recommendations says nothing about future consumption.",
+      "C": "Advisor does not turn an empty list into application test evidence.",
+      "D": "An empty result does not certify every possible architecture or future workload."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-010",
+    "stem": "Which built-in role can provide read access to Advisor recommendations at an appropriate supported scope?",
+    "choices": {
+      "A": "Only Owner",
+      "B": "Reader",
+      "C": "Only User Access Administrator",
+      "D": "Storage Blob Data Reader alone"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Advisor read access is not restricted to ownership of the subscription.",
+      "B": "Reader can access recommendations without needing resource-write permissions.",
+      "C": "Role-assignment administration is not the only route to reading recommendations.",
+      "D": "Blob data permissions alone do not provide management access to Advisor."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-011",
+    "stem": "Which command is appropriate for this lab's inspection of existing Advisor recommendations?",
+    "choices": {
+      "A": "az advisor recommendation list without --refresh",
+      "B": "az advisor recommendation disable",
+      "C": "az advisor recommendation enable",
+      "D": "az advisor recommendation list --refresh"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Listing existing recommendations supports a read-only exercise.",
+      "B": "Disable changes the recommendation's state.",
+      "C": "Enable changes the recommendation's state.",
+      "D": "Refresh requests generation of new recommendations and is excluded from the read-only exercise."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/advisor/recommendation?view=azure-cli-latest"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-012",
+    "stem": "The Advisor CLI exposes a category called HighAvailability while the portal discusses reliability. How should a learner interpret the category in this context?",
+    "choices": {
+      "A": "It means all returned recommendations concern security",
+      "B": "It proves a resource is available at the current instant",
+      "C": "It is the CLI's reliability-related category label",
+      "D": "It proves every listed workload already survives a regional failure"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "The category does not become a security category because its wording differs.",
+      "B": "A recommendation category is not an individual resource-health observation.",
+      "C": "The current CLI accepted category labels can differ from the portal's terminology.",
+      "D": "A recommendation does not certify an architecture's existing resilience."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/advisor/recommendation?view=azure-cli-latest"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-013",
+    "stem": "After an approved improvement is implemented, an old Advisor recommendation still appears briefly. What is a reasonable explanation?",
+    "choices": {
+      "A": "The retained recommendation proves the CLI command never executed",
+      "B": "The improvement changed the subscription to a private cloud",
+      "C": "Advisor automatically reverted the application code",
+      "D": "Advisor may need time to recognize the change"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Recommendation persistence alone does not establish whether the operation ran.",
+      "B": "Recommendation processing does not alter Azure's deployment model.",
+      "C": "The overview does not imply automatic reversal of custom application changes.",
+      "D": "Recommendation evaluation is not necessarily an immediate transaction confirmation."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-014",
+    "stem": "A learner can read an Advisor recommendation but cannot change the target resource. What does that demonstrate?",
+    "choices": {
+      "A": "Advisor grants temporary Owner permissions with each recommendation",
+      "B": "Every Advisor finding must be implemented through blob-data permissions",
+      "C": "Reading advice and applying its action require different permissions",
+      "D": "The recommended action has already been approved by the organization"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "A recommendation does not grant subscription ownership.",
+      "B": "Resource changes are management operations, not necessarily storage data operations.",
+      "C": "Read access does not grant the management permissions needed for a resource change.",
+      "D": "Visibility of a recommendation is not organizational change approval."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-015",
+    "stem": "Which information is central to Advisor's personalized deployment-improvement recommendations?",
+    "choices": {
+      "A": "Supported resource configuration and usage telemetry",
+      "B": "Only public reports of widespread Azure outages",
+      "C": "Only individual VM availability states",
+      "D": "Only the text of a resource's display name"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Advisor uses resource characteristics and observed usage to identify opportunities.",
+      "B": "Public outage notices belong to Azure Status and are not Advisor's core deployment analysis.",
+      "C": "Resource Health availability is a different primary capability.",
+      "D": "A display name alone is not sufficient configuration and usage analysis."
+    },
+    "objective_id": "M13",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-016",
+    "stem": "A visitor without subscription context wants a broad public report about widespread Azure service disruption. Which view is most appropriate?",
+    "choices": {
+      "A": "Azure Advisor",
+      "B": "Azure Status",
+      "C": "Resource Health for one VM",
+      "D": "Application Insights for a single application"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Advisor provides personalized improvement recommendations rather than a public outage report.",
+      "B": "Azure Status provides the public global service-health view.",
+      "C": "An individual resource's availability is narrower than a broad service disruption.",
+      "D": "Application telemetry does not provide the public global Azure status view."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-017",
+    "stem": "An administrator wants maintenance information relevant to the services and regions used by the organization's subscription. Which view best fits?",
+    "choices": {
+      "A": "Azure Service Health",
+      "B": "Azure Status alone",
+      "C": "Azure Advisor Cost category",
+      "D": "A single VM's Resource Health only"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Service Health provides personalized incident, maintenance, and advisory information.",
+      "B": "The broad public view is less tailored to the subscription's particular services.",
+      "C": "Cost recommendations are not personalized maintenance communications.",
+      "D": "One resource's availability is narrower than maintenance affecting used services and regions."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-018",
+    "stem": "An operator needs the reported availability state of one supported VM instance. Which view is the closest match?",
+    "choices": {
+      "A": "Azure Advisor Performance category",
+      "B": "Azure Status",
+      "C": "Azure Cost Management",
+      "D": "Azure Resource Health"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Performance suggestions are not that VM's current availability report.",
+      "B": "A global status view is broader than an individual instance's availability.",
+      "C": "Cost analysis does not report the instance's availability state.",
+      "D": "Resource Health addresses individual supported resource availability."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-019",
+    "stem": "The public Azure Status page shows no widespread issue, but a subscription has a relevant service incident. What should the operator inspect next?",
+    "choices": {
+      "A": "Only the Advisor Cost recommendations",
+      "B": "Only the subscription's naming convention",
+      "C": "Service Health for the affected subscription",
+      "D": "A reservation purchase"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Cost recommendations do not provide the affected subscription's incident communications.",
+      "B": "Resource names do not establish service-health state.",
+      "C": "Personalized health information can cover relevant issues beyond a broad public report.",
+      "D": "A billing commitment is not an incident diagnostic view."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-020",
+    "stem": "Resource Health reports a VM available, but users receive application errors. What is the appropriate next investigation?",
+    "choices": {
+      "A": "Close the incident because the VM availability report certifies all application code",
+      "B": "Application request, dependency, and error telemetry",
+      "C": "Assume the Azure Status page must show the specific exception",
+      "D": "Use Advisor findings as a complete request trace"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Individual resource availability is not application correctness certification.",
+      "B": "Platform availability does not prove that the hosted application functions correctly.",
+      "C": "The public platform view does not contain every custom application's error.",
+      "D": "Deployment recommendations do not replace request-level telemetry."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-021",
+    "stem": "What additional configuration turns relevant health information into proactive notifications through chosen channels?",
+    "choices": {
+      "A": "Service Health alerts and their notification routing",
+      "B": "Only opening Azure Status in a browser once",
+      "C": "Only reading an Advisor recommendation",
+      "D": "Only assigning a resource-group tag"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Alerts can notify the responsible recipients about relevant health changes.",
+      "B": "A one-time page visit does not configure proactive delivery.",
+      "C": "A read operation does not create a health notification rule.",
+      "D": "A tag does not itself configure alert conditions or destinations."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-022",
+    "stem": "Service Health communicates planned maintenance affecting a used service. What useful response can the workload owner plan?",
+    "choices": {
+      "A": "Assume Service Health has automatically redesigned the application",
+      "B": "Assume the maintenance notice is a bill for consumed capacity",
+      "C": "Assess impact and prepare the workload's response procedure",
+      "D": "Ignore application dependencies because a notice exists"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Health communication does not implement an application's recovery design.",
+      "B": "A service-health communication is not a usage invoice.",
+      "C": "The communication supplies information for proactive resilience and operational planning.",
+      "D": "Dependencies still determine how the workload is affected."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-023",
+    "stem": "Which information can Service Health communicate in addition to current incidents?",
+    "choices": {
+      "A": "Only completed application load-test results",
+      "B": "Planned maintenance and health advisories",
+      "C": "Only blob-level access audit records",
+      "D": "Only predicted application revenue"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Custom test results are not the health service's described primary information.",
+      "B": "Service Health includes upcoming maintenance and relevant advisories.",
+      "C": "Those are workload data events rather than the stated service-health communications.",
+      "D": "Business revenue forecasting is outside the described health view."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "19-024",
+    "stem": "Which statement best distinguishes Azure Status from personalized Service Health?",
+    "choices": {
+      "A": "Azure Status is an individual VM availability checker; Service Health is a pricing calculator",
+      "B": "Azure Status automatically repairs code; Service Health only reports spending",
+      "C": "Azure Status replaces every application metric; Service Health changes every resource configuration",
+      "D": "Azure Status is a broad public view; Service Health is relevant to used subscription services and regions"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Those descriptions confuse Resource Health and cost analysis.",
+      "B": "Neither description matches the services' stated health capabilities.",
+      "C": "Health communications do not replace application telemetry or automatically alter resources.",
+      "D": "The views differ in audience and health scope."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-025",
+    "stem": "When investigating a Service Health event, which scope details are relevant to whether it affects the workload?",
+    "choices": {
+      "A": "Only the application's resource-group tags",
+      "B": "Only the latest cost recommendation category",
+      "C": "Only the storage account's blob access tier",
+      "D": "Affected services and regions together with the subscription context"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Tags can organize resources but do not establish the event's affected service and region scope.",
+      "B": "Optimization advice is not the incident's affected-service scope.",
+      "C": "An access tier alone does not identify the event's affected services and regions.",
+      "D": "Personalized impact must be compared with the workload's actual Azure usage."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-026",
+    "stem": "Which expectation about health information would be incorrect?",
+    "choices": {
+      "A": "Resource Health can help investigate one supported resource",
+      "B": "Azure Status can help identify widespread platform issues",
+      "C": "Receiving a Service Health notice automatically repairs the workload",
+      "D": "Service Health can communicate maintenance relevant to used services"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is a legitimate individual-resource health use.",
+      "B": "That is a legitimate broad public health use.",
+      "C": "A notice informs responders; application recovery still requires an appropriate design and action.",
+      "D": "That is part of the personalized health capability."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-027",
+    "stem": "A query filters ServiceHealth events from only the latest 100 retrieved Activity log records and returns nothing. What conclusion is justified?",
+    "choices": {
+      "A": "No matching events occurred in that retrieved sample",
+      "B": "No Azure incident has ever affected the subscription",
+      "C": "The account's permissions grant access to every application's request logs",
+      "D": "All planned maintenance notices have been canceled"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The time window and record cap limit the inference; this is not proof of uninterrupted service.",
+      "B": "A bounded sample cannot establish an unlimited historical claim.",
+      "C": "Activity log permission does not imply all workload data access.",
+      "D": "A filtered empty sample does not establish cancellation of future maintenance."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/cli/azure/monitor/activity-log?view=azure-cli-latest"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-028",
+    "stem": "A dashboard must show both regional incident communications and one supported resource's availability. Which pair fits those scopes?",
+    "choices": {
+      "A": "Advisor Cost and a pricing calculator",
+      "B": "Service Health and Resource Health",
+      "C": "Resource tags and storage access tiers",
+      "D": "Only Application Insights request counts"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Those analyze optimization and estimates rather than the requested health scopes.",
+      "B": "One addresses relevant service incidents; the other addresses an individual resource.",
+      "C": "Those are metadata and storage choices, not the requested health experiences.",
+      "D": "Application request telemetry alone does not provide both platform-health scopes."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "19-029",
+    "stem": "Two applications use the same Azure service during an incident but experience different user impact. What should be considered?",
+    "choices": {
+      "A": "Service Health guarantees identical impact for every application",
+      "B": "Each application's dependencies, resilience, and actual telemetry",
+      "C": "The less affected application must use a different subscription billing model",
+      "D": "Advisor categories determine the exact count of failed user requests"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A service incident does not make all customer workload designs identical.",
+      "B": "Platform incident information must be interpreted alongside each workload's architecture and behavior.",
+      "C": "Billing model alone does not establish outage resilience.",
+      "D": "Recommendation categories are not request-level incident measurements."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "19-030",
+    "stem": "Which incident report combines appropriate evidence rather than relying on one health view alone?",
+    "choices": {
+      "A": "Relevant Service Health communication plus resource and application observations over the incident window",
+      "B": "Only a screenshot of an empty Advisor Cost list",
+      "C": "Only the fact that a VM resource name exists",
+      "D": "Only a global status page checked outside the incident window"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Correlating platform scope with workload behavior supports a grounded investigation.",
+      "B": "The absence of cost suggestions is not an incident diagnosis.",
+      "C": "Resource existence does not establish application health.",
+      "D": "A broad view at another time is insufficient for the workload's incident evidence."
+    },
+    "objective_id": "M14",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/service-health/overview"
+    ],
+    "difficulty": "review"
+  }
+]

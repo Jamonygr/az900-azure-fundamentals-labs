@@ -1,0 +1,692 @@
+[
+  {
+    "id": "17-001",
+    "stem": "A beginner wants a graphical interface for inspecting Azure resources. Which tool fits?",
+    "choices": {
+      "A": "An ARM template",
+      "B": "Azure portal",
+      "C": "Azure CLI",
+      "D": "Azure PowerShell"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "A template describes a deployment rather than a graphical interface.",
+      "B": "The portal is Azure's browser-based management interface.",
+      "C": "The CLI is a command-line interface.",
+      "D": "Azure PowerShell provides cmdlets."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-002",
+    "stem": "A user signs into the portal but sees no resources in the expected project. What should be checked first?",
+    "choices": {
+      "A": "The selected directory, subscription, filters, and access permissions",
+      "B": "Whether a pricing estimate was saved",
+      "C": "Whether every resource has been migrated to Azure Arc",
+      "D": "Whether the browser has deployed a new VM"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These determine which resources are visible.",
+      "B": "An estimate does not grant resource visibility.",
+      "C": "Arc is not required to view native Azure resources.",
+      "D": "Portal sign-in does not require VM deployment."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-003",
+    "stem": "What is a useful purpose of an Azure portal dashboard?",
+    "choices": {
+      "A": "Present selected resource information in one view",
+      "B": "Grant all viewers Owner permissions",
+      "C": "Prevent all resource deletion",
+      "D": "Replace a resource's deployment template"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Dashboards support visual inspection and organization.",
+      "B": "A dashboard does not grant resource permissions.",
+      "C": "Locks and authorization govern deletion.",
+      "D": "A dashboard is not infrastructure as code."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-004",
+    "stem": "A resource-management operation is made through the portal. Which statement about authorization is accurate?",
+    "choices": {
+      "A": "The portal ignores Policy assignments",
+      "B": "The operation still requires appropriate Azure permissions",
+      "C": "The portal can always delete locked resources",
+      "D": "Portal users automatically become subscription Owners"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Applicable governance checks still matter.",
+      "B": "A graphical interface does not bypass access checks.",
+      "C": "Resource locks can block operations.",
+      "D": "Sign-in does not create that grant."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-005",
+    "stem": "Which action is well suited to the portal for a first investigation?",
+    "choices": {
+      "A": "Bypass a deny policy by selecting a different menu",
+      "B": "Store a shared password in a dashboard tile",
+      "C": "Create every resource automatically on sign-in",
+      "D": "Inspect a resource's properties and available monitoring views"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "UI navigation does not bypass governance.",
+      "B": "Credentials should not be placed in dashboards.",
+      "C": "Signing in does not deploy all resources.",
+      "D": "The visual interface can help explore a resource."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-006",
+    "stem": "A team needs the same environment recreated consistently across many runs. Which approach complements portal exploration?",
+    "choices": {
+      "A": "Repeat undocumented clicks from memory",
+      "B": "Assume the dashboard stores complete deployment logic",
+      "C": "Use reviewed scripts or declarative templates",
+      "D": "Give every user Owner so results match"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That is harder to reproduce and review.",
+      "B": "A dashboard is not a deployment specification.",
+      "C": "Automation makes intended configuration repeatable.",
+      "D": "Permissions do not ensure consistent configuration."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-007",
+    "stem": "Which Azure portal feature helps locate a service when its navigation position is unfamiliar?",
+    "choices": {
+      "A": "Search",
+      "B": "A VM availability set",
+      "C": "A resource lock",
+      "D": "A storage redundancy selector"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The portal provides search for services and resources.",
+      "B": "That affects compute placement.",
+      "C": "That protects operations rather than finding services.",
+      "D": "That configures storage resiliency."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-008",
+    "stem": "Why should a learner confirm the active subscription before a portal deployment?",
+    "choices": {
+      "A": "A subscription selection grants the caller Owner",
+      "B": "The chosen subscription determines the target resource and billing boundary",
+      "C": "Subscription scope matters only for command-line deployments",
+      "D": "A portal deployment always targets every accessible subscription"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Target selection does not create a role assignment.",
+      "B": "The wrong subscription can place resources in the wrong scope.",
+      "C": "Portal operations also need the intended resource scope.",
+      "D": "A deployment has a selected scope."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-009",
+    "stem": "What does successful navigation to a resource page prove?",
+    "choices": {
+      "A": "The resource has no chargeable components",
+      "B": "The user has enough visibility to open that page",
+      "C": "Every deployment command will succeed",
+      "D": "The user can remove every inherited lock"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Visibility does not imply zero cost.",
+      "B": "It does not prove permission for every possible action.",
+      "C": "Other permissions, policies, and limits can still block changes.",
+      "D": "Lock management needs suitable permissions."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-010",
+    "stem": "A learner compares a portal view with az resource list. Why might the displayed sets differ?",
+    "choices": {
+      "A": "The portal automatically duplicates resources",
+      "B": "They may use different subscription scopes or filters",
+      "C": "The portal and CLI necessarily use separate clouds",
+      "D": "The CLI never returns resource IDs"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Viewing resources does not duplicate them.",
+      "B": "Scope and filtering need to match before comparing.",
+      "C": "They can address the same Azure environment.",
+      "D": "Resource listings include IDs."
+    },
+    "objective_id": "M08",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-011",
+    "stem": "What is Azure Cloud Shell?",
+    "choices": {
+      "A": "A new Azure resource hierarchy level",
+      "B": "A browser-accessible hosted shell with Azure management tools",
+      "C": "A storage redundancy model",
+      "D": "An Entra authentication-factor category"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "It is tooling rather than a hierarchy container.",
+      "B": "It provides a managed command-line environment.",
+      "C": "It is unrelated to data replication.",
+      "D": "It is not a factor category."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-012",
+    "stem": "Which statement distinguishes a shell from the Azure CLI?",
+    "choices": {
+      "A": "PowerShell can host az commands; Azure CLI is the command tool being invoked",
+      "B": "Azure CLI can run only inside Bash",
+      "C": "Cloud Shell is the same product as an ARM template",
+      "D": "Every PowerShell command is an Azure PowerShell cmdlet"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The shell and the command interface are different layers.",
+      "B": "It can also run in PowerShell.",
+      "C": "A shell hosts tools; a template describes infrastructure.",
+      "D": "PowerShell can run other executables."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-013",
+    "stem": "Which command syntax belongs to Azure CLI?",
+    "choices": {
+      "A": "az group list",
+      "B": "Get-AzResourceGroup",
+      "C": "Connect-AzAccount",
+      "D": "Get-AzSubscription"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The az executable uses command groups and subcommands.",
+      "B": "That is an Azure PowerShell cmdlet.",
+      "C": "That is an Azure PowerShell sign-in cmdlet.",
+      "D": "That is an Azure PowerShell cmdlet."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-014",
+    "stem": "Which command syntax belongs to Azure PowerShell?",
+    "choices": {
+      "A": "Get-AzResourceGroup",
+      "B": "az resource list",
+      "C": "az account show",
+      "D": "az group list"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Az-module cmdlets use PowerShell verb-noun names.",
+      "B": "That is Azure CLI syntax.",
+      "C": "That is Azure CLI syntax.",
+      "D": "That is Azure CLI syntax."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-015",
+    "stem": "Why is Azure CLI output converted with ConvertFrom-Json in a PowerShell script?",
+    "choices": {
+      "A": "To grant the caller new Azure roles",
+      "B": "To work with the JSON result as PowerShell objects",
+      "C": "To deploy a VM from every output row",
+      "D": "To move resources to another region"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Parsing does not change authorization.",
+      "B": "Parsing supports property access and validation.",
+      "C": "Conversion is a local data operation.",
+      "D": "Parsing does not relocate resources."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-016",
+    "stem": "What is one benefit of CLI or PowerShell automation?",
+    "choices": {
+      "A": "Automation removes the need for error handling",
+      "B": "A sequence can be saved, reviewed, and repeated",
+      "C": "Scripts guarantee that every service is free",
+      "D": "Commands bypass all role assignments"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Scripts must still handle failures.",
+      "B": "Scripts preserve operations more explicitly than remembered interactions.",
+      "C": "Costs depend on deployed services and usage.",
+      "D": "Automation still needs authorization."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-017",
+    "stem": "A lab calls az resource list from PowerShell 7. Which tools are involved?",
+    "choices": {
+      "A": "Only the Azure portal",
+      "B": "Only a Bicep compiler",
+      "C": "Only the Azure PowerShell Az module",
+      "D": "The PowerShell shell and Azure CLI"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "This is a command-line operation.",
+      "B": "No Bicep compilation is implied.",
+      "C": "The az executable is a separate tool.",
+      "D": "PowerShell hosts the az executable."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-018",
+    "stem": "A Cloud Shell session ends. What should a learner assume about resources created earlier?",
+    "choices": {
+      "A": "All billing ceases permanently",
+      "B": "Every created resource is automatically deleted",
+      "C": "All role assignments are removed",
+      "D": "Azure resources remain until appropriately stopped or deleted"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Running resources can continue to incur charges.",
+      "B": "Session lifetime and resource lifetime differ.",
+      "C": "Closing the shell does not revoke assignments.",
+      "D": "Ending a shell session is not resource cleanup."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-019",
+    "stem": "Which difference affects scripting between Azure CLI and Azure PowerShell?",
+    "choices": {
+      "A": "Azure PowerShell can manage only local files",
+      "B": "Azure CLI cannot be called from scripts",
+      "C": "CLI commonly returns JSON text; Az cmdlets return PowerShell objects",
+      "D": "One interface can authorize any user without roles"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Its Az modules manage Azure resources.",
+      "B": "It is commonly scripted.",
+      "C": "Output handling differs between the interfaces.",
+      "D": "Neither bypasses authorization."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-020",
+    "stem": "Why should a script pass an explicit subscription ID?",
+    "choices": {
+      "A": "It makes all resource operations free",
+      "B": "It guarantees that every provider is registered",
+      "C": "It supplies an authentication factor",
+      "D": "It makes the intended target independent of an ambiguous default context"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Scope selection does not waive charges.",
+      "B": "Provider availability must still be checked.",
+      "C": "The subscription ID is an identifier, not a secret proof.",
+      "D": "Explicit scope improves repeatability and safety."
+    },
+    "objective_id": "M09",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/cloud-shell/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-021",
+    "stem": "A company wants Azure governance visibility for servers that remain in its datacenter. Which service should it evaluate?",
+    "choices": {
+      "A": "Azure Migrate alone",
+      "B": "Azure App Service",
+      "C": "Azure Data Box",
+      "D": "Azure Arc"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Migration tooling assesses and moves workloads rather than supplying this ongoing projection.",
+      "B": "App Service hosts managed applications.",
+      "C": "Data Box moves data offline.",
+      "D": "Arc extends management to supported non-Azure infrastructure."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-022",
+    "stem": "What does connecting a supported external server to Azure Arc create?",
+    "choices": {
+      "A": "A guarantee of free monitoring ingestion",
+      "B": "An automatic replacement of the server's operating system",
+      "C": "An Azure resource representation for management",
+      "D": "A physical relocation of the server to an Azure datacenter"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Connected services can have separate costs.",
+      "B": "Onboarding does not imply OS replacement.",
+      "C": "The server can be managed within Azure resource scopes.",
+      "D": "Arc connection does not move the hardware."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-023",
+    "stem": "Which environments can be relevant to Azure Arc?",
+    "choices": {
+      "A": "On-premises, edge, and other-cloud environments",
+      "B": "Only Azure Storage blob accounts",
+      "C": "Only native Azure VMs in one subscription",
+      "D": "Only Microsoft 365 document identities"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Arc addresses management beyond Azure datacenters.",
+      "B": "Arc covers supported hybrid infrastructure rather than being a blob-only service.",
+      "C": "Arc's distinguishing purpose includes supported resources outside Azure.",
+      "D": "Arc is infrastructure management rather than an identity-provider configuration."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-024",
+    "stem": "A team needs to move a workload into Azure rather than manage it in place. Which distinction matters?",
+    "choices": {
+      "A": "Arc management and workload migration solve different needs",
+      "B": "Arc always migrates every connected workload",
+      "C": "Both terms mean the same action",
+      "D": "Migration only changes resource tags"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Arc connection alone is not a migration.",
+      "B": "It does not universally relocate workloads.",
+      "C": "They describe different operational goals.",
+      "D": "Migration can move workload data and hosting."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "17-025",
+    "stem": "What is a typical component for connecting a supported server to Azure Arc?",
+    "choices": {
+      "A": "The Azure Connected Machine agent",
+      "B": "A pricing calculator estimate",
+      "C": "A CanNotDelete lock on a glossary",
+      "D": "A storage archive access tier"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The agent connects external server management to Azure.",
+      "B": "An estimate does not install connectivity.",
+      "C": "Locks are unrelated to server onboarding.",
+      "D": "Tiering does not connect a server."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "17-026",
+    "stem": "Why should the organization review Arc extensions before enabling them?",
+    "choices": {
+      "A": "Every extension automatically moves the server to Azure",
+      "B": "They can add capabilities, permissions, and separate service charges",
+      "C": "All extensions are always free and require no authority",
+      "D": "Extensions replace the need for the server operating system"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Extension activation is not universal migration.",
+      "B": "Connected management still has operational and cost implications.",
+      "C": "That is not a safe assumption.",
+      "D": "They run alongside infrastructure rather than replacing it."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "17-027",
+    "stem": "Which governance advantage can an Arc resource representation provide?",
+    "choices": {
+      "A": "Remove all network connectivity prerequisites",
+      "B": "Move the connected machine's disks into Azure automatically",
+      "C": "Automatically transfer guest-OS patching to Microsoft for every external server",
+      "D": "Use Azure scopes and tags to organize supported hybrid resources"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Connected management requires suitable communication.",
+      "B": "Management representation does not imply data migration.",
+      "C": "The customer still owns relevant external-infrastructure duties.",
+      "D": "The representation integrates external infrastructure with Azure management."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "17-028",
+    "stem": "A connected external server stops communicating with Azure. What should an operator investigate?",
+    "choices": {
+      "A": "Agent status and required network connectivity",
+      "B": "Only whether the machine has a CostCenter tag",
+      "C": "Only whether a VM reservation was purchased",
+      "D": "Only whether the resource group has a delete lock"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These affect management connection health.",
+      "B": "An allocation tag alone does not diagnose agent connectivity.",
+      "C": "A compute commitment does not restore an external agent connection.",
+      "D": "Deletion protection does not by itself diagnose communication health."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "17-029",
+    "stem": "Why does this fundamentals lab avoid onboarding the learner's computer to Arc?",
+    "choices": {
+      "A": "Azure CLI can never inspect Arc resource types",
+      "B": "Arc requires no permissions, costs, or configuration",
+      "C": "Arc cannot manage any supported non-Azure servers",
+      "D": "Onboarding is an operational change beyond read-only tool comparison"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Azure management tools can inspect relevant resources.",
+      "B": "Requirements and connected-service costs need review.",
+      "C": "That contradicts its purpose.",
+      "D": "The concept can be learned without installing agents."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "17-030",
+    "stem": "Which statement about cost is appropriate for Arc-connected infrastructure?",
+    "choices": {
+      "A": "Arc converts every workload to a VM reservation",
+      "B": "Every connected service is permanently free",
+      "C": "Arc cancels all local datacenter costs",
+      "D": "Optional Azure services used with Arc can incur their own charges"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Management projection does not impose that pricing model.",
+      "B": "Service pricing still applies.",
+      "C": "On-premises infrastructure remains the customer's expense.",
+      "D": "Connection does not make every enabled service free."
+    },
+    "objective_id": "M10",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+    ],
+    "difficulty": "review"
+  }
+]

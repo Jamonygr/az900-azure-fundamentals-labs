@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 705" width="1000" height="705" role="img" aria-labelledby="title desc">
+<title id="title">Choose the control that answers the need</title>
+<desc id="desc">RBAC grants allowed actions at scope. Azure Policy evaluates resource compliance and can audit or deny deployments. Management locks restrict control-plane modification or deletion. Tags annotate resources for organization and reporting. Microsoft Purview addresses data governance, security, and compliance capabilities. Cost Management analyzes costs and budgets, and a budget alert does not stop spending.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64839a"/></marker></defs>
+<rect width="1000" height="705" rx="20" fill="#f4f8fc"/>
+<rect x="0" y="0" width="1000" height="8" fill="#0f766e"/>
+<text x="32" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#15324d" font-weight="700" text-anchor="start">Choose the control that answers the need</text>
+<text x="32" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Authorization, resource governance, data governance, and cost visibility complement one another.</text>
+<rect x="32" y="126" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="139" width="4" height="190" rx="2" fill="#0369a1"/>
+<text x="52" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Azure RBAC</text>
+<text x="52" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Who may perform this action?</text>
+<text x="52" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Grants allowed actions at scope.</text>
+<text x="52" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="52" y="265" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A role does not override Policy</text>
+<text x="52" y="290" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">or an applicable management lock.</text>
+<rect x="350" y="126" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="139" width="4" height="190" rx="2" fill="#6d28d9"/>
+<text x="370" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Azure Policy</text>
+<text x="370" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Does the resource meet a rule?</text>
+<text x="370" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Evaluate, audit, deny, or apply</text>
+<text x="370" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">other configured policy effects.</text>
+<text x="370" y="265" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="370" y="290" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Policy does not grant an Azure role.</text>
+<rect x="668" y="126" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="139" width="4" height="190" rx="2" fill="#0f766e"/>
+<text x="688" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Management locks</text>
+<text x="688" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Can it be changed or deleted?</text>
+<text x="688" y="215" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">CanNotDelete / ReadOnly</text>
+<text x="688" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">restrict management operations.</text>
+<text x="688" y="265" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="688" y="290" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A lock is not a data backup.</text>
+<rect x="32" y="362" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="32" y="375" width="4" height="190" rx="2" fill="#0369a1"/>
+<text x="52" y="396" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0369a1" font-weight="700" text-anchor="start">Tags</text>
+<text x="52" y="426" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">How should we organize it?</text>
+<text x="52" y="451" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Label resources for ownership,</text>
+<text x="52" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">cost attribution, and reporting.</text>
+<text x="52" y="501" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="52" y="526" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">A tag is not an access grant.</text>
+<rect x="350" y="362" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="350" y="375" width="4" height="190" rx="2" fill="#6d28d9"/>
+<text x="370" y="396" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#6d28d9" font-weight="700" text-anchor="start">Microsoft Purview</text>
+<text x="370" y="426" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">How is our data governed?</text>
+<text x="370" y="451" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Discover and understand data;</text>
+<text x="370" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">protect information and support</text>
+<text x="370" y="501" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">scoped compliance processes.</text>
+<text x="370" y="526" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Catalog access does not grant</text>
+<text x="370" y="551" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">access to source records.</text>
+<rect x="668" y="362" width="300" height="216" rx="12" fill="#ffffff" stroke="#cbdbe6" stroke-width="1.5"/>
+<rect x="668" y="375" width="4" height="190" rx="2" fill="#0f766e"/>
+<text x="688" y="396" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#0f766e" font-weight="700" text-anchor="start">Cost Management</text>
+<text x="688" y="426" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">What are we spending?</text>
+<text x="688" y="451" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Analyze costs, allocate spend,</text>
+<text x="688" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">and configure budget alerts.</text>
+<text x="688" y="501" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start"></text>
+<text x="688" y="526" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#435c72" font-weight="400" text-anchor="start">Budget alerts do not stop spending.</text>
+<rect x="32" y="607" width="936" height="38" rx="12" fill="#e5f5f1" stroke="#c2dfd7" stroke-width="1.5"/>
+<text x="51" y="632" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#0f766e" font-weight="400" text-anchor="start">Define the requirement, scope, accountable owner, and evidence before selecting a tool.</text>
+<text x="32" y="681" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#435c72" font-weight="400" text-anchor="start">Conceptual tool comparison. The lessons do not create enterprise Policy or Purview configurations.</text>
+</svg>

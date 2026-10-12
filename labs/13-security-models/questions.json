@@ -1,0 +1,692 @@
+[
+  {
+    "id": "13-001",
+    "stem": "Which set identifies the three central Zero Trust principles?",
+    "choices": {
+      "A": "Trust the office, share passwords, and disable logging",
+      "B": "Use one region, one account, and one firewall",
+      "C": "Verify explicitly, use least privilege, and assume breach",
+      "D": "Encrypt invoices, reserve capacity, and add tags"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "These practices undermine verification and containment.",
+      "B": "Those are infrastructure choices rather than the principles.",
+      "C": "These principles guide Zero Trust access design.",
+      "D": "These do not define Zero Trust principles."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-002",
+    "stem": "A user is connected to the office network. How should a Zero Trust design treat the request?",
+    "choices": {
+      "A": "Verify identity and context before authorizing access",
+      "B": "Disable monitoring for the request",
+      "C": "Skip authentication because the network is internal",
+      "D": "Give the user subscription Owner"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Network location alone is insufficient evidence of trust.",
+      "B": "Monitoring remains useful for detecting compromise.",
+      "C": "Internal networks can also contain compromised systems.",
+      "D": "Location does not justify broad privileges."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-003",
+    "stem": "What does least privilege mean for a help-desk task?",
+    "choices": {
+      "A": "Avoid assigning any identity to workloads",
+      "B": "Require every user to manage all tenant policies",
+      "C": "Grant the minimum permission needed at the appropriate scope",
+      "D": "Give every employee identical administrator rights"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Workloads still need authenticated identities.",
+      "B": "That expands privileges beyond most tasks.",
+      "C": "Access should match the job rather than exceed it.",
+      "D": "Jobs have different permission needs."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-004",
+    "stem": "What does assume breach encourage an architect to do?",
+    "choices": {
+      "A": "Limit lateral movement and detect suspicious activity",
+      "B": "Assume an internal network cannot be attacked",
+      "C": "Make application data public to simplify troubleshooting",
+      "D": "Remove backups because prevention is sufficient"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "The design accounts for an attacker already having a foothold.",
+      "B": "That conflicts with the principle.",
+      "C": "That increases exposure.",
+      "D": "Recovery remains necessary."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-005",
+    "stem": "A temporary contractor needs to read one report store. Which design best reflects Zero Trust?",
+    "choices": {
+      "A": "Give narrowly scoped access for the required task and review its lifetime",
+      "B": "Share the database administrator password",
+      "C": "Disable authentication on the store",
+      "D": "Grant permanent subscription Owner"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Scope and duration reduce unnecessary exposure.",
+      "B": "Shared secrets weaken verification and accountability.",
+      "C": "Removing identity checks does not implement Zero Trust.",
+      "D": "That exceeds the task."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-006",
+    "stem": "Why does Zero Trust use device and risk context with identity information?",
+    "choices": {
+      "A": "It guarantees no attack can succeed",
+      "B": "It removes the need for any authorization",
+      "C": "The access decision benefits from more evidence than a username",
+      "D": "It ensures every device is physically in one datacenter"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Security strategies reduce risk rather than guarantee perfection.",
+      "B": "Permission checks still matter.",
+      "C": "Additional signals help verify the request explicitly.",
+      "D": "Zero Trust is not a physical-placement requirement."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-007",
+    "stem": "An application is compromised. Which design can reduce the damage to unrelated systems?",
+    "choices": {
+      "A": "Disabling resource activity logs",
+      "B": "A shared highly privileged identity for all apps",
+      "C": "Segmentation with limited workload permissions",
+      "D": "One unrestricted internal network"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "That makes investigation harder.",
+      "B": "That expands cross-system exposure.",
+      "C": "Containment reduces the potential blast radius.",
+      "D": "Unrestricted movement helps an attacker."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-008",
+    "stem": "Which request should be evaluated under Zero Trust?",
+    "choices": {
+      "A": "Only guest users requesting expensive services",
+      "B": "Both internal and external access requests",
+      "C": "Only requests made from PowerShell",
+      "D": "Only traffic originating outside the country"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Employees and other requests also require verification.",
+      "B": "Trust should not be assumed solely from network location.",
+      "C": "The client tool does not define the trust model.",
+      "D": "Country alone does not define all relevant risk."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-009",
+    "stem": "A team removes standing administrator access and grants privileged access only when needed. Which principle does this support?",
+    "choices": {
+      "A": "Least privilege",
+      "B": "Verify explicitly",
+      "C": "Assume breach",
+      "D": "Perimeter-based trust"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Reducing privilege scope and lifetime supports minimal access.",
+      "B": "Explicit verification evaluates identity and context; the stated change primarily limits privilege lifetime.",
+      "C": "Assuming breach guides containment and detection; limiting standing administrator access directly implements least privilege.",
+      "D": "Trust based mainly on network location conflicts with Zero Trust and does not describe time-limited privilege."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-010",
+    "stem": "What is an accurate statement about Zero Trust implementation?",
+    "choices": {
+      "A": "It requires making every resource private regardless of its purpose",
+      "B": "It combines policies, identities, devices, and other protections",
+      "C": "Buying one firewall completes the strategy",
+      "D": "It eliminates the customer share of security responsibility"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Controls should follow requirements and risk.",
+      "B": "It is a strategy applied across multiple control areas.",
+      "C": "A single product cannot cover all principles.",
+      "D": "Customers still configure access and protect data."
+    },
+    "objective_id": "A25",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-011",
+    "stem": "Why use defense in depth?",
+    "choices": {
+      "A": "To make every layer use the same password",
+      "B": "Several layers can limit harm when one control fails",
+      "C": "To avoid monitoring after a firewall is installed",
+      "D": "To replace all application security with physical locks"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Shared credentials weaken the layers.",
+      "B": "Layering reduces dependence on one protection.",
+      "C": "Monitoring complements preventive controls.",
+      "D": "Application threats need application protections."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-012",
+    "stem": "Which example represents protections at different layers?",
+    "choices": {
+      "A": "MFA for identities, network filtering, and data encryption",
+      "B": "Three IP filtering rules with no identity or data controls",
+      "C": "Three MFA methods with no host or application protections",
+      "D": "Three backups with no authentication or application protections"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These address identity, network, and data risks.",
+      "B": "These remain concentrated in the network layer.",
+      "C": "Those focus on identity rather than different defensive layers.",
+      "D": "Recovery copies do not provide the requested spread of preventive layers."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-013",
+    "stem": "A public web app needs anonymous access to its home page. What remains useful in a layered design?",
+    "choices": {
+      "A": "Secure application code, protected administration, and monitored data access",
+      "B": "Removing all TLS encryption",
+      "C": "Anonymous administrator access",
+      "D": "Storing secrets in the home-page source"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Public content does not require unprotected management or data.",
+      "B": "Public-facing traffic still benefits from TLS.",
+      "C": "Administration should remain protected.",
+      "D": "Public source must not expose secrets."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-014",
+    "stem": "Which security layer addresses unauthorized access to physical server hardware in Azure datacenters?",
+    "choices": {
+      "A": "Application input validation",
+      "B": "Physical security",
+      "C": "Azure RBAC",
+      "D": "Sensitivity labels"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "That protects application processing.",
+      "B": "Provider controls protect the physical facilities.",
+      "C": "That authorizes resource operations.",
+      "D": "Those help classify and protect information."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-015",
+    "stem": "What is the role of encryption at rest in a defense-in-depth design?",
+    "choices": {
+      "A": "Replace identity verification",
+      "B": "Protect stored data if underlying storage is accessed improperly",
+      "C": "Authorize users to modify every resource",
+      "D": "Guarantee that malicious code cannot run"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Access still requires appropriate identity controls.",
+      "B": "Encryption addresses a data-protection layer.",
+      "C": "Authorization is separate.",
+      "D": "Encryption is not a code-execution prevention guarantee."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-016",
+    "stem": "A firewall is configured correctly, but a user exposes data with excessive permissions. What does this show?",
+    "choices": {
+      "A": "Network protection cannot substitute for access control",
+      "B": "Encryption at rest is impossible in Azure",
+      "C": "A firewall always grants least privilege",
+      "D": "Azure regions determine every user's permissions"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Different threats require different protective layers.",
+      "B": "The incident says nothing about encryption availability.",
+      "C": "Firewalls do not automatically scope user roles.",
+      "D": "Roles and application controls determine permissions."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-017",
+    "stem": "Which control helps detect a failure of preventive defenses?",
+    "choices": {
+      "A": "Naming every resource identically",
+      "B": "Disabling identity checks",
+      "C": "Removing all audit records",
+      "D": "Monitoring and alerting"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Naming does not detect attacks.",
+      "B": "That creates additional risk.",
+      "C": "That reduces visibility.",
+      "D": "Detection helps identify suspicious behavior after access occurs."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-018",
+    "stem": "A learner describes defense in depth as installing two identical firewalls and stopping there. What is missing?",
+    "choices": {
+      "A": "A stricter resource naming convention alone",
+      "B": "Additional copies of the same perimeter firewall rule alone",
+      "C": "A larger firewall VM SKU alone",
+      "D": "Protection across identity, application, data, and other layers"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Names do not provide the missing security layers.",
+      "B": "That does not address missing identity, host, application, and data controls.",
+      "C": "More capacity in one layer is not broad defensive coverage.",
+      "D": "Depth spans complementary controls rather than only one control type."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-019",
+    "stem": "Which pair best separates prevention from recovery?",
+    "choices": {
+      "A": "Access restrictions reduce exposure; tested backups support restoration",
+      "B": "Tags prevent malware; DNS records restore databases",
+      "C": "Invoices prevent phishing; budgets recover deleted files",
+      "D": "Azure regions authenticate users; MFA restores disks"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Both activities contribute to resilient defense.",
+      "B": "These claims assign the wrong capabilities.",
+      "C": "Billing tools do not perform those functions.",
+      "D": "Those functions are mismatched."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-020",
+    "stem": "How does patching a customer-managed guest operating system contribute to layered security?",
+    "choices": {
+      "A": "It changes a subscription into a tenant",
+      "B": "It automatically grants application data permissions",
+      "C": "It removes the need for network segmentation",
+      "D": "It reduces exposure to known software vulnerabilities"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Patching does not alter identity or billing boundaries.",
+      "B": "Patching does not assign data roles.",
+      "C": "Complementary network controls still matter.",
+      "D": "VM guest maintenance is a useful host-level control."
+    },
+    "objective_id": "A26",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-021",
+    "stem": "What is a main purpose of Microsoft Defender for Cloud?",
+    "choices": {
+      "A": "Host every application database",
+      "B": "Provide a replacement for every Azure billing tool",
+      "C": "Calculate only network address ranges",
+      "D": "Assess security posture and provide workload-protection capabilities"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "It does not serve as a universal database host.",
+      "B": "It is a security service.",
+      "C": "Address planning is not its core purpose.",
+      "D": "It helps identify and address cloud security risks."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-022",
+    "stem": "An administrator wants a prioritized view of configuration weaknesses across cloud resources. Which service should be evaluated?",
+    "choices": {
+      "A": "Azure Pricing Calculator",
+      "B": "Microsoft Defender for Cloud",
+      "C": "Azure DNS",
+      "D": "Azure Data Box"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "The calculator estimates costs.",
+      "B": "Its posture capabilities help identify security weaknesses.",
+      "C": "DNS resolves names.",
+      "D": "Data Box is for offline data movement."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-023",
+    "stem": "What should a team do before enabling a Defender workload-protection plan in a learning subscription?",
+    "choices": {
+      "A": "Assume every plan is always free",
+      "B": "Enable it in every subscription automatically",
+      "C": "Review scope, permissions, and current pricing",
+      "D": "Publish credentials to prove the plan works"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Pricing varies by capability and plan.",
+      "B": "The lab does not authorize broad paid activation.",
+      "C": "Plan activation can add charges and affect the selected scope.",
+      "D": "Credentials must remain private."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-024",
+    "stem": "A security recommendation reports excessive exposure. What is the appropriate next step?",
+    "choices": {
+      "A": "Ignore it because Azure owns physical security",
+      "B": "Treat the finding as proof that compliance is complete",
+      "C": "Delete every resource in the tenant",
+      "D": "Investigate the finding and plan a tested remediation"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Customer configuration still affects exposure.",
+      "B": "A recommendation identifies work rather than certification.",
+      "C": "That is disproportionate and destructive.",
+      "D": "Recommendations need contextual review before changes."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "applied"
+  },
+  {
+    "id": "13-025",
+    "stem": "Which distinction is useful when learning Defender for Cloud?",
+    "choices": {
+      "A": "Posture assessment identifies risks; workload protection helps detect threats",
+      "B": "Posture assessment guarantees compliance; workload protection guarantees no breach",
+      "C": "Posture assessment approves resource access; workload protection assigns Azure roles",
+      "D": "Posture assessment estimates billing; workload protection sets budgets"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "These capabilities address related but distinct security needs.",
+      "B": "Neither capability supplies those universal guarantees.",
+      "C": "Resource authorization still requires deliberate role and access design.",
+      "D": "Those are cost-management functions."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "13-026",
+    "stem": "How should a beginner interpret a favorable security score?",
+    "choices": {
+      "A": "As permission to remove application authentication",
+      "B": "As one input for prioritizing security improvements",
+      "C": "As legal proof of every regulatory obligation",
+      "D": "As a guarantee that no breach can occur"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Authentication remains necessary.",
+      "B": "A score summarizes measured posture and has limits.",
+      "C": "Regulatory compliance needs broader evidence.",
+      "D": "No posture score guarantees prevention."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "13-027",
+    "stem": "A team uses resources in Azure and another cloud. Which security need can Defender for Cloud address?",
+    "choices": {
+      "A": "Free migration of every database",
+      "B": "A consolidated view of supported multicloud security posture",
+      "C": "A guarantee of identical features for every provider",
+      "D": "Automatic deletion of every external server"
+    },
+    "answer": "B",
+    "explanations": {
+      "A": "Security assessment is not a universal migration service.",
+      "B": "Supported connected environments can contribute to the posture view.",
+      "C": "Capabilities and onboarding requirements can differ.",
+      "D": "That is not its purpose."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "13-028",
+    "stem": "Why might an organization combine Defender recommendations with its own threat model?",
+    "choices": {
+      "A": "A threat model disables Defender billing",
+      "B": "Recommendations automatically know every business requirement",
+      "C": "The workload's context affects remediation priorities",
+      "D": "Resource tags fully prevent attacks"
+    },
+    "answer": "C",
+    "explanations": {
+      "A": "Pricing is not changed by the document.",
+      "B": "They do not replace contextual analysis.",
+      "C": "Business purpose and architecture matter alongside findings.",
+      "D": "Tags are not threat-prevention controls."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "13-029",
+    "stem": "A learner wants to complete this security lab without changing any subscription security plans. Which activity fits?",
+    "choices": {
+      "A": "Analyze labeled synthetic findings and map controls to them",
+      "B": "Install agents on production servers",
+      "C": "Enable all paid Defender plans",
+      "D": "Create a tenant-wide privileged role assignment"
+    },
+    "answer": "A",
+    "explanations": {
+      "A": "Concept exercises meet the learning goal without plan activation.",
+      "B": "That is operational onboarding.",
+      "C": "That changes configuration and may incur charges.",
+      "D": "That modifies real access outside the lab."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "review"
+  },
+  {
+    "id": "13-030",
+    "stem": "Which conclusion follows from using Defender for Cloud?",
+    "choices": {
+      "A": "All data becomes publicly discoverable",
+      "B": "Every Azure resource becomes immune to attacks",
+      "C": "The customer no longer manages identities",
+      "D": "The customer still needs to act on appropriate findings and maintain protections"
+    },
+    "answer": "D",
+    "explanations": {
+      "A": "Security posture management does not make data public.",
+      "B": "Security services cannot guarantee immunity.",
+      "C": "Identity responsibility remains.",
+      "D": "The service supports security work rather than transferring all duties."
+    },
+    "objective_id": "A27",
+    "remediation": "README.md#concept-primer",
+    "source_urls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+    ],
+    "difficulty": "review"
+  }
+]
